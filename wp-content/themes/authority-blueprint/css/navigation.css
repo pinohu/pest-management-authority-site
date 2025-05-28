@@ -1,0 +1,123 @@
+/* Mobile-first navigation styles for Authority Blueprint */
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  padding: 10px;
+  position: relative;
+  z-index: 200;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.hamburger-icon {
+  display: block;
+  width: 24px;
+  height: 18px;
+  position: relative;
+}
+.hamburger-icon::before,
+.hamburger-icon::after,
+.hamburger-icon span {
+  content: '';
+  display: block;
+  height: 3px;
+  background: #222;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.primary-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 100;
+  padding: 2rem 1rem;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.primary-navigation[hidden] {
+  transform: translateX(-100%);
+}
+.menu-toggle[aria-expanded="true"] + .primary-navigation {
+  transform: translateX(0);
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  margin-bottom: 1.5rem;
+}
+.menu a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
+  .primary-navigation {
+    position: static;
+    transform: none;
+    padding: 0;
+    background: transparent;
+    display: block !important;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .menu li {
+    margin-bottom: 0;
+  }
+}
+
+.bottom-navigation {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: #666;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.bottom-nav-item.active {
+  color: #0073aa;
+}
+.bottom-nav-item .icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+  background: #eee;
+  border-radius: 50%;
+}
+@media (min-width: 1024px) {
+  .bottom-navigation {
+    display: none;
+  }
+} 
