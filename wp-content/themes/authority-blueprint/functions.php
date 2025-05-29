@@ -218,13 +218,13 @@ add_action( 'after_setup_theme', function() {
 	add_theme_support( 'align-wide' );
 } );
 
-// Register custom post types and taxonomies for authority site architecture
+// Register custom post types and taxonomies for pest management science authority site architecture
 add_action( 'init', function() {
-	// Pillar Content
+	// Pest Pillar Content
 	register_post_type( 'pillar', array(
 		'labels' => array(
-			'name' => __( 'Pillars', 'authority-blueprint' ),
-			'singular_name' => __( 'Pillar', 'authority-blueprint' ),
+			'name' => __( 'Pest Pillars', 'authority-blueprint' ),
+			'singular_name' => __( 'Pest Pillar', 'authority-blueprint' ),
 		),
 		'public' => true,
 		'has_archive' => true,
@@ -232,11 +232,11 @@ add_action( 'init', function() {
 		'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'author', 'revisions' ),
 		'rewrite' => array( 'slug' => 'pillar' ),
 	) );
-	// Cluster Content
+	// Pest Cluster Content
 	register_post_type( 'cluster', array(
 		'labels' => array(
-			'name' => __( 'Clusters', 'authority-blueprint' ),
-			'singular_name' => __( 'Cluster', 'authority-blueprint' ),
+			'name' => __( 'Pest Clusters', 'authority-blueprint' ),
+			'singular_name' => __( 'Pest Cluster', 'authority-blueprint' ),
 		),
 		'public' => true,
 		'has_archive' => true,
@@ -244,11 +244,11 @@ add_action( 'init', function() {
 		'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'author', 'revisions' ),
 		'rewrite' => array( 'slug' => 'cluster' ),
 	) );
-	// Resource Content
+	// Pest Resource Content
 	register_post_type( 'resource', array(
 		'labels' => array(
-			'name' => __( 'Resources', 'authority-blueprint' ),
-			'singular_name' => __( 'Resource', 'authority-blueprint' ),
+			'name' => __( 'Pest Resources', 'authority-blueprint' ),
+			'singular_name' => __( 'Pest Resource', 'authority-blueprint' ),
 		),
 		'public' => true,
 		'has_archive' => true,
@@ -256,11 +256,11 @@ add_action( 'init', function() {
 		'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'author', 'revisions' ),
 		'rewrite' => array( 'slug' => 'resource' ),
 	) );
-	// Case Study Content
+	// Pest Case Study Content
 	register_post_type( 'case_study', array(
 		'labels' => array(
-			'name' => __( 'Case Studies', 'authority-blueprint' ),
-			'singular_name' => __( 'Case Study', 'authority-blueprint' ),
+			'name' => __( 'Pest Case Studies', 'authority-blueprint' ),
+			'singular_name' => __( 'Pest Case Study', 'authority-blueprint' ),
 		),
 		'public' => true,
 		'has_archive' => true,
@@ -268,11 +268,11 @@ add_action( 'init', function() {
 		'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'author', 'revisions' ),
 		'rewrite' => array( 'slug' => 'case-study' ),
 	) );
-	// Glossary Content
+	// Pest Glossary Content
 	register_post_type( 'glossary', array(
 		'labels' => array(
-			'name' => __( 'Glossaries', 'authority-blueprint' ),
-			'singular_name' => __( 'Glossary', 'authority-blueprint' ),
+			'name' => __( 'Pest Glossaries', 'authority-blueprint' ),
+			'singular_name' => __( 'Pest Glossary', 'authority-blueprint' ),
 		),
 		'public' => true,
 		'has_archive' => true,
@@ -282,18 +282,25 @@ add_action( 'init', function() {
 	) );
 	// Custom Taxonomies
 	register_taxonomy( 'topic', array( 'pillar', 'cluster', 'resource', 'case_study', 'glossary' ), array(
-		'label' => __( 'Topics', 'authority-blueprint' ),
+		'label' => __( 'Pest Topics', 'authority-blueprint' ),
 		'public' => true,
 		'hierarchical' => true,
 		'show_in_rest' => true,
 		'rewrite' => array( 'slug' => 'topic' ),
 	) );
 	register_taxonomy( 'audience', array( 'pillar', 'cluster', 'resource', 'case_study', 'glossary' ), array(
-		'label' => __( 'Audiences', 'authority-blueprint' ),
+		'label' => __( 'Pest Audiences', 'authority-blueprint' ),
 		'public' => true,
 		'hierarchical' => true,
 		'show_in_rest' => true,
 		'rewrite' => array( 'slug' => 'audience' ),
+	) );
+	register_taxonomy( 'control_method', array( 'pillar', 'cluster', 'resource', 'case_study' ), array(
+		'label' => __( 'Control Methods', 'authority-blueprint' ),
+		'public' => true,
+		'hierarchical' => true,
+		'show_in_rest' => true,
+		'rewrite' => array( 'slug' => 'control-method' ),
 	) );
 	register_taxonomy( 'resource_type', array( 'resource' ), array(
 		'label' => __( 'Resource Types', 'authority-blueprint' ),
@@ -312,142 +319,34 @@ add_action( 'after_setup_theme', function() {
 	) );
 } );
 
-// Register block pattern categories and a sample pattern for rapid layout creation
-add_action( 'init', function() {
-	register_block_pattern_category(
-		'authority_blueprint_hero',
-		array(
-			'label' => __( 'Hero Sections', 'authority-blueprint' ),
-		)
-	);
-
-	register_block_pattern(
-		'authority-blueprint/hero-simple',
-		array(
-			'title'       => __( 'Simple Hero Section', 'authority-blueprint' ),
-			'description' => _x( 'A mobile-first, accessible hero section with headline, description, and call to action.', 'Block pattern description', 'authority-blueprint' ),
-			'categories'  => array( 'authority_blueprint_hero' ),
-			'content'     => '<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}},"backgroundColor":"primary","textColor":"background"} -->
-<div class="wp-block-group alignfull has-background-color has-primary-background-color has-text-color has-background" style="padding-top:3rem;padding-bottom:3rem"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","level":1} -->
-<h1 class="has-text-align-center">Welcome to Your Authority Site</h1>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Build trust, rank higher, and convert more with a best-practice, mobile-first, SEO-optimized WordPress site.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"background","textColor":"primary"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-background-color has-primary-color has-text-color has-background" href="#">Get Started</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div></div>
-<!-- /wp:group -->',
-		)
-	);
-
-	// Featured Content pattern category and pattern
-	register_block_pattern_category(
-		'authority_blueprint_featured',
-		array('label' => __( 'Featured Content', 'authority-blueprint' ))
-	);
-	register_block_pattern(
-		'authority-blueprint/featured-content-cards',
-		array(
-			'title' => __( 'Featured Content Cards', 'authority-blueprint' ),
-			'description' => _x( 'A responsive, accessible section for highlighting featured articles or resources.', 'Block pattern description', 'authority-blueprint' ),
-			'categories' => array( 'authority_blueprint_featured' ),
-			'content' => '<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"2rem"}}} -->
-<div class="wp-block-group alignwide"><!-- wp:columns {"isStackedOnMobile":true} -->
-<div class="wp-block-columns is-stack-on-mobile"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"https://via.placeholder.com/600x400","dimRatio":30,"minHeight":200,"isDark":false} -->
-<div class="wp-block-cover is-light" style="min-height:200px"><img class="wp-block-cover__image-background" alt="" src="https://via.placeholder.com/600x400" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":3} -->
-<h3>Featured Guide</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Highlight your best content here for maximum impact.</p>
-<!-- /wp:paragraph --><!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link" href="#">Read More</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div></div>
-<!-- /wp:cover --></div>
-<!-- /wp:column -->
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"https://via.placeholder.com/600x400","dimRatio":30,"minHeight":200,"isDark":false} -->
-<div class="wp-block-cover is-light" style="min-height:200px"><img class="wp-block-cover__image-background" alt="" src="https://via.placeholder.com/600x400" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":3} -->
-<h3>Resource Library</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Drive users to your most valuable resources or downloads.</p>
-<!-- /wp:paragraph --><!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link" href="#">Explore</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div></div>
-<!-- /wp:cover --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group -->',
-		)
-	);
-
-	// Testimonials pattern category and pattern
-	register_block_pattern_category(
-		'authority_blueprint_testimonials',
-		array('label' => __( 'Testimonials', 'authority-blueprint' ))
-	);
-	register_block_pattern(
-		'authority-blueprint/testimonials-simple',
-		array(
-			'title' => __( 'Simple Testimonials', 'authority-blueprint' ),
-			'description' => _x( 'A mobile-first, accessible testimonials section with quotes and author info.', 'Block pattern description', 'authority-blueprint' ),
-			'categories' => array( 'authority_blueprint_testimonials' ),
-			'content' => '<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"2rem"}}} -->
-<div class="wp-block-group alignwide"><!-- wp:heading {"textAlign":"center","level":2} -->
-<h2 class="has-text-align-center">What Our Readers Say</h2>
-<!-- /wp:heading -->
-<!-- wp:columns {"isStackedOnMobile":true} -->
-<div class="wp-block-columns is-stack-on-mobile"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:quote -->
-<blockquote class="wp-block-quote"><p>"This site helped me become an expert in my field."</p><cite>Jane Doe</cite></blockquote>
-<!-- /wp:quote --></div>
-<!-- /wp:column -->
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:quote -->
-<blockquote class="wp-block-quote"><p>"The resources and guides are top-notch and easy to follow."</p><cite>John Smith</cite></blockquote>
-<!-- /wp:quote --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group -->',
-		)
-	);
-
-	// Newsletter Signup pattern category and pattern
-	register_block_pattern_category(
-		'authority_blueprint_newsletter',
-		array('label' => __( 'Newsletter Signup', 'authority-blueprint' ))
-	);
-	register_block_pattern(
-		'authority-blueprint/newsletter-signup-simple',
-		array(
-			'title' => __( 'Simple Newsletter Signup', 'authority-blueprint' ),
-			'description' => _x( 'A mobile-first, accessible newsletter signup section with headline, description, and form.', 'Block pattern description', 'authority-blueprint' ),
-			'categories' => array( 'authority_blueprint_newsletter' ),
-			'content' => '<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem"}}},"backgroundColor":"primary","textColor":"background"} -->
-<div class="wp-block-group alignwide has-background-color has-primary-background-color has-text-color has-background" style="padding-top:2rem;padding-bottom:2rem"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","level":2} -->
-<h2 class="has-text-align-center">Stay Updated</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Subscribe to our newsletter for the latest authority content and resources.</p>
-<!-- /wp:paragraph -->
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:shortcode -->
-[email-subscribers-form id="1"]
-<!-- /wp:shortcode --></div>
-<!-- /wp:group --></div></div>
-<!-- /wp:group -->',
-		)
-	);
+// Register custom block patterns for authority blueprint
+add_action('init', function() {
+	$patterns = [
+		'hero-section',
+		'feature-list',
+		'testimonial-section',
+		'mobile-nav',
+		'bottom-nav',
+		'mobile-form',
+		'feature-card',
+		'aspect-ratio-media',
+		'cta-section',
+		'content-hub',
+		'accessibility-announcement',
+		'faq-section',
+		'comparison-table',
+	];
+	foreach ($patterns as $pattern) {
+		register_block_pattern(
+			'authority-blueprint/' . $pattern,
+			[
+				'title'       => ucwords(str_replace('-', ' ', $pattern)),
+				'description' => 'Authority Blueprint: ' . ucwords(str_replace('-', ' ', $pattern)),
+				'content'     => file_get_contents(get_template_directory() . '/block-patterns/' . $pattern . '.php'),
+				'categories'  => ['authority-blueprint'],
+			]
+		);
+	}
 });
 
 // Enqueue editor styles for block editor consistency
@@ -463,5 +362,177 @@ add_action( 'wp_enqueue_scripts', function() {
 
 // Output skip link for accessibility
 add_action( 'wp_body_open', function() {
-	echo '<a class="skip-link screen-reader-text" href="#main">Skip to main content</a>';
+	echo '<a href="#main" class="skip-link">Skip to main content</a>';
 } );
+
+// Enqueue custom block styles and variations
+add_action( 'enqueue_block_editor_assets', function() {
+	wp_enqueue_script(
+		'authority-block-styles',
+		get_template_directory_uri() . '/js/block-styles.js',
+		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
+		null,
+		true
+	);
+	wp_enqueue_script(
+		'authority-block-variations',
+		get_template_directory_uri() . '/js/block-variations.js',
+		array( 'wp-blocks' ),
+		null,
+		true
+	);
+} );
+
+// Register a placeholder for custom REST API endpoints
+add_action( 'rest_api_init', function() {
+	// Example: register_rest_route( ... );
+} );
+
+// Add privacy policy content (for future plugin/theme data collection)
+add_action( 'admin_init', function() {
+	if ( function_exists( 'wp_add_privacy_policy_content' ) ) {
+		wp_add_privacy_policy_content( 'Authority Blueprint',
+			__( 'This theme does not collect or store personal data by default.', 'authority-blueprint' )
+		);
+	}
+} );
+
+// --- Extensibility Hooks ---
+// Allow plugins to extend schema.org output
+function authority_blueprint_schema_filter($schema, $post) {
+    return apply_filters('authority_blueprint_schema', $schema, $post);
+}
+// Allow plugins to log or enhance performance metrics
+function authority_blueprint_performance_metrics($metrics) {
+    do_action('authority_blueprint_performance_metrics', $metrics);
+}
+// Allow plugins to inject content into theme parts
+function authority_blueprint_before_header() { do_action('authority_blueprint_before_header'); }
+function authority_blueprint_after_header() { do_action('authority_blueprint_after_header'); }
+function authority_blueprint_before_footer() { do_action('authority_blueprint_before_footer'); }
+function authority_blueprint_after_footer() { do_action('authority_blueprint_after_footer'); }
+
+// --- Advanced Schema.org Output ---
+add_action('wp_head', function() {
+    if (!is_singular()) return;
+    global $post;
+    if (!$post) return;
+    $schema = array(
+        '@context' => 'https://schema.org',
+        '@type' => is_singular('post') ? 'Article' : (is_page() ? 'WebPage' : 'CreativeWork'),
+        'headline' => get_the_title($post),
+        'datePublished' => get_the_date('c', $post),
+        'dateModified' => get_the_modified_date('c', $post),
+        'author' => array(
+            '@type' => 'Person',
+            'name' => get_the_author_meta('display_name', $post->post_author),
+        ),
+        'mainEntityOfPage' => get_permalink($post),
+        'description' => get_the_excerpt($post),
+        'image' => get_the_post_thumbnail_url($post, 'full'),
+    );
+    $schema = authority_blueprint_schema_filter($schema, $post);
+    echo '<script type="application/ld+json">' . wp_json_encode($schema) . '</script>';
+});
+
+// --- Performance Metrics Logging ---
+add_action('wp_footer', function() {
+    $memory = round(memory_get_peak_usage(true) / 1048576, 2);
+    $load = timer_stop(0, 3);
+    echo '<div class="site-performance" aria-label="Performance Metrics">Memory: ' . esc_html($memory) . 'MB | Load Time: ' . esc_html($load) . 's</div>';
+});
+
+// --- Accessibility: ARIA live region for announcements ---
+add_action('wp_footer', function() {
+    echo '<div id="a11y-announcements" aria-live="polite" class="sr-only" role="status"></div>';
+});
+
+// --- Accessibility: Skip link focus management JS ---
+add_action('wp_enqueue_scripts', function() {
+    wp_add_inline_script('authority-blueprint-navigation',
+        'document.addEventListener("DOMContentLoaded",function(){var s=document.querySelector(".skip-link");if(s){s.addEventListener("click",function(e){var m=document.getElementById("main");if(m){m.setAttribute("tabindex","-1");m.focus();}});}});'
+    );
+});
+
+// --- Extensibility: Filter for internal linking keyword map ---
+if (!function_exists('authority_internal_linking_map')) {
+    function authority_internal_linking_map($map) {
+        return apply_filters('authority_internal_linking_map', $map);
+    }
+}
+
+// --- Add extensibility hooks for plugins/child themes ---
+do_action('authority_blueprint_before_header');
+do_action('authority_blueprint_after_header');
+do_action('authority_blueprint_before_footer');
+do_action('authority_blueprint_after_footer');
+do_action('authority_blueprint_before_main');
+do_action('authority_blueprint_after_main');
+
+// --- SEO: Canonical and Open Graph Meta Tags ---
+add_action('wp_head', function() {
+    if (!is_singular()) return;
+    global $post;
+    if (!$post) return;
+    // Canonical tag
+    $canonical = get_permalink($post);
+    echo '<link rel="canonical" href="' . esc_url($canonical) . '" />\n';
+    // Open Graph meta tags
+    $og_title = get_the_title($post);
+    $og_desc = get_the_excerpt($post);
+    $og_url = get_permalink($post);
+    $og_img = get_the_post_thumbnail_url($post, 'full');
+    echo '<meta property="og:type" content="article" />\n';
+    echo '<meta property="og:title" content="' . esc_attr($og_title) . '" />\n';
+    echo '<meta property="og:description" content="' . esc_attr($og_desc) . '" />\n';
+    echo '<meta property="og:url" content="' . esc_url($og_url) . '" />\n';
+    if ($og_img) {
+        echo '<meta property="og:image" content="' . esc_url($og_img) . '" />\n';
+    }
+    // Twitter Card
+    echo '<meta name="twitter:card" content="summary_large_image" />\n';
+    echo '<meta name="twitter:title" content="' . esc_attr($og_title) . '" />\n';
+    echo '<meta name="twitter:description" content="' . esc_attr($og_desc) . '" />\n';
+    if ($og_img) {
+        echo '<meta name="twitter:image" content="' . esc_url($og_img) . '" />\n';
+    }
+    // Extensibility hook
+    do_action('authority_blueprint_seo_meta', $post);
+});
+
+// --- MCP Integration: AltText.ai for Image Alt Text ---
+add_action('add_attachment', function($post_ID) {
+    $post = get_post($post_ID);
+    if ($post->post_type !== 'attachment') return;
+    $mime = get_post_mime_type($post_ID);
+    if (strpos($mime, 'image/') !== 0) return;
+    $alt = get_post_meta($post_ID, '_wp_attachment_image_alt', true);
+    if (!empty($alt)) return; // Alt text already set
+    $image_url = wp_get_attachment_url($post_ID);
+    // Call AltText.ai MCP (pseudo-code, replace with real API call)
+    $alt_text = null;
+    try {
+        $response = wp_remote_post('https://api.alttext.ai/v1/generate', array(
+            'headers' => array('Content-Type' => 'application/json'),
+            'body' => json_encode(array('image_url' => $image_url)),
+            'timeout' => 10,
+        ));
+        if (!is_wp_error($response) && isset($response['body'])) {
+            $data = json_decode($response['body'], true);
+            if (isset($data['alt_text'])) {
+                $alt_text = $data['alt_text'];
+            }
+        }
+    } catch (Exception $e) {
+        error_log('AltText.ai error: ' . $e->getMessage());
+    }
+    if ($alt_text) {
+        update_post_meta($post_ID, '_wp_attachment_image_alt', sanitize_text_field($alt_text));
+        error_log('AltText.ai alt text set for attachment ' . $post_ID . ': ' . $alt_text);
+    } else {
+        // Fallback: leave alt text empty for manual entry
+        error_log('AltText.ai failed for attachment ' . $post_ID . ' (' . $image_url . ')');
+    }
+    // Extensibility hook for other MCPs
+    do_action('authority_blueprint_image_alt_mcp', $post_ID, $alt_text);
+});

@@ -11,69 +11,75 @@ get_header();
 <main id="main" class="site-main" tabindex="-1">
 	<!-- Hero Section -->
 	<section class="hero-section" aria-label="Primary Value Proposition">
-		<h1><?php bloginfo('name'); ?></h1>
-		<p><?php bloginfo('description'); ?></p>
-		<a href="#category-navigation" class="button primary-cta">Get Started</a>
+		<h1>Pest Management Science</h1>
+		<p>The leading resource for integrated pest management, biological control, pesticide safety, and sustainable agriculture.</p>
+		<a href="#category-navigation" class="button primary-cta">Explore Pest Solutions</a>
 	</section>
 
 	<!-- Category Navigation -->
 	<section id="category-navigation" class="category-navigation" aria-label="Main Content Sections">
-		<h2>Main Topics</h2>
+		<h2>Key Topics</h2>
 		<div class="category-cards">
-			<?php
-				$categories = get_categories(array('hide_empty' => 0, 'number' => 6));
-				foreach ($categories as $cat) : ?>
-					<div class="category-card">
-						<a href="<?php echo get_category_link($cat->term_id); ?>">
-							<h3><?php echo esc_html($cat->name); ?></h3>
-							<p><?php echo esc_html($cat->description); ?></p>
-						</a>
-					</div>
-				<?php endforeach; ?>
+			<div class="category-card">
+				<a href="#integrated-pest-management"><h3>Integrated Pest Management</h3><p>Strategies for sustainable, science-based pest control.</p></a>
+			</div>
+			<div class="category-card">
+				<a href="#biological-control"><h3>Biological Control</h3><p>Harnessing natural enemies for pest suppression.</p></a>
+			</div>
+			<div class="category-card">
+				<a href="#pesticide-safety"><h3>Pesticide Safety</h3><p>Best practices for safe and effective pesticide use.</p></a>
+			</div>
+			<div class="category-card">
+				<a href="#insect-identification"><h3>Insect Identification</h3><p>Field guides and diagnostics for common pests.</p></a>
+			</div>
+			<div class="category-card">
+				<a href="#crop-protection"><h3>Crop Protection</h3><p>Defending crops from pests, weeds, and diseases.</p></a>
+			</div>
+			<div class="category-card">
+				<a href="#resistance-management"><h3>Resistance Management</h3><p>Preventing and managing pesticide resistance.</p></a>
+			</div>
 		</div>
 	</section>
 
 	<!-- Featured Content -->
 	<section class="featured-content" aria-label="Featured Resources">
-		<h2>Featured Content</h2>
+		<h2>Featured Research & Guides</h2>
 		<div class="featured-items">
-			<?php
-				$featured = new WP_Query(array('posts_per_page' => 3, 'meta_key' => 'is_featured', 'meta_value' => '1'));
-				if ($featured->have_posts()) :
-					while ($featured->have_posts()) : $featured->the_post(); ?>
-						<article class="featured-item">
-							<a href="<?php the_permalink(); ?>">
-								<?php if (has_post_thumbnail()) the_post_thumbnail('medium'); ?>
-								<h3><?php the_title(); ?></h3>
-								<p><?php echo get_the_excerpt(); ?></p>
-							</a>
-						</article>
-					<?php endwhile; wp_reset_postdata(); endif; ?>
+			<article class="featured-item">
+				<a href="#ipm-guide"><h3>Comprehensive Guide to Integrated Pest Management</h3><p>Step-by-step IPM strategies for professionals and growers.</p></a>
+			</article>
+			<article class="featured-item">
+				<a href="#biocontrol-overview"><h3>Biological Control: Natural Solutions</h3><p>How to use beneficial insects and microbes for pest control.</p></a>
+			</article>
+			<article class="featured-item">
+				<a href="#pesticide-safety-checklist"><h3>Pesticide Safety Checklist</h3><p>Essential safety protocols for applicators and researchers.</p></a>
+			</article>
 		</div>
 	</section>
 
 	<!-- Audience Pathways -->
 	<section class="audience-pathways" aria-label="Audience Pathways">
-		<h2>For You</h2>
+		<h2>For Every Stakeholder</h2>
 		<div class="audience-cards">
-			<div class="audience-card"><h3>Beginners</h3><p>Start your journey with our beginner guides.</p></div>
-			<div class="audience-card"><h3>Professionals</h3><p>Deep dives and advanced resources for experts.</p></div>
-			<div class="audience-card"><h3>Businesses</h3><p>Solutions and case studies for organizations.</p></div>
+			<div class="audience-card"><h3>Growers & Farmers</h3><p>Practical pest management for sustainable yields.</p></div>
+			<div class="audience-card"><h3>Researchers</h3><p>Latest science, data, and peer-reviewed studies.</p></div>
+			<div class="audience-card"><h3>Extension Agents</h3><p>Outreach tools and training for community impact.</p></div>
+			<div class="audience-card"><h3>Students</h3><p>Learning resources and career pathways in pest science.</p></div>
 		</div>
 	</section>
 
 	<!-- Social Proof -->
 	<section class="social-proof" aria-label="Testimonials and Trust">
-		<h2>What Our Readers Say</h2>
+		<h2>Trusted by the Pest Science Community</h2>
 		<div class="testimonials">
-			<blockquote>"This site helped me become an expert in my field."<cite>Jane Doe</cite></blockquote>
-			<blockquote>"The resources and guides are top-notch and easy to follow."<cite>John Smith</cite></blockquote>
+			<blockquote>"The most comprehensive pest management resource online."<cite>Dr. A. Entomo, University of Agriculture</cite></blockquote>
+			<blockquote>"Essential reading for anyone in crop protection."<cite>Jane Grower, Certified Crop Advisor</cite></blockquote>
 		</div>
 	</section>
 
 	<!-- Latest Updates -->
 	<section class="latest-updates" aria-label="Latest Updates">
-		<h2>Latest Updates</h2>
+		<h2>Latest Research & News</h2>
 		<ul>
 			<?php
 				$latest = new WP_Query(array('posts_per_page' => 5));
@@ -86,8 +92,8 @@ get_header();
 
 	<!-- Newsletter Signup -->
 	<section class="newsletter-signup" aria-label="Newsletter Signup">
-		<h2>Stay Updated</h2>
-		<p>Subscribe to our newsletter for the latest authority content and resources.</p>
+		<h2>Stay Informed</h2>
+		<p>Subscribe for the latest in pest management science, research, and field updates.</p>
 		<form class="mobile-first-form" method="post" action="#">
 			<div class="form-group">
 				<label for="newsletter-email">Email Address</label>

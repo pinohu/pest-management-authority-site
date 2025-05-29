@@ -16,28 +16,10 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <header id="masthead" class="site-header" role="banner">
-	<div class="site-branding">
-		<?php if ( has_custom_logo() ) : ?>
-			<div class="site-logo"><?php the_custom_logo(); ?></div>
-		<?php endif; ?>
-		<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-		<?php if ( get_bloginfo( 'description' ) ) : ?>
-			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-		<?php endif; ?>
-	</div>
-	<button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
-		<span class="sr-only">Menu</span>
-		<span class="hamburger-icon" aria-hidden="true"></span>
-	</button>
-	<nav id="primary-menu" class="primary-navigation" role="navigation" aria-label="Primary Menu" hidden>
-		<?php
-			wp_nav_menu( array(
-				'theme_location' => 'primary',
-				'menu_id'        => 'primary-menu-list',
-				'container'      => false,
-				'menu_class'     => 'menu',
-				'fallback_cb'    => false,
-			) );
-		?>
-	</nav>
-</header> 
+	<?php get_template_part( 'parts/header', 'site-branding' ); ?>
+	<?php get_template_part( 'parts/header', 'navigation' ); ?>
+</header>
+<div id="page" class="site">
+	<?php get_template_part( 'parts/header', 'site-branding' ); ?>
+	<?php get_template_part( 'parts/header', 'navigation' ); ?>
+</div> 

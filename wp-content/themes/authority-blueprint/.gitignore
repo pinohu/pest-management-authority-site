@@ -1,0 +1,39 @@
+# WordPress core
+/wp-admin/
+/wp-includes/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Composer
+vendor/
+composer.lock
+
+# Tests
+/tests/output/
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Env
+.env
+.env.*
+
+# Build
+/build/
+/dist/
+
+# Language files
+*.mo
+
+# Exceptions
+!/parts/
+!/templates/ 

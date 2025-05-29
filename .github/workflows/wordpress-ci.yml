@@ -1,0 +1,28 @@
+name: WordPress CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+      - name: Validate composer.json and composer.lock
+        run: |
+          if [ -f composer.json ]; then composer validate; fi
+      - name: PHP Lint
+        run: |
+          find . -type f -name '*.php' -exec php -l {} \;
+      - name: Run PHPUnit (if tests exist)
+        run: |
+          if [ -f vendor/bin/phpunit ]; then vendor/bin/phpunit; fi
+      # - name: Deploy to Production
+      #   run: echo "Deploy step here (add secrets and deployment logic)" 
