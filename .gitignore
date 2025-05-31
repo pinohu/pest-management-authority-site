@@ -79,4 +79,7 @@ axe-a11y-report.json
 # Sensitive files that should never be committed
 *.log
 *.sql
-wp-config.php 
+wp-config.php
+
+# Plugins with sensitive examples
+wp-content/plugins/directorist-stripe/ 
