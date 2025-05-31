@@ -354,10 +354,17 @@ add_action( 'after_setup_theme', function() {
 	add_editor_style( 'style.css' );
 } );
 
-// Enqueue navigation JS and CSS for mobile-first hamburger menu
+// Enqueue styles and scripts
 add_action( 'wp_enqueue_scripts', function() {
-	wp_enqueue_script( 'authority-blueprint-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0.0', true );
+	// Google Fonts
+	wp_enqueue_style( 'authority-blueprint-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap', array(), null );
+	
+	// Theme styles
 	wp_enqueue_style( 'authority-blueprint-navigation', get_template_directory_uri() . '/css/navigation.css', array(), '1.0.0' );
+	wp_enqueue_style( 'authority-blueprint-components', get_template_directory_uri() . '/css/components.css', array(), '1.0.0' );
+	
+	// Scripts
+	wp_enqueue_script( 'authority-blueprint-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0.0', true );
 } );
 
 // Output skip link for accessibility
