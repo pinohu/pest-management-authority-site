@@ -488,9 +488,9 @@ blockquote {
    ========================================================================== */
 
 .hero-section {
-  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: var(--color-white);
-  padding: var(--space-20) 0;
+  padding: var(--space-24) 0;
   position: relative;
   overflow: hidden;
 }
@@ -502,13 +502,13 @@ blockquote {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
   opacity: 0.3;
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
@@ -518,24 +518,21 @@ blockquote {
   font-size: var(--font-size-4xl);
   font-weight: 800;
   margin-bottom: var(--space-6);
-  color: var(--color-white);
-  letter-spacing: -0.05em;
+  line-height: 1.1;
 }
 
 .hero-description {
-  font-size: var(--font-size-md);
-  margin-bottom: var(--space-10);
-  color: rgba(255, 255, 255, 0.9);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-8);
+  opacity: 0.9;
+  line-height: 1.6;
 }
 
 .hero-actions {
   display: flex;
-  flex-direction: column;
   gap: var(--space-4);
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 640px) {
@@ -544,8 +541,7 @@ blockquote {
   }
   
   .hero-actions {
-    flex-direction: row;
-    justify-content: center;
+    gap: var(--space-6);
   }
 }
 
@@ -555,39 +551,41 @@ blockquote {
   align-items: center;
   gap: var(--space-2);
   padding: var(--space-4) var(--space-8);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-lg);
   font-weight: 600;
   text-decoration: none;
   transition: all var(--transition-normal);
   border: 2px solid transparent;
-  cursor: pointer;
   font-size: var(--font-size-base);
-  min-height: 44px;
+  line-height: 1;
 }
 
 .btn-primary {
   background: var(--color-white);
   color: var(--color-primary);
-  border-color: var(--color-white);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: var(--color-gray-100);
+  background: var(--color-gray-50);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
+  color: var(--color-primary-dark);
 }
 
 .btn-secondary {
   background: transparent;
   color: var(--color-white);
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: var(--color-white);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 /* ==========================================================================
@@ -604,6 +602,8 @@ blockquote {
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -614,7 +614,8 @@ blockquote {
 .card-icon {
   width: 64px;
   height: 64px;
-  background: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  box-shadow: var(--shadow-md);
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
@@ -622,6 +623,18 @@ blockquote {
   margin-bottom: var(--space-6);
   color: var(--color-white);
   font-size: var(--font-size-2xl);
+  position: relative;
+}
+
+.card-icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+  border-radius: var(--radius-xl);
 }
 
 .card-title {
@@ -672,6 +685,10 @@ blockquote {
   font-weight: 800;
   margin-bottom: var(--space-4);
   color: var(--color-text-primary);
+  background: linear-gradient(135deg, var(--color-text-primary) 0%, var(--color-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .section-description {
@@ -680,7 +697,19 @@ blockquote {
 }
 
 .section-bg-light {
-  background-color: var(--color-background-light);
+  background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--color-white) 100%);
+  position: relative;
+}
+
+.section-bg-light::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%2388c999' points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E") repeat;
+  opacity: 0.5;
 }
 
 .section-bg-dark {
@@ -953,3 +982,126 @@ select:focus {
   .lg\:flex { display: flex; }
   .lg\:hidden { display: none; }
 }
+
+/* ==========================================================================
+   ENHANCED VISUAL COMPONENTS
+   ========================================================================== */
+
+/* Enhanced Card Styles */
+.card-image {
+  margin: calc(-1 * var(--space-8)) calc(-1 * var(--space-8)) var(--space-6) calc(-1 * var(--space-8));
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Additional Mobile Responsive Button Styles */
+
+/* Enhanced Grid and Layout */
+.grid {
+  display: grid;
+  gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    gap: var(--space-10);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    gap: var(--space-12);
+  }
+}
+
+/* Card Hover Effects */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  z-index: 1;
+}
+
+.card:hover::before {
+  opacity: 0.02;
+}
+
+.card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Enhanced Typography - removed duplicate */
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: var(--space-16) 0;
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .hero-description {
+    font-size: var(--font-size-base);
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+}
+
+/* Loading Animation for Cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }

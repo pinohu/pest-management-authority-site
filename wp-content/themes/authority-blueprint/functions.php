@@ -9,9 +9,129 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Twenty Twenty-Four
- * @since Twenty Twenty-Four 1.0
+ * @package Authority_Blueprint
+ * @since Authority_Blueprint 1.0
  */
+
+/**
+ * Theme Setup
+ */
+if (!function_exists('authority_blueprint_setup')) :
+	function authority_blueprint_setup() {
+		// Add default posts and comments RSS feed links to head.
+		add_theme_support('automatic-feed-links');
+
+		// Let WordPress manage the document title.
+		add_theme_support('title-tag');
+
+		// Enable support for Post Thumbnails on posts and pages.
+		add_theme_support('post-thumbnails');
+
+		// This theme uses wp_nav_menu() in multiple locations.
+		register_nav_menus(array(
+			'primary' => esc_html__('Primary Menu', 'authority-blueprint'),
+			'footer' => esc_html__('Footer Menu', 'authority-blueprint'),
+		));
+
+		// Switch default core markup for search form, comment form, and comments
+		add_theme_support('html5', array(
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+			'style',
+			'script',
+		));
+
+		// Set up the WordPress core custom background feature.
+		add_theme_support('custom-background', apply_filters('authority_blueprint_custom_background_args', array(
+			'default-color' => 'ffffff',
+			'default-image' => '',
+		)));
+
+		// Add theme support for selective refresh for widgets.
+		add_theme_support('customize-selective-refresh-widgets');
+
+		// Add support for core custom logo.
+		add_theme_support('custom-logo', array(
+			'height'      => 250,
+			'width'       => 250,
+			'flex-width'  => true,
+			'flex-height' => true,
+		));
+
+		// Add support for wide and full alignment.
+		add_theme_support('align-wide');
+
+		// Add support for editor styles.
+		add_theme_support('editor-styles');
+
+		// Enqueue editor styles.
+		add_editor_style('style.css');
+
+		// Add support for responsive embedded content.
+		add_theme_support('responsive-embeds');
+	}
+endif;
+add_action('after_setup_theme', 'authority_blueprint_setup');
+
+/**
+ * Enqueue scripts and styles.
+ */
+function authority_blueprint_scripts() {
+	// Main theme stylesheet
+	wp_enqueue_style('authority-blueprint-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
+
+	// Load Google Fonts
+	wp_enqueue_style('authority-blueprint-fonts', 
+		'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap',
+		array(), null);
+
+	// Main theme JavaScript
+	wp_enqueue_script('authority-blueprint-navigation', 
+		get_template_directory_uri() . '/js/navigation.js', 
+		array('jquery'), wp_get_theme()->get('Version'), true);
+
+	// Skip link focus script
+	wp_enqueue_script('authority-blueprint-skip-link-focus-fix', 
+		get_template_directory_uri() . '/js/skip-link-focus-fix.js', 
+		array(), wp_get_theme()->get('Version'), true);
+
+	// Comment reply script
+	if (is_singular() && comments_open() && get_option('thread_comments')) {
+		wp_enqueue_script('comment-reply');
+	}
+
+	// Localize script for AJAX
+	wp_localize_script('authority-blueprint-navigation', 'authority_blueprint_ajax', array(
+		'ajax_url' => admin_url('admin-ajax.php'),
+		'nonce' => wp_create_nonce('authority_blueprint_nonce'),
+	));
+}
+add_action('wp_enqueue_scripts', 'authority_blueprint_scripts');
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * Functions which enhance the theme by hooking into WordPress.
+ */
+require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Load Jetpack compatibility file.
+ */
+if (defined('JETPACK__VERSION')) {
+	require get_template_directory() . '/inc/jetpack.php';
+}
 
 /**
  * Register block styles.
@@ -210,6 +330,14 @@ endif;
 
 add_action( 'init', 'authority_blueprint_pattern_categories' );
 
+/**
+ * Include theme enhancement files
+ */
+require get_template_directory() . '/inc/template-functions.php';
+require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/shortcodes.php';
+require get_template_directory() . '/inc/class-pest-research-widget.php';
+
 // Add theme support for key features
 add_action( 'after_setup_theme', function() {
 	add_theme_support( 'title-tag' );
@@ -362,6 +490,7 @@ add_action( 'wp_enqueue_scripts', function() {
 	// Theme styles
 	wp_enqueue_style( 'authority-blueprint-navigation', get_template_directory_uri() . '/css/navigation.css', array(), '1.0.0' );
 	wp_enqueue_style( 'authority-blueprint-components', get_template_directory_uri() . '/css/components.css', array(), '1.0.0' );
+	wp_enqueue_style( 'authority-blueprint-enhanced-structure', get_template_directory_uri() . '/css/enhanced-structure.css', array(), '1.0.0' );
 	
 	// Scripts
 	wp_enqueue_script( 'authority-blueprint-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0.0', true );

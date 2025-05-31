@@ -1,0 +1,77 @@
+# WordPress Core Files
+wp-config.php
+wp-config-local.php
+wp-config-production.php
+
+# WordPress Database
+*.sql
+*.sql.gz
+
+# WordPress Uploads (comment out if you want to include media)
+# wp-content/uploads/
+
+# WordPress Cache and Temp Files
+wp-content/cache/
+wp-content/temp/
+wp-content/upgrade/
+wp-content/backup-*
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/upgrade/
+
+# WordPress Updates
+wp-content/update-core/
+wp-content/updraft/
+
+# Log Files
+*.log
+error_log
+access_log
+
+# Security Files
+.htaccess.bak
+.htpasswd
+
+# Development Files
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+.env.local
+.env.production
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup Files
+backups/
+*.bak
+*.backup
+
+# 20i Specific
+.20i/
+.cpanel/
+
+# Additional WordPress
+sitemap.xml
+sitemap.xml.gz
+robots.txt
+
+# Specific to this project
+wordpress.zip
+audit-report.json
+lighthouse-report.*
+axe-a11y-report.json 

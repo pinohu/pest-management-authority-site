@@ -1,0 +1,29 @@
+WORDPRESS DATABASE SETUP
+========================
+
+When WordPress asks for database info, use:
+
+Database Name: wordpress_pest_management
+Username: root
+Password: (leave blank for XAMPP)
+Database Host: localhost
+Table Prefix: wp_
+
+SITE CONFIGURATION:
+Site Title: Pest Management Science Authority
+Username: admin
+Password: (choose a strong password)
+Email: your-email@example.com
+
+THEME ACTIVATION:
+1. Go to Appearance > Themes
+2. Activate "Authority Blueprint"
+3. Visit your site to see the improvements!
+
+WHAT YOU'LL SEE:
+- Modern gradient hero section
+- Professional card layouts
+- Pest management green/brown theme
+- Responsive mobile design
+- Smooth animations
+- Directory integration ready 
