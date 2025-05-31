@@ -39,24 +39,17 @@ if (!function_exists('getenv_docker')) {
 	}
 }
 
-// ** Database settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define( 'DB_NAME', getenv_docker('WORDPRESS_DB_NAME', 'wordpress') );
-
-/** Database username */
-define( 'DB_USER', getenv_docker('WORDPRESS_DB_USER', 'example username') );
-
-/** Database password */
-define( 'DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'example password') );
+// ** Database settings - CONFIGURED FOR 20i ** //
+define('DB_NAME', 'pestmanagementsite-323038c8c2');  // Database name from 20i
+define('DB_USER', 'pestmanagementsite-323038c8c2');   // Database username from 20i  
+define('DB_PASSWORD', '8huilc2drh'); // Database password from 20i
+define('DB_HOST', 'sdb-t.hosting.stackcp.net'); // Database host from 20i
 
 /**
  * Docker image fallback values above are sourced from the official WordPress installation wizard:
  * https://github.com/WordPress/WordPress/blob/1356f6537220ffdc32b9dad2a6cdbe2d010b7a88/wp-admin/setup-config.php#L224-L238
  * (However, using "example username" and "example password" in your database is strongly discouraged.  Please use strong, random credentials!)
  */
-
-/** Database hostname */
-define( 'DB_HOST', getenv_docker('WORDPRESS_DB_HOST', 'mysql') );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', getenv_docker('WORDPRESS_DB_CHARSET', 'utf8') );
@@ -75,14 +68,14 @@ define( 'DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', '') );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         '1a15cf4f1d3398135d78dc872ac83ac1afacffef') );
-define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  '012f1ce031016e9003f379dd6f242f497fe4441a') );
-define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    '474408caa72b6d6ef4a284f856651bfe618d1be8') );
-define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        'aad0f5ff6c338cad4876ffc2bfc3345c1f3eb211') );
-define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        '05aea93899485378ec1d14bf4f530876a321f2e7') );
-define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', '34924fca5a45a61700bd10d6edbdc45b269b184f') );
-define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   'bdf19da8bf22fda705d745e114c141b3d269c907') );
-define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       '4e886f36397d891cdeb76455fefeb12e7669c1e8') );
+define('AUTH_KEY',         'mV&8q#P9Kx!2$wR7@nL5zF*3jH6gB#uY8cD4sW@qE1rT9mV&5zA$3xP7!nK2fL*6g');
+define('SECURE_AUTH_KEY',  'xP7!nK2fL*6g$B9cM&8q#V5zA@3sW7rT1jH4gF*9mY2uE8dC&6zA$5xP1!nK4fL*');
+define('LOGGED_IN_KEY',    'zA$5xP1!nK4fL*9g$B2cM&7q#V8zA@6sW4rT3jH1gF*2mY5uE9dC&3zA$8xP4!nK');
+define('NONCE_KEY',        'dC&3zA$8xP4!nK7fL*2g$B5cM&1q#V9zA@3sW7rT6jH4gF*8mY1uE2dC&9zA$6xP');
+define('AUTH_SALT',        'zA@3sW7rT6jH4gF*8mY1uE2dC&9zA$6xP!nK5fL*1g$B8cM&4q#V2zA@9sW3rT7j');
+define('SECURE_AUTH_SALT', 'H1gF*5mY8uE4dC&2zA$9xP7!nK1fL*4g$B6cM&3q#V5zA@8sW2rT9jH7gF*1mY3u');
+define('LOGGED_IN_SALT',   'E6dC&5zA$2xP9!nK7fL*3g$B1cM&8q#V4zA@6sW5rT2jH9gF*7mY4uE1dC&8zA$5');
+define('NONCE_SALT',       'xP3!nK9fL*6g$B4cM&2q#V7zA@1sW8rT5jH3gF*6mY9uE7dC&4zA$1xP2!nK8fL*');
 // (See also https://wordpress.stackexchange.com/a/152905/199287)
 
 /**#@-*/
@@ -99,7 +92,7 @@ define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       '4e886f3
  *
  * @link https://developer.wordpress.org/advanced-administration/wordpress/wp-config/#table-prefix
  */
-$table_prefix = getenv_docker('WORDPRESS_TABLE_PREFIX', 'wp_');
+$table_prefix = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -113,16 +106,7 @@ $table_prefix = getenv_docker('WORDPRESS_TABLE_PREFIX', 'wp_');
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-define( 'DISALLOW_FILE_EDIT', true );
-define( 'FORCE_SSL_ADMIN', false );
-define( 'WP_DEBUG', false );
-define( 'WP_DEBUG_LOG', false );
-define( 'WP_DEBUG_DISPLAY', false );
-@ini_set( 'display_errors', 'Off' );
-define( 'WP_MEMORY_LIMIT', '96M' );
-define( 'WP_MAX_MEMORY_LIMIT', '256M' );
-define( 'WP_CACHE', true );
-// define( 'DISABLE_WP_CRON', true ); // Uncomment if using system cron
+define('WP_DEBUG', false);
 
 /* Add any custom values between this line and the "stop editing" line. */
 
@@ -133,12 +117,25 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strpos($_SERVER['HTTP_X_FORWARD
 }
 // (we include this by default because reverse proxying is extremely common in container environments)
 
-define('WP_HOME', 'http://localhost:8080');
-define('WP_SITEURL', 'http://localhost:8080');
+// ** WordPress URLs for pestmanagementscience.com ** //
+define('WP_HOME','https://pestmanagementscience.com');
+define('WP_SITEURL','https://pestmanagementscience.com');
 
-if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {
-	eval($configExtra);
+// ** File system method ** //
+define('FS_METHOD', 'direct');
+
+// ** SSL Settings ** //
+if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
+    $_SERVER['HTTPS'] = 'on';
+    define('FORCE_SSL_ADMIN', true);
 }
+
+// ** Memory limit ** //
+ini_set('memory_limit', '512M');
+
+// ** Pest Management Science Authority Site Settings ** //
+define('WPLANG', '');
+define('WP_CACHE', true);
 
 /* That's all, stop editing! Happy publishing. */
 
