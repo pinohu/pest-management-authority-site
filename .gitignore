@@ -74,4 +74,9 @@ robots.txt
 wordpress.zip
 audit-report.json
 lighthouse-report.*
-axe-a11y-report.json 
+axe-a11y-report.json
+
+# Sensitive files that should never be committed
+*.log
+*.sql
+wp-config.php 
