@@ -1,13 +1,17 @@
 <?php
 /**
  * The sidebar containing the main widget area
- * Mobile-first, accessible, extensible markup
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
  * @package Authority_Blueprint
  */
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+
+if (!is_active_sidebar('sidebar-1')) {
 	return;
 }
 ?>
-<aside id="secondary" class="sidebar widget-area" role="complementary" aria-label="Sidebar">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</aside> 
+
+<aside id="secondary" class="widget-area">
+	<?php dynamic_sidebar('sidebar-1'); ?>
+</aside><!-- #secondary --> 

@@ -1,106 +1,270 @@
 <?php
 /**
- * The front page template for Authority Blueprint
+ * The front page template file
  *
- * Implements robust, modular home page structure per best practices and blueprints.
+ * This is the template that displays the front page of the site.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Authority_Blueprint
  */
+
 get_header();
 ?>
-<main id="main" class="site-main" tabindex="-1">
+
+<main id="primary" class="site-main">
+	
 	<!-- Hero Section -->
-	<section class="hero-section" aria-label="Primary Value Proposition">
-		<h1>Pest Management Science</h1>
-		<p>The leading resource for integrated pest management, biological control, pesticide safety, and sustainable agriculture.</p>
-		<a href="#category-navigation" class="button primary-cta">Explore Pest Solutions</a>
-	</section>
-
-	<!-- Category Navigation -->
-	<section id="category-navigation" class="category-navigation" aria-label="Main Content Sections">
-		<h2>Key Topics</h2>
-		<div class="category-cards">
-			<div class="category-card">
-				<a href="#integrated-pest-management"><h3>Integrated Pest Management</h3><p>Strategies for sustainable, science-based pest control.</p></a>
-			</div>
-			<div class="category-card">
-				<a href="#biological-control"><h3>Biological Control</h3><p>Harnessing natural enemies for pest suppression.</p></a>
-			</div>
-			<div class="category-card">
-				<a href="#pesticide-safety"><h3>Pesticide Safety</h3><p>Best practices for safe and effective pesticide use.</p></a>
-			</div>
-			<div class="category-card">
-				<a href="#insect-identification"><h3>Insect Identification</h3><p>Field guides and diagnostics for common pests.</p></a>
-			</div>
-			<div class="category-card">
-				<a href="#crop-protection"><h3>Crop Protection</h3><p>Defending crops from pests, weeds, and diseases.</p></a>
-			</div>
-			<div class="category-card">
-				<a href="#resistance-management"><h3>Resistance Management</h3><p>Preventing and managing pesticide resistance.</p></a>
+	<section class="hero-section">
+		<div class="container">
+			<div class="hero-content">
+				<h1 class="hero-title">
+					<?php esc_html_e('Advancing Pest Management Science', 'authority-blueprint'); ?>
+				</h1>
+				<p class="hero-description">
+					<?php esc_html_e('Leading research, innovation, and education in sustainable pest management solutions for agriculture, urban environments, and public health.', 'authority-blueprint'); ?>
+				</p>
+				<div class="hero-actions">
+					<a href="#research" class="btn-primary">
+						<?php esc_html_e('Explore Research', 'authority-blueprint'); ?>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="m9 18 6-6-6-6"/>
+						</svg>
+					</a>
+					<a href="#directory" class="btn-secondary">
+						<?php esc_html_e('Find Professionals', 'authority-blueprint'); ?>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Featured Content -->
-	<section class="featured-content" aria-label="Featured Resources">
-		<h2>Featured Research & Guides</h2>
-		<div class="featured-items">
-			<article class="featured-item">
-				<a href="#ipm-guide"><h3>Comprehensive Guide to Integrated Pest Management</h3><p>Step-by-step IPM strategies for professionals and growers.</p></a>
-			</article>
-			<article class="featured-item">
-				<a href="#biocontrol-overview"><h3>Biological Control: Natural Solutions</h3><p>How to use beneficial insects and microbes for pest control.</p></a>
-			</article>
-			<article class="featured-item">
-				<a href="#pesticide-safety-checklist"><h3>Pesticide Safety Checklist</h3><p>Essential safety protocols for applicators and researchers.</p></a>
-			</article>
+	<!-- Research Areas Section -->
+	<section id="research" class="section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title"><?php esc_html_e('Research Areas', 'authority-blueprint'); ?></h2>
+				<p class="section-description">
+					<?php esc_html_e('Comprehensive research across all aspects of pest management science', 'authority-blueprint'); ?>
+				</p>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-3">
+				<div class="card">
+					<div class="card-icon">🌱</div>
+					<h3 class="card-title"><?php esc_html_e('Integrated Pest Management', 'authority-blueprint'); ?></h3>
+					<p class="card-description">
+						<?php esc_html_e('Sustainable approaches combining biological, cultural, physical, and chemical tools for effective pest control.', 'authority-blueprint'); ?>
+					</p>
+					<a href="#" class="card-action">
+						<?php esc_html_e('Learn More', 'authority-blueprint'); ?>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="m9 18 6-6-6-6"/>
+						</svg>
+					</a>
+				</div>
+
+				<div class="card">
+					<div class="card-icon">🦗</div>
+					<h3 class="card-title"><?php esc_html_e('Biological Control', 'authority-blueprint'); ?></h3>
+					<p class="card-description">
+						<?php esc_html_e('Natural enemies and biological agents for environmentally friendly pest management solutions.', 'authority-blueprint'); ?>
+					</p>
+					<a href="#" class="card-action">
+						<?php esc_html_e('Learn More', 'authority-blueprint'); ?>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="m9 18 6-6-6-6"/>
+						</svg>
+					</a>
+				</div>
+
+				<div class="card">
+					<div class="card-icon">🛡️</div>
+					<h3 class="card-title"><?php esc_html_e('Pesticide Safety', 'authority-blueprint'); ?></h3>
+					<p class="card-description">
+						<?php esc_html_e('Research on safe application, resistance management, and environmental impact assessment.', 'authority-blueprint'); ?>
+					</p>
+					<a href="#" class="card-action">
+						<?php esc_html_e('Learn More', 'authority-blueprint'); ?>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="m9 18 6-6-6-6"/>
+						</svg>
+					</a>
+				</div>
+
+				<div class="card">
+					<div class="card-icon">🌾</div>
+					<h3 class="card-title"><?php esc_html_e('Sustainable Agriculture', 'authority-blueprint'); ?></h3>
+					<p class="card-description">
+						<?php esc_html_e('Crop protection strategies that support long-term agricultural sustainability and food security.', 'authority-blueprint'); ?>
+					</p>
+					<a href="#" class="card-action">
+						<?php esc_html_e('Learn More', 'authority-blueprint'); ?>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="m9 18 6-6-6-6"/>
+						</svg>
+					</a>
+				</div>
+
+				<div class="card">
+					<div class="card-icon">🏙️</div>
+					<h3 class="card-title"><?php esc_html_e('Urban Pest Management', 'authority-blueprint'); ?></h3>
+					<p class="card-description">
+						<?php esc_html_e('Specialized approaches for pest control in urban environments and public health protection.', 'authority-blueprint'); ?>
+					</p>
+					<a href="#" class="card-action">
+						<?php esc_html_e('Learn More', 'authority-blueprint'); ?>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="m9 18 6-6-6-6"/>
+						</svg>
+					</a>
+				</div>
+
+				<div class="card">
+					<div class="card-icon">📊</div>
+					<h3 class="card-title"><?php esc_html_e('Data & Analytics', 'authority-blueprint'); ?></h3>
+					<p class="card-description">
+						<?php esc_html_e('Advanced modeling, monitoring technologies, and data-driven decision making tools.', 'authority-blueprint'); ?>
+					</p>
+					<a href="#" class="card-action">
+						<?php esc_html_e('Learn More', 'authority-blueprint'); ?>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="m9 18 6-6-6-6"/>
+						</svg>
+					</a>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<!-- Audience Pathways -->
-	<section class="audience-pathways" aria-label="Audience Pathways">
-		<h2>For Every Stakeholder</h2>
-		<div class="audience-cards">
-			<div class="audience-card"><h3>Growers & Farmers</h3><p>Practical pest management for sustainable yields.</p></div>
-			<div class="audience-card"><h3>Researchers</h3><p>Latest science, data, and peer-reviewed studies.</p></div>
-			<div class="audience-card"><h3>Extension Agents</h3><p>Outreach tools and training for community impact.</p></div>
-			<div class="audience-card"><h3>Students</h3><p>Learning resources and career pathways in pest science.</p></div>
+	<!-- Professional Directory Section -->
+	<section id="directory" class="section section-bg-light">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title"><?php esc_html_e('Professional Directory', 'authority-blueprint'); ?></h2>
+				<p class="section-description">
+					<?php esc_html_e('Connect with certified pest management professionals, researchers, and service providers', 'authority-blueprint'); ?>
+				</p>
+			</div>
+			
+			<div class="grid md:grid-cols-3">
+				<div class="card">
+					<div class="card-icon">🏢</div>
+					<h3 class="card-title"><?php esc_html_e('Pest Control Services', 'authority-blueprint'); ?></h3>
+					<p class="card-description">
+						<?php esc_html_e('Licensed professionals providing comprehensive pest management services for residential and commercial properties.', 'authority-blueprint'); ?>
+					</p>
+					<a href="/directory/pest-control-services" class="card-action">
+						<?php esc_html_e('Browse Services', 'authority-blueprint'); ?>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="m9 18 6-6-6-6"/>
+						</svg>
+					</a>
+				</div>
+
+				<div class="card">
+					<div class="card-icon">🔬</div>
+					<h3 class="card-title"><?php esc_html_e('Research Institutions', 'authority-blueprint'); ?></h3>
+					<p class="card-description">
+						<?php esc_html_e('Universities, laboratories, and research centers advancing pest management science and innovation.', 'authority-blueprint'); ?>
+					</p>
+					<a href="/directory/research-institutions" class="card-action">
+						<?php esc_html_e('Explore Research', 'authority-blueprint'); ?>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="m9 18 6-6-6-6"/>
+						</svg>
+					</a>
+				</div>
+
+				<div class="card">
+					<div class="card-icon">📦</div>
+					<h3 class="card-title"><?php esc_html_e('Product Suppliers', 'authority-blueprint'); ?></h3>
+					<p class="card-description">
+						<?php esc_html_e('Manufacturers and distributors of pest management products, equipment, and innovative solutions.', 'authority-blueprint'); ?>
+					</p>
+					<a href="/directory/product-suppliers" class="card-action">
+						<?php esc_html_e('Find Suppliers', 'authority-blueprint'); ?>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="m9 18 6-6-6-6"/>
+						</svg>
+					</a>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<!-- Social Proof -->
-	<section class="social-proof" aria-label="Testimonials and Trust">
-		<h2>Trusted by the Pest Science Community</h2>
-		<div class="testimonials">
-			<blockquote>"The most comprehensive pest management resource online."<cite>Dr. A. Entomo, University of Agriculture</cite></blockquote>
-			<blockquote>"Essential reading for anyone in crop protection."<cite>Jane Grower, Certified Crop Advisor</cite></blockquote>
-		</div>
-	</section>
-
-	<!-- Latest Updates -->
-	<section class="latest-updates" aria-label="Latest Updates">
-		<h2>Latest Research & News</h2>
-		<ul>
+	<!-- Latest Research Section -->
+	<section class="section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title"><?php esc_html_e('Latest Research', 'authority-blueprint'); ?></h2>
+				<p class="section-description">
+					<?php esc_html_e('Recent publications and breakthrough discoveries in pest management science', 'authority-blueprint'); ?>
+				</p>
+			</div>
+			
 			<?php
-				$latest = new WP_Query(array('posts_per_page' => 5));
-				if ($latest->have_posts()) :
-					while ($latest->have_posts()) : $latest->the_post(); ?>
-						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <span class="date"><?php echo get_the_date(); ?></span></li>
-					<?php endwhile; wp_reset_postdata(); endif; ?>
-		</ul>
+			// Query for latest posts
+			$latest_posts = new WP_Query(array(
+				'posts_per_page' => 3,
+				'post_status' => 'publish'
+			));
+			
+			if ($latest_posts->have_posts()) : ?>
+				<div class="grid md:grid-cols-3">
+					<?php while ($latest_posts->have_posts()) : $latest_posts->the_post(); ?>
+						<article class="card">
+							<?php if (has_post_thumbnail()) : ?>
+								<div class="card-image">
+									<a href="<?php the_permalink(); ?>">
+										<?php the_post_thumbnail('medium'); ?>
+									</a>
+								</div>
+							<?php endif; ?>
+							
+							<div class="card-content">
+								<h3 class="card-title">
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								</h3>
+								<p class="card-description"><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
+								<a href="<?php the_permalink(); ?>" class="card-action">
+									<?php esc_html_e('Read More', 'authority-blueprint'); ?>
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+										<path d="m9 18 6-6-6-6"/>
+									</svg>
+								</a>
+							</div>
+						</article>
+					<?php endwhile; ?>
+				</div>
+			<?php 
+			wp_reset_postdata();
+			endif; ?>
+		</div>
 	</section>
 
-	<!-- Newsletter Signup -->
-	<section class="newsletter-signup" aria-label="Newsletter Signup">
-		<h2>Stay Informed</h2>
-		<p>Subscribe for the latest in pest management science, research, and field updates.</p>
-		<form class="mobile-first-form" method="post" action="#">
-			<div class="form-group">
-				<label for="newsletter-email">Email Address</label>
-				<input type="email" id="newsletter-email" name="newsletter-email" required>
+	<!-- Call to Action Section -->
+	<section class="section section-bg-light">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title"><?php esc_html_e('Join Our Community', 'authority-blueprint'); ?></h2>
+				<p class="section-description">
+					<?php esc_html_e('Connect with professionals, access exclusive resources, and stay updated on the latest developments', 'authority-blueprint'); ?>
+				</p>
+				<div class="hero-actions">
+					<a href="#" class="btn-primary">
+						<?php esc_html_e('Join Network', 'authority-blueprint'); ?>
+					</a>
+					<a href="#" class="btn-secondary">
+						<?php esc_html_e('Subscribe Newsletter', 'authority-blueprint'); ?>
+					</a>
+				</div>
 			</div>
-			<button type="submit" class="submit-button">Subscribe</button>
-		</form>
+		</div>
 	</section>
-</main>
-<?php get_footer(); ?> 
+
+</main><!-- #main -->
+
+<?php
+get_footer();
+?> 

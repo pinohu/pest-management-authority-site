@@ -557,62 +557,64 @@ add_action('init', function() {
 });
 
 function pest_management_directory_types($types) {
-    $types['pest_control_services'] = array(
-        'name' => 'Pest Control Services',
-        'slug' => 'pest-control-services',
-        'icon' => 'fas fa-bug',
-        'description' => 'Professional pest control service providers'
+    $pest_types = array(
+        'pest-control-services' => array(
+            'name' => 'Pest Control Services',
+            'description' => 'Professional pest control and management services',
+            'icon' => 'fas fa-bug'
+        ),
+        'research-institutions' => array(
+            'name' => 'Research Institutions',
+            'description' => 'Universities and research centers',
+            'icon' => 'fas fa-microscope'
+        ),
+        'product-suppliers' => array(
+            'name' => 'Product Suppliers',
+            'description' => 'Pest management products and equipment',
+            'icon' => 'fas fa-boxes'
+        )
     );
     
-    $types['research_institutions'] = array(
-        'name' => 'Research Institutions',
-        'slug' => 'research-institutions', 
-        'icon' => 'fas fa-microscope',
-        'description' => 'Pest management research facilities'
-    );
-    
-    $types['product_suppliers'] = array(
-        'name' => 'Product Suppliers',
-        'slug' => 'product-suppliers',
-        'icon' => 'fas fa-industry',
-        'description' => 'Pest management product suppliers'
-    );
-    
-    return $types;
+    return array_merge($types, $pest_types);
 }
 
 function pest_management_custom_fields($fields) {
-    $fields['pest_specialization'] = array(
-        'type' => 'select',
-        'label' => 'Pest Specialization',
-        'options' => array(
-            'agricultural' => 'Agricultural Pests',
-            'urban' => 'Urban Pest Control', 
-            'stored_product' => 'Stored Product Pests',
-            'structural' => 'Structural Pests',
-            'public_health' => 'Public Health Pests'
+    $pest_fields = array(
+        'pest_specialization' => array(
+            'label' => 'Pest Specialization',
+            'type' => 'select',
+            'options' => array(
+                'agricultural' => 'Agricultural Pests',
+                'urban' => 'Urban Pests',
+                'stored-product' => 'Stored Product Pests',
+                'structural' => 'Structural Pests',
+                'public-health' => 'Public Health Pests'
+            )
+        ),
+        'control_methods' => array(
+            'label' => 'Control Methods',
+            'type' => 'checkbox',
+            'options' => array(
+                'biological' => 'Biological Control',
+                'chemical' => 'Chemical Control',
+                'mechanical' => 'Mechanical Control',
+                'cultural' => 'Cultural Control',
+                'integrated' => 'Integrated Pest Management'
+            )
+        ),
+        'certifications' => array(
+            'label' => 'Certifications',
+            'type' => 'text',
+            'description' => 'Professional certifications and licenses'
+        ),
+        'service_area' => array(
+            'label' => 'Service Area',
+            'type' => 'text',
+            'description' => 'Geographic areas served'
         )
     );
     
-    $fields['control_methods'] = array(
-        'type' => 'checkbox',
-        'label' => 'Control Methods',
-        'options' => array(
-            'biological' => 'Biological Control',
-            'chemical' => 'Chemical Control',
-            'mechanical' => 'Mechanical Control',
-            'cultural' => 'Cultural Control',
-            'integrated' => 'Integrated Pest Management'
-        )
-    );
-    
-    $fields['certifications'] = array(
-        'type' => 'text',
-        'label' => 'Certifications',
-        'placeholder' => 'e.g., Licensed Pest Control Operator, IPM Certified'
-    );
-    
-    return $fields;
+    return array_merge($fields, $pest_fields);
 }
 
 // Add directory showcase to front page
