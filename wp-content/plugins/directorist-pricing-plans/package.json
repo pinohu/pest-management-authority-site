@@ -1,0 +1,26 @@
+{
+  "name": "directorist-pricing-plans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch --output-style expanded assets/css/style.scss assets/css/main.css",
+    "rtl": "rtlcss --config rtlconfig.rtlcss.json assets/css/style.scss assets/css/main-rtl.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aazztech/directorist-pricing-plans.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aazztech/directorist-pricing-plans/issues"
+  },
+  "homepage": "https://github.com/aazztech/directorist-pricing-plans#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "rtlcss": "^3.5.0"
+  }
+}

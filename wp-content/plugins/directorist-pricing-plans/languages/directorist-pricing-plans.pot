@@ -1,0 +1,971 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Directorist - Pricing Plans\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-05 09:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.9; wp-6.5.3\n"
+"X-Domain: directorist-pricing-plans"
+
+#: templates/listing_type.php:61 templates/listing_type.php:81
+#: inc/classes/class-ajax-handler.php:90 inc/classes/class-ajax-handler.php:110
+#: inc/classes/class-ajax-handler.php:474
+#: inc/classes/class-ajax-handler.php:494
+#: inc/classes/class-ajax-handler.php:633
+#: inc/classes/class-ajax-handler.php:653 inc/views/html-views.php:582
+#: inc/views/html-views.php:602
+msgid " (Unlimited)"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:187
+#: inc/classes/class-listing_type_manager.php:240
+msgid " - Active"
+msgstr ""
+
+#: templates/fee-plans.php:194
+msgid " <span class=\"atbd_plan-active\">Active</span>"
+msgstr ""
+
+#: templates/fee-plans.php:191
+msgid " <span class=\"atbd_popular_badge\">Recommended</span>"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:273 inc/views/html-views.php:505
+msgid " days"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:493
+#: inc/classes/class-ajax-handler.php:502
+#: inc/classes/class-ajax-handler.php:652
+#: inc/classes/class-ajax-handler.php:661 inc/views/html-views.php:601
+#: inc/views/html-views.php:610
+msgid " Featured listing"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:270 inc/views/html-views.php:502
+msgid " featured listings"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:269 inc/views/html-views.php:501
+msgid " regular & "
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:473
+#: inc/classes/class-ajax-handler.php:480
+#: inc/classes/class-ajax-handler.php:632
+#: inc/classes/class-ajax-handler.php:639 inc/views/html-views.php:581
+#: inc/views/html-views.php:588
+msgid " Regular listing"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:98 inc/classes/class-ajax-handler.php:120
+msgid " Remaining"
+msgstr ""
+
+#: inc/validator.php:67
+#, php-format
+msgid "%s %s %s %s"
+msgstr ""
+
+#: inc/validator.php:38
+#, php-format
+msgid "%s %s%s %s"
+msgstr ""
+
+#: templates/fee-plans.php:306
+msgid "(Maximum of "
+msgstr ""
+
+#: templates/fee-plans.php:304
+msgid "(Unlimited "
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:178
+#: inc/classes/class-listing_type_manager.php:231
+msgid "- Select -"
+msgstr ""
+
+#: templates/admin-meta-fields.php:137
+msgid ""
+"<p>(PayPal Allowed Range: Days 1-90, Weeks 1-52, Months 1-24, Years 1-5)<br>"
+"(Stripe Allowed Range: Days 1-365, Weeks 1-52, Months 1-12, Year 1)</p>"
+msgstr ""
+
+#: inc/views/html-views.php:559
+#, php-format
+msgid "<p><span>Plan:</span> %s %s</p>"
+msgstr ""
+
+#: inc/classes/migration/class-migration.php:51
+msgid ""
+"A database migration process is running in the background, so you might see "
+"unexpected behavior in the Directorist app until the migration process is "
+"finished. Please wait until the migration is done."
+msgstr ""
+
+#: inc/classes/class-settings.php:150 inc/classes/class-settings.php:157
+msgid "Action"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:97
+#: inc/classes/class-ajax-handler.php:277 inc/views/html-views.php:508
+msgid "Active"
+msgstr ""
+
+#: templates/listing_type.php:20 inc/classes/class-ajax-handler.php:443
+#: inc/classes/class-ajax-handler.php:594
+msgid "Active Orders"
+msgstr ""
+
+#: templates/admin-meta-fields.php:47
+#, php-format
+msgid "Add %s Rate"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:232
+#: inc/classes/class-custom-post-types.php:233
+msgid "Add New Plan"
+msgstr ""
+
+#: inc/helper-functions.php:50
+msgid "Administrator"
+msgstr ""
+
+#: templates/fee-plans.php:327
+msgid "All Categories"
+msgstr ""
+
+#: templates/fee-plans.php:320
+msgid "Allow Customer Review"
+msgstr ""
+
+#: templates/fee-plans.php:382
+msgid "Already Used!"
+msgstr ""
+
+#: inc/views/html-views.php:74 inc/views/html-views.php:179
+msgid "Amount"
+msgstr ""
+
+#: inc/helper-functions.php:58
+msgid "Author"
+msgstr ""
+
+#: templates/fee-plans.php:239
+msgid "Auto renewing"
+msgstr ""
+
+#: inc/views/html-views.php:126
+msgid "Bank Transfer"
+msgstr ""
+
+#: inc/classes/class-data-controller.php:647
+msgid "Basic Configurations"
+msgstr ""
+
+#: inc/classes/class-listing_type_manager.php:200
+msgid "Belongs to Plan"
+msgstr ""
+
+#: templates/admin-meta-fields.php:276
+msgid "Booking "
+msgstr ""
+
+#: templates/fee-plans.php:340
+msgid "Booking Included"
+msgstr ""
+
+#: templates/admin-meta-fields.php:427
+msgid "Cancel"
+msgstr ""
+
+#: inc/views/html-views.php:533 inc/views/html-views.php:554
+msgid "Change"
+msgstr ""
+
+#: inc/views/html-views.php:282
+msgid "Change plan"
+msgstr ""
+
+#: templates/admin-meta-fields.php:412
+msgid "Change Plan Type"
+msgstr ""
+
+#: inc/views/html-views.php:450
+msgid "Change Pricing Plan"
+msgstr ""
+
+#: directorist-pricing-plans.php:144 directorist-pricing-plans.php:156
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:466
+#: inc/classes/class-ajax-handler.php:625 inc/views/html-views.php:574
+msgid "Choose Listing Type"
+msgstr ""
+
+#: templates/admin-meta-fields.php:253 templates/fee-plans.php:333
+msgid "Claim Badge Included"
+msgstr ""
+
+#: inc/classes/class-payments.php:214 inc/classes/class-payments.php:420
+#: inc/classes/class-payments.php:428
+msgid "Claim for "
+msgstr ""
+
+#: inc/classes/class-payments.php:294 inc/classes/class-payments.php:366
+msgid "Claiming charge for this listing"
+msgstr ""
+
+#: inc/classes/class-payments.php:429
+msgid "Claiming charge for this listing "
+msgstr ""
+
+#: inc/views/html-views.php:452
+msgid "Click Here"
+msgstr ""
+
+#: templates/admin-meta-fields.php:210
+msgid "Contact Listing Owner"
+msgstr ""
+
+#: templates/fee-plans.php:263
+msgid "Contact Owner"
+msgstr ""
+
+#: templates/fee-plans.php:382
+msgid "Continue"
+msgstr ""
+
+#: inc/classes/class-enqueuer.php:71
+msgid "Continue with email"
+msgstr ""
+
+#: inc/helper-functions.php:62
+msgid "Contributor"
+msgstr ""
+
+#: templates/admin-meta-fields.php:230
+msgid "Customer Reviews"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:289
+msgid "Date"
+msgstr ""
+
+#: templates/fee-plans.php:165
+msgid "day"
+msgstr ""
+
+#: templates/admin-meta-fields.php:101
+msgid "Day(s)"
+msgstr ""
+
+#: templates/fee-plans.php:165
+msgid "days"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:204
+#: inc/classes/class-listing_type_manager.php:257
+msgid "Details"
+msgstr ""
+
+#: inc/classes/class-settings.php:68
+msgid "Direct Plan Purchase"
+msgstr ""
+
+#. Name of the plugin
+msgid "Directorist - Pricing Plans"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:283
+msgid "Directory Type"
+msgstr ""
+
+#: inc/classes/class-settings.php:122
+msgid "Display Order History Tab"
+msgstr ""
+
+#: inc/classes/class-settings.php:116
+msgid "Display Packages Tab"
+msgstr ""
+
+#: inc/classes/class-settings.php:134
+msgid "Display Plan Change Link"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:235
+msgid "Edit Plan"
+msgstr ""
+
+#: inc/helper-functions.php:54
+msgid "Editor"
+msgstr ""
+
+#: inc/classes/class-enqueuer.php:70
+msgid "Email"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:51
+msgid "Email is required"
+msgstr ""
+
+#: templates/admin-meta-fields.php:120
+msgid "Enable Subscription"
+msgstr ""
+
+#: inc/classes/class-settings.php:170
+msgid "Enter your Pricing Plans extension license"
+msgstr ""
+
+#: templates/admin-meta-fields.php:178
+msgid "Example 100"
+msgstr ""
+
+#: templates/admin-meta-fields.php:56
+msgid "Example 2"
+msgstr ""
+
+#: templates/admin-meta-fields.php:199
+msgid "Example 5"
+msgstr ""
+
+#: templates/admin-meta-fields.php:346
+msgid "Exclude Categories"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:445
+#: inc/classes/class-ajax-handler.php:596
+msgid "Featured"
+msgstr ""
+
+#: inc/views/html-views.php:121
+msgid "Featured listing "
+msgstr ""
+
+#: templates/fee-plans.php:255
+msgid "Featured Listings"
+msgstr ""
+
+#: templates/admin-meta-fields.php:148
+msgid "Featured the Listing"
+msgstr ""
+
+#: inc/classes/class-data-controller.php:649
+msgid "Field Configurations"
+msgstr ""
+
+#: templates/admin-meta-fields.php:53
+msgid "Flat Rate"
+msgstr ""
+
+#: inc/classes/class-settings.php:80
+#, php-format
+msgid "Following shortcode must be in the selected page %s"
+msgstr ""
+
+#: templates/admin-meta-fields.php:63 templates/fee-plans.php:220
+#: inc/views/html-views.php:126
+msgid "Free"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:445
+#: inc/classes/class-ajax-handler.php:596
+msgid "General"
+msgstr ""
+
+#: templates/admin-meta-fields.php:392
+msgid "Hide form All Plans"
+msgstr ""
+
+#: templates/admin-meta-fields.php:74 templates/admin-meta-fields.php:124
+#: templates/admin-meta-fields.php:153 templates/admin-meta-fields.php:172
+#: templates/admin-meta-fields.php:193 templates/admin-meta-fields.php:214
+#: templates/admin-meta-fields.php:234 templates/admin-meta-fields.php:257
+#: templates/admin-meta-fields.php:280 templates/admin-meta-fields.php:303
+#: templates/admin-meta-fields.php:326 templates/admin-meta-fields.php:350
+#: templates/admin-meta-form-fields.php:52
+#: templates/admin-meta-form-fields.php:98
+msgid "Hide this from pricing plan page "
+msgstr ""
+
+#. URI of the plugin
+msgid "https://directorist.com/product/directorist-pricing-plans"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpwax.com"
+msgstr ""
+
+#: templates/admin-meta-form-fields.php:133
+msgid ""
+"If you need to put the shortcode inside php code/template file, use this:"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:97
+msgid "Inactive"
+msgstr ""
+
+#: inc/classes/class-payments.php:145
+msgid "including "
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:286
+msgid "Length"
+msgstr ""
+
+#: inc/classes/class-settings.php:169
+msgid "License"
+msgstr ""
+
+#: templates/fee-plans.php:184
+msgid "Lifetime"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:97
+msgid "Limit Exceeded"
+msgstr ""
+
+#: templates/fee-plans.php:244
+msgid "Listing as featured"
+msgstr ""
+
+#: templates/admin-meta-fields.php:86
+msgid "Listing Duration"
+msgstr ""
+
+#: templates/admin-meta-sorting-configuration-fields.php:11
+msgid "Listing Sorting Order"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:287
+msgid "Listings"
+msgstr ""
+
+#: templates/admin-meta-fields.php:299
+msgid "Live Chat "
+msgstr ""
+
+#: templates/fee-plans.php:347
+msgid "Live Chat Included"
+msgstr ""
+
+#: templates/admin-meta-fields.php:322
+msgid "Mark as Sold "
+msgstr ""
+
+#: templates/fee-plans.php:354
+msgid "Mark as Sold Included"
+msgstr ""
+
+#: inc/classes/class-enqueuer.php:68
+msgid "Max character limit reached!"
+msgstr ""
+
+#: templates/fee-plans.php:173
+msgid "month"
+msgstr ""
+
+#: templates/admin-meta-fields.php:103
+msgid "Month(s)"
+msgstr ""
+
+#: templates/fee-plans.php:173
+msgid "months"
+msgstr ""
+
+#: templates/admin-meta-fields.php:113
+msgid "Never expire"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:234
+msgid "New Plan"
+msgstr ""
+
+#: templates/admin-meta-fields.php:162 templates/admin-meta-form-fields.php:62
+#: templates/admin-meta-form-fields.php:110
+msgid "No"
+msgstr ""
+
+#: templates/admin-meta-form-fields.php:119
+msgid "No fields found in this directory"
+msgstr ""
+
+#: inc/views/html-views.php:236
+msgid "No order found!"
+msgstr ""
+
+#: inc/views/html-views.php:141
+msgid "No package found!"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:239
+msgid "No Plan found"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:240
+msgid "No Plan found in Trash"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:54 inc/views/html-views.php:297
+#: inc/views/html-views.php:558
+msgid "No Plan!"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:95
+msgid "No plan!"
+msgstr ""
+
+#: templates/admin-meta-fields.php:189
+msgid "Number of Featured Listings"
+msgstr ""
+
+#: templates/admin-meta-fields.php:168
+msgid "Number of Listings"
+msgstr ""
+
+#: templates/admin-meta-fields.php:431
+msgid "Ok"
+msgstr ""
+
+#: templates/admin-meta-fields.php:182 templates/admin-meta-fields.php:203
+#: templates/admin-meta-form-fields.php:74
+msgid "Or mark as unlimited "
+msgstr ""
+
+#: templates/admin-meta-sorting-configuration-fields.php:16
+msgid "Order"
+msgstr ""
+
+#: inc/views/html-views.php:77 inc/views/html-views.php:181
+msgid "Order Date"
+msgstr ""
+
+#: inc/views/html-views.php:43 inc/views/html-views.php:416
+msgid "Order History"
+msgstr ""
+
+#: inc/views/html-views.php:72
+msgid "Order ID"
+msgstr ""
+
+#: inc/views/html-views.php:178
+msgid "Order Number"
+msgstr ""
+
+#: templates/admin-meta-fields.php:25
+#: inc/classes/class-custom-post-types.php:60
+#: inc/classes/class-custom-post-types.php:198
+#: inc/classes/class-ajax-handler.php:273 inc/views/html-views.php:505
+msgid "Package"
+msgstr ""
+
+#: inc/views/html-views.php:73
+msgid "Package Name"
+msgstr ""
+
+#: inc/views/html-views.php:35 inc/views/html-views.php:405
+msgid "Packages"
+msgstr ""
+
+#: inc/views/html-views.php:282 inc/views/html-views.php:554
+msgid "Pay Now"
+msgstr ""
+
+#: templates/admin-meta-fields.php:19
+#: inc/classes/class-custom-post-types.php:65
+#: inc/classes/class-custom-post-types.php:198
+#: inc/classes/class-ajax-handler.php:273 inc/views/html-views.php:505
+msgid "Pay Per Listing"
+msgstr ""
+
+#: inc/views/html-views.php:76
+msgid "Payment Gateway"
+msgstr ""
+
+#: inc/views/html-views.php:183
+msgid "Payment Receipt"
+msgstr ""
+
+#: inc/views/html-views.php:182
+msgid "Payment Status"
+msgstr ""
+
+#: inc/views/html-views.php:126
+msgid "PayPal"
+msgstr ""
+
+#: templates/fee-plans.php:223
+msgid "Per Listing"
+msgstr ""
+
+#: templates/fee-plans.php:223
+msgid "Per Package"
+msgstr ""
+
+#: templates/admin-meta-fields.php:54
+msgid "Percentage"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:82
+#: inc/classes/class-custom-post-types.php:117 inc/views/html-views.php:306
+msgid "Plan"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:372
+#: inc/classes/class-ajax-handler.php:407
+#: inc/classes/class-ajax-handler.php:695
+#: inc/classes/class-ajax-handler.php:711
+msgid "Plan changed successfully!"
+msgstr ""
+
+#: inc/views/html-views.php:180
+msgid "Plan Name"
+msgstr ""
+
+#: templates/admin-meta-fields.php:42
+msgid "Plan price"
+msgstr ""
+
+#: templates/admin-meta-fields.php:70
+msgid "Plan Short Description"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:288
+msgid "Plan Type"
+msgstr ""
+
+#: templates/admin-meta-fields.php:419
+msgid ""
+"Please Make sure to add number of Regular and Featured listings in this "
+"package"
+msgstr ""
+
+#: templates/fee-plans.php:206 templates/fee-plans.php:216
+#, php-format
+msgid "Plus %s %s"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:227
+msgctxt "Post Type General Name"
+msgid "Pricing Plans"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:228
+msgctxt "Post Type Singular Name"
+msgid "Pricing Plans"
+msgstr ""
+
+#: templates/admin-meta-fields.php:35
+#: inc/classes/class-custom-post-types.php:285
+msgid "Price"
+msgstr ""
+
+#: inc/validator.php:37
+msgid "price with this plan!"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:230
+msgid "Pricing Plan"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:229
+#: inc/classes/class-custom-post-types.php:231
+#: inc/classes/class-settings.php:51 inc/classes/class-settings.php:91
+#: inc/classes/class-settings.php:163
+msgid "Pricing Plans"
+msgstr ""
+
+#: inc/classes/class-settings.php:78
+msgid "Pricing Plans Page"
+msgstr ""
+
+#: inc/classes/class-settings.php:95
+msgid "Pricing Plans Settings"
+msgstr ""
+
+#: inc/views/html-views.php:282 inc/views/html-views.php:554
+msgid "Promote"
+msgstr ""
+
+#: templates/admin-meta-fields.php:379
+msgid "Recommend this Plan"
+msgstr ""
+
+#: inc/views/html-views.php:118
+msgid "Regular listing "
+msgstr ""
+
+#: templates/fee-plans.php:250
+msgid "Regular Listings"
+msgstr ""
+
+#: templates/listing_type.php:69 templates/listing_type.php:91
+#: inc/classes/class-ajax-handler.php:482
+#: inc/classes/class-ajax-handler.php:504
+#: inc/classes/class-ajax-handler.php:641
+#: inc/classes/class-ajax-handler.php:663 inc/views/html-views.php:590
+#: inc/views/html-views.php:612
+msgid "Remaining"
+msgstr ""
+
+#: inc/classes/class-enqueuer.php:67
+msgid "Remaining Character:"
+msgstr ""
+
+#: inc/views/html-views.php:75
+msgid "Remaining listings"
+msgstr ""
+
+#: inc/views/html-views.php:260
+msgid "Renew"
+msgstr ""
+
+#: templates/admin-meta-fields.php:134
+msgid "Requires Directorist PayPal or Stripe payment gateway"
+msgstr ""
+
+#: inc/classes/class-settings.php:73
+msgid "Restrict Listing Deletion"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:205
+#: inc/classes/class-listing_type_manager.php:258
+msgid "Save"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:238
+msgid "Search Plan"
+msgstr ""
+
+#: inc/views/html-views.php:534
+msgid "Secure Payment Process"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:445
+#: inc/classes/class-ajax-handler.php:596
+msgid "Select active order"
+msgstr ""
+
+#: templates/listing_type.php:23 inc/classes/class-ajax-handler.php:447
+#: inc/classes/class-ajax-handler.php:597
+msgid "Select an order"
+msgstr ""
+
+#: templates/plan_directory_type.php:7
+msgid "Select Directory Type"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:175
+#: inc/classes/class-ajax-handler.php:254
+#: inc/classes/class-listing_type_manager.php:228 inc/views/html-views.php:488
+msgid "Select Plan"
+msgstr ""
+
+#: templates/admin-meta-fields.php:11
+msgid "Select Plan Type"
+msgstr ""
+
+#: inc/classes/class-data-controller.php:641
+msgid "Select Type"
+msgstr ""
+
+#: templates/admin-meta-form-fields.php:68
+msgid "Set a limit"
+msgstr ""
+
+#: templates/admin-meta-form-fields.php:126
+msgid "Shortcode"
+msgstr ""
+
+#: inc/classes/class-settings.php:57
+msgid "Skip Plan Page for Paid Users"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:727
+msgid "Something is wrong! Please refresh and retry."
+msgstr ""
+
+#: inc/classes/class-data-controller.php:648
+msgid "Sorting Configurations"
+msgstr ""
+
+#: inc/views/html-views.php:126
+msgid "Stripe"
+msgstr ""
+
+#: inc/helper-functions.php:66
+msgid "Subscriber"
+msgstr ""
+
+#: inc/views/html-views.php:424
+msgid "Subscription"
+msgstr ""
+
+#: inc/classes/class-ajax-handler.php:398
+msgid "Successfully assigned!"
+msgstr ""
+
+#: inc/classes/class-settings.php:64
+msgid "tax"
+msgstr ""
+
+#: inc/classes/class-settings.php:63
+msgid "Tax Placeholder"
+msgstr ""
+
+#: templates/fee-plans.php:396
+msgid ""
+"There is no Plan available right now. Please contact with administrator."
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"This is an extension for Directorist plugin. It allows you to create & sell "
+"unlimited pricing plans to monetize your directory."
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:245
+msgid "This order post type will keep track of admin fee plans"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:282
+msgid "Title"
+msgstr ""
+
+#: inc/views/html-views.php:126
+msgid "Unknown"
+msgstr ""
+
+#: templates/fee-plans.php:102 inc/classes/class-ajax-handler.php:260
+#: inc/views/html-views.php:492
+msgid "Unlimited"
+msgstr ""
+
+#: inc/views/html-views.php:121
+msgid "Unlimited Featured listing "
+msgstr ""
+
+#: inc/validator.php:33
+msgid "Unlimited price with this plan!"
+msgstr ""
+
+#: inc/views/html-views.php:118
+msgid "Unlimited Regular listing "
+msgstr ""
+
+#: inc/validator.php:62
+msgid "Unlimited tags with this plan!"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:236
+msgid "Update Plan"
+msgstr ""
+
+#: templates/admin-meta-form-fields.php:129
+msgid "Use following shortcode to display the Plan anywhere:"
+msgstr ""
+
+#: inc/classes/class-settings.php:74
+msgid "User can't delete their listing if the listing is assigned with a plan."
+msgstr ""
+
+#: inc/views/html-views.php:224
+msgid "View"
+msgstr ""
+
+#: inc/classes/class-custom-post-types.php:237
+msgid "View Plan"
+msgstr ""
+
+#: inc/views/html-views.php:453
+msgid "We recommend you check the details of Pricing Plans before changing."
+msgstr ""
+
+#: templates/fee-plans.php:169
+msgid "week"
+msgstr ""
+
+#: templates/admin-meta-fields.php:102
+msgid "Week(s)"
+msgstr ""
+
+#: templates/fee-plans.php:169
+msgid "weeks"
+msgstr ""
+
+#: inc/validator.php:66
+msgid "with this plan!"
+msgstr ""
+
+#. Author of the plugin
+msgid "wpWax"
+msgstr ""
+
+#: templates/fee-plans.php:177
+msgid "year"
+msgstr ""
+
+#: templates/admin-meta-fields.php:104
+msgid "Year(s)"
+msgstr ""
+
+#: templates/fee-plans.php:177
+msgid "years"
+msgstr ""
+
+#: templates/admin-meta-fields.php:161 templates/admin-meta-form-fields.php:61
+#: templates/admin-meta-form-fields.php:109
+msgid "Yes"
+msgstr ""
+
+#: inc/classes/class-settings.php:164
+msgid "You can active your Pricing Plans extension here."
+msgstr ""
+
+#: inc/classes/class-settings.php:96
+msgid "You can Customize all the settings of Pricing Plans Extension here"
+msgstr ""
+
+#: inc/classes/class-settings.php:54
+msgid "You can disable it for users."
+msgstr ""
+
+#: inc/validator.php:36
+msgid "You can set maximum"
+msgstr ""
+
+#: inc/validator.php:65
+msgid "You can use"
+msgstr ""
+
+#: config.php:33
+msgid "You do not have the right to access this file directly"
+msgstr ""
+
+#: inc/helper-functions.php:754 inc/classes/class-data-controller.php:234
+msgid ""
+"You have already crossed your limit for featured listing, please try again"
+msgstr ""
+
+#: inc/helper-functions.php:747 inc/classes/class-data-controller.php:227
+msgid ""
+"You have already crossed your limit for regular listing, please try again."
+msgstr ""
+
+#: inc/classes/class-enqueuer.php:69
+msgid "You have crossed the limit!"
+msgstr ""
+
+#: inc/helper-functions.php:739 inc/classes/class-data-controller.php:219
+msgid "You have crossed the limit! Please try again"
+msgstr ""

@@ -536,3 +536,99 @@ add_action('add_attachment', function($post_ID) {
     // Extensibility hook for other MCPs
     do_action('authority_blueprint_image_alt_mcp', $post_ID, $alt_text);
 });
+
+// === DIRECTORIST INTEGRATION FOR PEST MANAGEMENT SCIENCE ===
+
+// Enqueue Directorist integration styles
+add_action('wp_enqueue_scripts', function() {
+    if (function_exists('directorist_setup')) {
+        wp_enqueue_style('authority-directorist-integration', 
+            get_template_directory_uri() . '/css/directorist-integration.css',
+            array('authority-blueprint-style'), '1.0.0');
+    }
+});
+
+// Directorist customization for pest management science
+add_action('init', function() {
+    if (function_exists('directorist_setup')) {
+        add_filter('directorist_listing_types', 'pest_management_directory_types');
+        add_filter('directorist_custom_fields', 'pest_management_custom_fields');
+    }
+});
+
+function pest_management_directory_types($types) {
+    $types['pest_control_services'] = array(
+        'name' => 'Pest Control Services',
+        'slug' => 'pest-control-services',
+        'icon' => 'fas fa-bug',
+        'description' => 'Professional pest control service providers'
+    );
+    
+    $types['research_institutions'] = array(
+        'name' => 'Research Institutions',
+        'slug' => 'research-institutions', 
+        'icon' => 'fas fa-microscope',
+        'description' => 'Pest management research facilities'
+    );
+    
+    $types['product_suppliers'] = array(
+        'name' => 'Product Suppliers',
+        'slug' => 'product-suppliers',
+        'icon' => 'fas fa-industry',
+        'description' => 'Pest management product suppliers'
+    );
+    
+    return $types;
+}
+
+function pest_management_custom_fields($fields) {
+    $fields['pest_specialization'] = array(
+        'type' => 'select',
+        'label' => 'Pest Specialization',
+        'options' => array(
+            'agricultural' => 'Agricultural Pests',
+            'urban' => 'Urban Pest Control', 
+            'stored_product' => 'Stored Product Pests',
+            'structural' => 'Structural Pests',
+            'public_health' => 'Public Health Pests'
+        )
+    );
+    
+    $fields['control_methods'] = array(
+        'type' => 'checkbox',
+        'label' => 'Control Methods',
+        'options' => array(
+            'biological' => 'Biological Control',
+            'chemical' => 'Chemical Control',
+            'mechanical' => 'Mechanical Control',
+            'cultural' => 'Cultural Control',
+            'integrated' => 'Integrated Pest Management'
+        )
+    );
+    
+    $fields['certifications'] = array(
+        'type' => 'text',
+        'label' => 'Certifications',
+        'placeholder' => 'e.g., Licensed Pest Control Operator, IPM Certified'
+    );
+    
+    return $fields;
+}
+
+// Add directory showcase to front page
+add_filter('the_content', function($content) {
+    if (is_front_page() && !is_admin() && function_exists('directorist_setup')) {
+        $directory_content = '
+        <section class="pest-directory-showcase">
+            <h2>Find Pest Management Professionals</h2>
+            <p>Connect with certified pest control services, research institutions, and product suppliers in your area.</p>
+            <div class="directory-quick-links">
+                <a href="/directory/" class="btn btn-primary">Browse Directory</a>
+                <a href="/add-listing/" class="btn btn-secondary">Add Your Listing</a>
+            </div>
+        </section>';
+        
+        return $content . $directory_content;
+    }
+    return $content;
+});

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "customTemplates": [
+      { "name": "home", "title": "Home", "postTypes": [ "page" ] },
+      { "name": "page", "title": "Page", "postTypes": [ "page" ] },
+      { "name": "single", "title": "Single Post", "postTypes": [ "post" ] },
+      { "name": "archive", "title": "Archive", "postTypes": [ "post", "pillar", "cluster", "resource", "case_study", "glossary" ] },
+      { "name": "404", "title": "404", "postTypes": [ "page", "post" ] }
+    ],
+    "color": {
+      "palette": [
+        { "slug": "primary", "color": "#388e3c", "name": "Primary Green" },
+        { "slug": "secondary", "color": "#795548", "name": "Earth Brown" },
+        { "slug": "background", "color": "#f5fbe7", "name": "Background" },
+        { "slug": "contrast", "color": "#222", "name": "Contrast" }
+      ],
+      "custom": false,
+      "customGradient": false
+    },
+    "typography": {
+      "fontFamilies": [
+        { "slug": "system", "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif", "name": "System UI" }
+      ],
+      "fontSizes": [
+        { "slug": "small", "size": "0.9rem", "name": "Small" },
+        { "slug": "normal", "size": "1rem", "name": "Normal" },
+        { "slug": "large", "size": "1.5rem", "name": "Large" },
+        { "slug": "xlarge", "size": "2.2rem", "name": "Extra Large" }
+      ],
+      "customFontSize": false,
+      "customLineHeight": false
+    },
+    "spacing": {
+      "spacingScale": [ 0, 4, 8, 16, 24, 32, 40, 48, 56, 64 ],
+      "customPadding": true,
+      "customMargin": true
+    },
+    "layout": {
+      "contentSize": "48rem",
+      "wideSize": "64rem"
+    },
+    "custom": {
+      "mobileFirst": true,
+      "blockPatterns": [ "block-patterns" ],
+      "blockTemplates": [ "templates" ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#ffffff",
+      "text": "#222222"
+    },
+    "typography": {
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+      "fontSize": "1.125rem"
+    },
+    "spacing": {
+      "padding": {
+        "top": "1.5rem",
+        "bottom": "1.5rem"
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "sidebar",
+      "area": "sidebar"
+    }
+  ]
+} 

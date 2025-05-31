@@ -1,0 +1,249 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Directorist - Stripe Payment Gateway\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-07 09:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.5; wp-5.8.2\n"
+"X-Domain: directorist-stripe"
+
+#: directorist-stripe.php:797 directorist-stripe.php:804
+msgid "Action"
+msgstr ""
+
+#: directorist-stripe.php:322 directorist-stripe.php:378
+#: directorist-stripe.php:418 directorist-stripe.php:472
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: directorist-stripe.php:1001
+msgid "Complete Submission"
+msgstr ""
+
+#: directorist-stripe.php:266
+msgid "Default Percentage Vat Rate"
+msgstr ""
+
+#: directorist-stripe.php:893
+msgid "Default Vat Rate"
+msgstr ""
+
+#. Name of the plugin
+msgid "Directorist - Stripe Payment Gateway"
+msgstr ""
+
+#: directorist-stripe.php:238 directorist-stripe.php:859
+msgid "Enter some description for your user to make payment using stripe."
+msgstr ""
+
+#: directorist-stripe.php:232 directorist-stripe.php:852
+msgid ""
+"Enter the title of this gateway that should be displayed to the user on the "
+"front end."
+msgstr ""
+
+#: directorist-stripe.php:817
+msgid "Enter your Stripe extension license"
+msgstr ""
+
+#: directorist-stripe.php:244 directorist-stripe.php:866
+#, php-format
+msgid ""
+"Enter your Stripe Live Publishable Key Here. You can find your API key on "
+"your Stripe Dashboard Under Developers > API section. %s"
+msgstr ""
+
+#: directorist-stripe.php:250 directorist-stripe.php:873
+#, php-format
+msgid ""
+"Enter your Stripe Live Secret Key Here. You can find your API key on your "
+"Stripe Dashboard Under Developers > API section. %s"
+msgstr ""
+
+#: directorist-stripe.php:256 directorist-stripe.php:880
+#, php-format
+msgid ""
+"Enter your Stripe Test Publishable Key Here. You can find your API key on "
+"your Stripe Dashboard Under Developers > API section. %s"
+msgstr ""
+
+#: directorist-stripe.php:262 directorist-stripe.php:887
+#, php-format
+msgid ""
+"Enter your Stripe Test Secret Key Here. You can find your API key on your "
+"Stripe Dashboard Under Developers > API section. %s"
+msgstr ""
+
+#: directorist-stripe.php:121 directorist-stripe.php:540
+#: directorist-stripe.php:679
+msgid "Error: Stripe class dosen't exists"
+msgstr ""
+
+#: directorist-stripe.php:237 directorist-stripe.php:858
+msgid "Gateway Description"
+msgstr ""
+
+#: directorist-stripe.php:221 directorist-stripe.php:837
+msgid "Gateway Settings Page"
+msgstr ""
+
+#: directorist-stripe.php:231 directorist-stripe.php:851
+msgid "Gateway Title"
+msgstr ""
+
+#: directorist-stripe.php:222 directorist-stripe.php:838
+msgid "Get your Stripe API keys"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://directorist.com/product/directorist-stripe/"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpwax.com"
+msgstr ""
+
+#: directorist-stripe.php:227 directorist-stripe.php:845
+#, php-format
+msgid ""
+"If you want to use Stripe for a testing purpose, you should set Test MODE to "
+"Yes on The %s."
+msgstr ""
+
+#: directorist-stripe.php:354 directorist-stripe.php:448
+msgid "Invalid license."
+msgstr ""
+
+#: directorist-stripe.php:894
+msgid "It only works with Subscription/Recurring pricing plan"
+msgstr ""
+
+#: directorist-stripe.php:816
+msgid "License"
+msgstr ""
+
+#: directorist-stripe.php:479
+msgid "License activated successfully!"
+msgstr ""
+
+#: directorist-stripe.php:385
+msgid "License deactivated successfully!"
+msgstr ""
+
+#: directorist-stripe.php:391 directorist-stripe.php:485
+msgid "License not found!"
+msgstr ""
+
+#: directorist-stripe.php:243 directorist-stripe.php:865
+msgid "Live Publishable Key"
+msgstr ""
+
+#: directorist-stripe.php:249 directorist-stripe.php:872
+msgid "Live Secret Key"
+msgstr ""
+
+#: directorist-stripe.php:226 directorist-stripe.php:844
+msgid "Note About Stripe Gateway:"
+msgstr ""
+
+#: directorist-stripe.php:1001
+msgid "Pay Now"
+msgstr ""
+
+#: directorist-stripe.php:655
+msgid "Please wait..."
+msgstr ""
+
+#: directorist-stripe.php:1001
+msgid "Process Now"
+msgstr ""
+
+#: directorist-stripe.php:330 directorist-stripe.php:426
+msgid "Response not found!"
+msgstr ""
+
+#: directorist-stripe.php:903
+msgid "Solve Repeated Library Conflict"
+msgstr ""
+
+#: directorist-stripe.php:215 directorist-stripe.php:233
+#: directorist-stripe.php:810 directorist-stripe.php:853
+msgid "Stripe"
+msgstr ""
+
+#: directorist-stripe.php:287
+msgid "Stripe Gateway"
+msgstr ""
+
+#: directorist-stripe.php:291
+msgid "Stripe Gateway Settings"
+msgstr ""
+
+#: directorist-stripe.php:170 directorist-stripe.php:187
+msgid "Tax"
+msgstr ""
+
+#: directorist-stripe.php:255 directorist-stripe.php:879
+msgid "Test Publishable Key"
+msgstr ""
+
+#: directorist-stripe.php:261 directorist-stripe.php:886
+msgid "Test Secret Key"
+msgstr ""
+
+#: directorist-stripe.php:367 directorist-stripe.php:461
+#, php-format
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#. Author of the plugin
+msgid "wpWax"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"You can accept payment via Stripe using this extension on any website "
+"powered by the Directorist WordPress Plugin."
+msgstr ""
+
+#: directorist-stripe.php:811
+msgid "You can active your Stripe extension here."
+msgstr ""
+
+#: directorist-stripe.php:292
+msgid ""
+"You can customize all the settings related to your stripe gateway. After "
+"switching any option, Do not forget to save the changes."
+msgstr ""
+
+#: directorist-stripe.php:239 directorist-stripe.php:860
+msgid ""
+"You can make payment using your credit card using stripe if you choose this "
+"payment gateway."
+msgstr ""
+
+#: directorist-stripe.php:361 directorist-stripe.php:455
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#: directorist-stripe.php:341 directorist-stripe.php:435
+#, php-format
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: directorist-stripe.php:349 directorist-stripe.php:443
+msgid "Your license key has been disabled."
+msgstr ""
+
+#: directorist-stripe.php:373 directorist-stripe.php:467
+msgid "Your license key has reached its activation limit."
+msgstr ""

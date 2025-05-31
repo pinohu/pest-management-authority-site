@@ -1,0 +1,14 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Authority Blueprint 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#: style.css
+msgid "Read More"
+msgstr ""
+
+#: functions.php
+msgid "Next"
+msgstr ""
+msgid "Previous"
+msgstr "" 
