@@ -1,11 +1,41 @@
 import React from 'react';
 import { ExportManager } from './ExportManager/ExportManager';
+import { Hero } from './Hero/Hero';
 
 interface ComponentGalleryProps {
   components: { name: string; Component: React.FC; code: string }[];
 }
 
-export function ComponentGallery({ components }: ComponentGalleryProps) {
+const heroCode = `// Hero component usage example
+<Hero
+  title="Welcome to Authority Blueprint"
+  subtitle="Build your next project with flexible, modern UI blocks."
+  imageUrl="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+  variant="split"
+  ctaText="Get Started"
+  ctaHref="#"
+/>
+`;
+
+const components = [
+  {
+    name: 'Hero',
+    Component: () => (
+      <Hero
+        title="Welcome to Authority Blueprint"
+        subtitle="Build your next project with flexible, modern UI blocks."
+        imageUrl="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+        variant="split"
+        ctaText="Get Started"
+        ctaHref="#"
+      />
+    ),
+    code: heroCode,
+  },
+  // Add more components here
+];
+
+export function ComponentGallery({ components: _components }: ComponentGalleryProps) {
   return (
     <div style={{ padding: 24 }}>
       <h1>Component Gallery</h1>
