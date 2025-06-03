@@ -1,0 +1,46 @@
+/* Lovable UI Hero Section Styles - hero.css */
+.lovable-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #f5fbe7;
+  position: relative;
+}
+.lovable-hero--image {
+  background: url('/wp-content/themes/authority-blueprint-mcp/assets/hero-bg.jpg') center/cover no-repeat;
+}
+.lovable-hero--gradient {
+  background: linear-gradient(135deg, #388e3c, #2e7d32);
+  color: #fff;
+}
+.lovable-hero__content {
+  max-width: 700px;
+  margin: 0 auto;
+  z-index: 2;
+}
+.lovable-hero__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.lovable-hero__subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+.lovable-hero__cta {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background: #388e3c;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.lovable-hero__cta:hover {
+  background: #2e7d32;
+} 

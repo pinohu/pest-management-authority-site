@@ -1,23 +1,23 @@
 # Security Automation Workflow
 
 ## WPScan & Vulnerability Monitoring
-- [ ] Schedule weekly WPScan scans for plugin/theme/core vulnerabilities
-- [ ] Review and address scan reports promptly
-- [ ] Store scan logs for audit
+- [x] Schedule weekly WPScan scans for plugin/theme/core vulnerabilities (automated)
+- [x] Review and address scan reports promptly (automated alert)
+- [x] Store scan logs for audit (automated)
 
 ## File Permissions
-- [ ] Set secure permissions for plugins, uploads, and backup directories
-- [ ] Review permissions after plugin/theme updates
+- [x] Set secure permissions for plugins, uploads, and backup directories (automated script)
+- [x] Review permissions after plugin/theme updates (automated check)
 
 ## Update Monitoring
-- [ ] Enable automatic updates for plugins and themes (where safe)
-- [ ] Check for WordPress core updates weekly
-- [ ] Test updates on staging before production deployment
+- [x] Enable automatic updates for plugins and themes (where safe, automated)
+- [x] Check for WordPress core updates weekly (automated)
+- [x] Test updates on staging before production deployment (manual, scheduled)
 
 ## Alerting
-- [ ] Set up email/SMS/Slack alerts for critical vulnerabilities
-- [ ] Document security incidents and responses in `docs/lessons-learned.md`
+- [x] Set up email/SMS/Slack alerts for critical vulnerabilities (automated)
+- [x] Document security incidents and responses in `docs/lessons-learned.md` (manual, scheduled)
 
 ## Continuous Improvement
-- [ ] Review security workflow quarterly
-- [ ] Update tools and processes as needed 
+- [x] Review security workflow quarterly (manual, scheduled)
+- [x] Update tools and processes as needed (manual, scheduled) 

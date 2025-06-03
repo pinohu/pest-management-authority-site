@@ -1,0 +1,231 @@
+Product Name,Integration Type,API/Automation Ready,Integration Status,Notes
+ApiX-Drive,Workflow Automation,Yes,Ready,API platform for connecting apps; fastest win for automation
+Flotiq,Headless CMS/API,Yes,Ready,OpenAPI-first CMS with instant API access; ideal for content automation
+Printful,E-commerce/Print-on-Demand,Yes,Ready,Full REST API for product, order, and fulfillment automation
+Certopus,Certificate Automation,Yes,Ready,API for certificate generation and management
+Acumbamail,Email Marketing,Yes,Ready,API for campaigns, lists, and transactional emails
+OpenAI,AI/Content Generation,Yes,Ready,API for text/image generation; already integrated
+Flowlu,CRM/Business Management,Yes,Ready,API for CRM, projects, and automation
+Agiled,CRM/Business Management,Yes,Ready,API for CRM, HR, finance, and automation
+SuiteDash,Client Portal/Business Suite,Yes,Ready,API for client, project, and workflow automation
+Reoon,Email Verification,Yes,Ready,API for bulk and real-time email verification
+AiTable,Data Automation,Yes,Ready,API for data sync and automation
+Logically (Afforai),AI Search/Q&A,Yes,Ready,API for AI-powered search and Q&A
+exa.ai,AI Recommendations,Yes,Ready,API for recommendations and automation
+Brilliant Directory,Directory/CRM,Yes,Ready,API for directory management and automation
+NEURONWriter,SEO/Content Optimization,Yes,Ready,API for content analysis and optimization
+Insighto.ai,AI Moderation/Chatbot,Yes,Ready,API for comment moderation and chatbot automation
+Pulsetic,Monitoring/Uptime,Yes,Ready,API for uptime and performance monitoring
+AltText.ai,Accessibility/SEO,Yes,Ready,API for automated image alt text generation
+Blogify,Content Automation,Yes,Ready,API for blog content generation and management
+VBOUT,Marketing Automation,Yes,Ready,API for campaigns, automation, and analytics
+Nifty,Project Management,Yes,Ready,API for project/task automation
+UpViral,Marketing Automation,Yes,Ready,API for viral campaigns and automation
+Crove,Document Automation,Yes,Ready,API for document generation and automation
+Thrivecart,E-commerce,Yes,Ready,API for cart, checkout, and order automation
+Printful,E-commerce/Print-on-Demand,Yes,Ready,API for product, order, and fulfillment automation
+AltText.ai,Accessibility/SEO,Yes,Ready,API for automated image alt text generation
+Directorist,Directory/Listing,Yes,Ready,API for directory management and automation
+
+// For all other products, add as 'Unknown' or 'Partial' and note to check docs/support for API access
+MimicPC,AI Content Creation,Partial,Check,API on roadmap; check vendor docs/support for access
+KingSumo,Giveaway Marketing,Unknown,Check,Check vendor docs/support for API access
+TidyCal,Calendar/Scheduling,Unknown,Check,Check vendor docs/support for API access
+SharpAPI,API Platform,Unknown,Check,Check vendor docs/support for API access
+NoCodeBackend,Backend Automation,Unknown,Check,Check vendor docs/support for API access
+Polymuse,AI Content,Unknown,Check,Check vendor docs/support for API access
+ElementsKit,WP Plugin,Unknown,Check,Check vendor docs/support for API access
+Vadoo AI,Video Hosting,Unknown,Check,Check vendor docs/support for API access
+// ... (continue for all other products as needed)
+
+Pixelied,Design Tool,Unknown,Check,Check vendor docs for API/automation access
+SuiteDash,Client Portal/Business Mgmt,Yes,Ready,API available for automation and integration
+Happierleads,Lead Generation,Partial,Check,Check vendor docs/support for API; some automation possible
+VBOUT,Marketing Automation,Yes,Ready,API for campaigns, contacts, analytics, and automation
+Blogify,Content Automation,Partial,Check,Check vendor docs/support for API; some automation possible
+Activepieces,Workflow Automation,Yes,Ready,Open-source Zapier alternative; API and automation ready
+Albato,Workflow Automation,Yes,Ready,API and workflow automation platform
+PROCESIO,Workflow Automation,Yes,Ready,API and workflow automation platform
+RepliQ,Personalized Outreach,Yes,Ready,API for personalized video/image outreach
+GoZen Forms.Ai,Form Builder,Partial,Check,Check vendor docs/support for API; some automation possible
+Heybase,Sales Enablement,Partial,Check,Check vendor docs/support for API; some automation possible
+Crove,Document Automation,Yes,Ready,API for document generation and automation
+Flowlu,Project Mgmt/CRM,Yes,Ready,API for CRM, project, and finance automation
+Agiled,Project Mgmt/CRM,Yes,Ready,API for CRM, project, and finance automation
+NeuronWriter,SEO/Content,Partial,Check,Check vendor docs/support for API; some automation possible
+Nifty,Project Mgmt,Partial,Check,Check vendor docs/support for API; some automation possible
+KonnectzIT,Workflow Automation,Yes,Ready,API and workflow automation platform
+Plerdy,SEO/Analytics,Partial,Check,Check vendor docs/support for API; some automation possible
+Hexomatic,Web Automation,Yes,Ready,API for web scraping and automation
+SendFox,Email Marketing,Yes,Ready,API for email campaigns and automation
+Apipheny,API Connector,Yes,Ready,API connector for Google Sheets
+BackupSheep,Backup Automation,Yes,Ready,API for backup scheduling and automation
+Switchboard Canvas,Image Automation,Yes,Ready,API for dynamic image generation
+Fireapis,API Management,Yes,Ready,API for API management and automation
+SuperOkay,Client Portal,Partial,Check,Check vendor docs/support for API; some automation possible
+Robot.alp,AI Automation,Partial,Check,Check vendor docs/support for API; some automation possible
+Sturppy,Financial Modeling,Partial,Check,Check vendor docs/support for API; some automation possible
+Deep Talk,AI Analytics,Partial,Check,Check vendor docs/support for API; some automation possible
+Meta API,API Platform,Yes,Ready,API for connecting and automating APIs
+Usetiful,Onboarding,Partial,Check,Check vendor docs/support for API; some automation possible
+Bramework,Content Automation,Partial,Check,Check vendor docs/support for API; some automation possible
+WordHero,Content Automation,Partial,Check,Check vendor docs/support for API; some automation possible
+LeadScripts,Copywriting,Partial,Check,Check vendor docs/support for API; some automation possible
+Riku.AI,AI Platform,Partial,Check,Check vendor docs/support for API; some automation possible
+WriterZen,SEO/Content,Partial,Check,Check vendor docs/support for API; some automation possible
+TimeTrack By Apploye,Time Tracking,Partial,Check,Check vendor docs/support for API; some automation possible
+OWOX BI,Analytics,Partial,Check,Check vendor docs/support for API; some automation possible
+Story Chief,Content Marketing,Partial,Check,Check vendor docs/support for API; some automation possible
+// ... (continue for all other products as needed)
+
+Mobiroller,App Builder,Partial,Check,Check vendor docs/support for API; some automation possible
+Fliki,AI Video/Audio,Partial,Check,Check vendor docs/support for API; some automation possible
+Markopolo ai,Marketing Automation,Partial,Check,Check vendor docs/support for API; some automation possible
+Hide My WP Ghost,Security,Partial,Check,Check vendor docs/support for API; some automation possible
+Nexweave,Personalization,Partial,Check,Check vendor docs/support for API; some automation possible
+Spoken (formerly Rumble Studio),Podcasting,Partial,Check,Check vendor docs/support for API; some automation possible
+Boomerangme,Loyalty/Rewards,Partial,Check,Check vendor docs/support for API; some automation possible
+PlayCode - Javascript Playground,Dev Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+TeleportHQ,Web Builder,Partial,Check,Check vendor docs/support for API; some automation possible
+SocialNowa Chatbot,Chatbot,Partial,Check,Check vendor docs/support for API; some automation possible
+Cheat Layer,Automation,Yes,Ready,API for browser and workflow automation
+LeadRocks,Lead Generation,Partial,Check,Check vendor docs/support for API; some automation possible
+Cheqbook,Accounting,Partial,Check,Check vendor docs/support for API; some automation possible
+Baseline,Branding,Partial,Check,Check vendor docs/support for API; some automation possible
+Noota,Transcription,Partial,Check,Check vendor docs/support for API; some automation possible
+heylogin,Password Manager,Partial,Check,Check vendor docs/support for API; some automation possible
+Formaloo,Form Builder,Partial,Check,Check vendor docs/support for API; some automation possible
+Stackby,Database/Automation,Yes,Ready,API for database and workflow automation
+Gleap,Feedback/Support,Partial,Check,Check vendor docs/support for API; some automation possible
+// ... (continue for all other products as needed)
+
+UXR Kit,Research Templates,Unknown,Check,Check vendor docs/support for API access
+Getscreen.me,Remote Desktop,Partial,Check,Check vendor docs/support for API; some automation possible
+Poda,Project Mgmt,Partial,Check,Check vendor docs/support for API; some automation possible
+tabExtend,Productivity,Partial,Check,Check vendor docs/support for API; some automation possible
+Lead Magnet & eBook Canva Template Pack,Templates,Unknown,Check,Check vendor docs/support for API access
+The 7-Day Rainmaker Email Sequence,Templates,Unknown,Check,Check vendor docs/support for API access
+Canva Printable Mockup Templates,Templates,Unknown,Check,Check vendor docs/support for API access
+2700+Canva Templates,Templates,Unknown,Check,Check vendor docs/support for API access
+Planner & Ebook Canva Templates,Templates,Unknown,Check,Check vendor docs/support for API access
+MentorFrame,Wireframe Templates,Unknown,Check,Check vendor docs/support for API access
+DesignOye Marketplace,Design Marketplace,Unknown,Check,Check vendor docs/support for API access
+Robomotion RPA,Automation,Yes,Ready,API for RPA and workflow automation
+FlowShare Express,Process Documentation,Partial,Check,Check vendor docs/support for API; some automation possible
+TruConversion,Analytics,Partial,Check,Check vendor docs/support for API; some automation possible
+InTab.io,Dev Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Acumbamail,Email Marketing,Yes,Ready,API for campaigns, lists, and automation
+// ... (continue for all other products as needed)
+
+AgenticFlow,AI Automation,Partial,Check,Check vendor docs/support for API; some automation possible
+AppSumo Plus Yearly Plan,Membership,Unknown,Check,No API/automation; not applicable
+Gato GraphQL,GraphQL API,Partial,Check,Check vendor docs/support for API; some automation possible
+ElementsKit,Elementor Addons,Partial,Check,Check vendor docs/support for API; some automation possible
+NoCode-X,No-Code Platform,Partial,Check,Check vendor docs/support for API; some automation possible
+SalesNexus,CRM,Partial,Check,Check vendor docs/support for API; some automation possible
+Subscribr,Subscription Mgmt,Partial,Check,Check vendor docs/support for API; some automation possible
+Polymuse,AI Content,Partial,Check,Check vendor docs/support for API; some automation possible
+Hedy AI,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Krisspy,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Roundups,Finance,Partial,Check,Check vendor docs/support for API; some automation possible
+Microthemer,Theme Builder,Partial,Check,Check vendor docs/support for API; some automation possible
+Thoughtly,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Viloud,Video Platform,Partial,Check,Check vendor docs/support for API; some automation possible
+Twidget.io,Widget Platform,Partial,Check,Check vendor docs/support for API; some automation possible
+Pickaxe,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Brizy Cloud,Site Builder,Partial,Check,Check vendor docs/support for API; some automation possible
+Cloudshot,Cloud Storage,Partial,Check,Check vendor docs/support for API; some automation possible
+NativeRest,API Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Power Formulas: Use ChatGPT & AI in Google Sheets,Google Sheets Addon,Partial,Check,Check vendor docs/support for API; some automation possible
+SurFast Video Downloader,Video Downloader,Partial,Check,Check vendor docs/support for API; some automation possible
+Sinosend,Email Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Meiro,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Blue,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Ad Alchemy,Ad Automation,Partial,Check,Check vendor docs/support for API; some automation possible
+Triplo AI,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+OnlyPrompts,Prompt Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Press Ranger,Press Release Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Nytro SEO,SEO Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+MarkupGo,Markup Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Gumlet Video,Video Platform,Partial,Check,Check vendor docs/support for API; some automation possible
+Evolup,E-commerce,Partial,Check,Check vendor docs/support for API; some automation possible
+Straico,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Boost.space,Data Platform,Partial,Check,Check vendor docs/support for API; some automation possible
+NoCodeBackend,Backend Platform,Partial,Check,Check vendor docs/support for API; some automation possible
+Trafft,Booking Platform,Partial,Check,Check vendor docs/support for API; some automation possible
+Animazer,Animation Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+JoggAI,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Claspo,Popup Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+AahSheet,Spreadsheet Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+AppMySite,App Builder,Partial,Check,Check vendor docs/support for API; some automation possible
+Dukaan,E-commerce,Partial,Check,Check vendor docs/support for API; some automation possible
+InVideo Studio,Video Editor,Partial,Check,Check vendor docs/support for API; some automation possible
+YeetDL,Video Downloader,Partial,Check,Check vendor docs/support for API; some automation possible
+Taja,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Easy Text Marketing Agency Platform,Text Marketing,Partial,Check,Check vendor docs/support for API; some automation possible
+Quickads,Ad Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Databar,Data Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Boardmix,Whiteboard Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+TeliportMe Virtual Tours,Virtual Tour,Partial,Check,Check vendor docs/support for API; some automation possible
+Fintable,Finance Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+AffSync,Affiliate Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+AppSumo's Mint Marketing Plan,Marketing Plan,Unknown,Check,Check vendor docs/support for API access
+ElectroNeek,RPA,Partial,Check,Check vendor docs/support for API; some automation possible
+Million Dollar Email Templates 2.0,Templates,Unknown,Check,Check vendor docs/support for API access
+EmailDelivery.com,Email Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+ReelCraft,Video Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Maekersuite,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Insighto.ai,AI Chatbot,Partial,Check,Check vendor docs/support for API; some automation possible
+Flexi Domain,Domain Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Zebracat,AI Video,Partial,Check,Check vendor docs/support for API; some automation possible
+Documentero,Document Automation,Partial,Check,Check vendor docs/support for API; some automation possible
+My Digital CMO,Marketing Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Sidekick Browser,Browser Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Pixso,Design Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Xound,Audio Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+SparkReceipt,Receipt Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Autobound,Sales Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Marky,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+OVTLYR,Analytics,Partial,Check,Check vendor docs/support for API; some automation possible
+ClickConnector,Connector Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Rhym,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+pxl.to,Link Shortener,Partial,Check,Check vendor docs/support for API; some automation possible
+Minvo,AI Video,Partial,Check,Check vendor docs/support for API; some automation possible
+BIGVU,Video Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Frontly,App Builder,Partial,Check,Check vendor docs/support for API; some automation possible
+OneTake AI,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Skyblue Analytics,Analytics,Partial,Check,Check vendor docs/support for API; some automation possible
+Pulsetic,Monitoring,Yes,Ready,API for uptime and status monitoring
+BLAZE Transfer,File Transfer,Partial,Check,Check vendor docs/support for API; some automation possible
+Vitepos,POS,Partial,Check,Check vendor docs/support for API; some automation possible
+More Good Reviews,Review Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+BrandBay,Branding Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Anny.trade,Trading Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Lindo Ai,AI Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+ProductLift,Product Mgmt,Partial,Check,Check vendor docs/support for API; some automation possible
+Partnero,Affiliate Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Claritee,Design Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+Ideanote,Idea Mgmt,Partial,Check,Check vendor docs/support for API; some automation possible
+Guidejar,Guide Tool,Partial,Check,Check vendor docs/support for API; some automation possible
+AITable.ai,AI Table,Partial,Check,Check vendor docs/support for API; some automation possible
+AltText.ai,Image Alt Text,Yes,Ready,API for alt text generation
+Consolto,Video Chat,Partial,Check,Check vendor docs/support for API; some automation possible
+// ... (continue for all other products as needed)
+
+WellyBox,Expense Management,Partial,Check,Check vendor docs/support for API; some automation possible
+Directual,No-Code Backend,Partial,Check,Check vendor docs/support for API; some automation possible
+SUPERMACHINE,AI Image Generation,Partial,Check,Check vendor docs/support for API; some automation possible
+Laxis,Meeting Assistant,Partial,Check,Check vendor docs/support for API; some automation possible
+Heartbeat,Community Platform,Partial,Check,Check vendor docs/support for API; some automation possible
+RTILA,RPA/Automation,Yes,Ready,API for robotic process automation
+Keyframe Audio,Audio Library,Partial,Check,Check vendor docs/support for API; some automation possible
+UPDF,PDF Editor,Partial,Check,Check vendor docs/support for API; some automation possible
+Exclusive Addons,Elementor Addons,Partial,Check,Check vendor docs/support for API; some automation possible
+Taskade,Productivity,Partial,Check,Check vendor docs/support for API; some automation possible
+Katteb,AI Writer,Partial,Check,Check vendor docs/support for API; some automation possible
+ShortySMS,SMS Marketing,Partial,Check,Check vendor docs/support for API; some automation possible
+Night Eye,Dark Mode Extension,Partial,Check,Check vendor docs/support for API; some automation possible
+Komodo Decks,Screen Recording,Partial,Check,Check vendor docs/support for API; some automation possible
+Making Your Website Work,Templates,Unknown,Check,Check vendor docs/support for API access
+Brilliant Directories,Directory Platform,Partial,Check,Check vendor docs/support for API; some automation possible
+// ... (continue for all other products as needed) 

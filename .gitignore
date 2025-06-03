@@ -82,4 +82,23 @@ axe-a11y-report.json
 wp-config.php
 
 # Plugins with sensitive examples
-wp-content/plugins/directorist-stripe/ 
+wp-content/plugins/directorist-stripe/
+
+# Lovable.dev temporary files
+.lovable-cache/
+*.lovable-tmp
+
+# Design source files
+*.fig
+*.sketch
+*.xd
+*.psd
+*.ai
+*.svgz
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+._* 

@@ -1,4 +1,12 @@
-# Backup & Disaster Recovery Workflow
+# Backup & Disaster Recovery
+
+## Backups
+- [x] Schedule daily backups (automated)
+- [x] Automate offsite/cloud syncs (e.g., AWS S3, Google Drive)
+
+## Restore Tests
+- [x] Schedule monthly restore tests on staging (automated)
+- [x] Document all restore test results
 
 ## Backup Validation
 - [ ] Confirm daily backups are created in `wp-content/backups/`

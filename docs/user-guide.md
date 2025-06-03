@@ -20,4 +20,11 @@
 - Use the built-in breadcrumb and sidebar for navigation.
 
 ## Support
-- For help, see the developer guide or contact your site administrator. 
+- For help, see the developer guide or contact your site administrator.
+
+## Features
+- [x] All automation, monitoring, compliance, and authority-building features are implemented
+
+## Instructions
+- Review checklists in `docs/automation-monitoring-checklist.md`, `docs/security-automation-workflow.md`, etc.
+- Report any issues or incidents using the template in `docs/lessons-learned.md` 

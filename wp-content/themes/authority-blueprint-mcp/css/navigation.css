@@ -1,0 +1,98 @@
+/* OpenAI Content Generator Styles */
+.openai-generator {
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(56,142,60,0.07);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+.openai-generator h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+.openai-content-form textarea {
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  resize: vertical;
+}
+.openai-content-form .btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.openai-content-form .btn:hover,
+.openai-content-form .btn:focus {
+  background: var(--secondary-color);
+}
+.openai-content-result {
+  font-size: 1.1rem;
+  background: #f5fbe7;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  min-height: 2.5rem;
+  color: var(--text-color);
+  margin-top: 1rem;
+  word-break: break-word;
+}
+
+/* Error summary styles */
+.error-summary {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  border-radius: var(--border-radius);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.error-summary a {
+  color: #856404;
+  text-decoration: underline;
+}
+
+/* Accessible accordion styles */
+.accordion {
+  border-radius: var(--border-radius);
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(56,142,60,0.07);
+  margin: 2rem 0;
+}
+.accordion-item {
+  border-bottom: 1px solid #eee;
+}
+.accordion-item:last-child {
+  border-bottom: none;
+}
+.accordion-header {
+  margin: 0;
+}
+.accordion-button {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  outline: none;
+  transition: background var(--transition);
+}
+.accordion-button[aria-expanded="true"] {
+  background: #f5fbe7;
+}
+.accordion-panel {
+  padding: 1rem 1.5rem;
+  display: none;
+}
+.accordion-panel[aria-hidden="false"] {
+  display: block;
+} 

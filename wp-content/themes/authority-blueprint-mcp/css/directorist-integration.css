@@ -1,0 +1,100 @@
+/* Directorist Integration Styles (Niche-Agnostic)
+   Customize these styles for your directory types and add-ons as needed. */
+
+.directorist .atbd_content_module .widget {
+    border-color: #388e3c;
+}
+
+.directorist .btn.btn-primary,
+.directorist .atbd_submit_btn {
+    background-color: #388e3c;
+    border-color: #388e3c;
+}
+
+.directorist .btn.btn-primary:hover,
+.directorist .atbd_submit_btn:hover {
+    background-color: #2e7d32;
+    border-color: #2e7d32;
+}
+
+.directorist .atbd_single_listing {
+    border: 1px solid #795548;
+    background: #f5fbe7;
+}
+
+/* Example: Directory type icons (customize for your use case) */
+.service-provider-category .fas.fa-briefcase { color: #388e3c; }
+.organization-category .fas.fa-building { color: #795548; }
+.product-supplier-category .fas.fa-box { color: #2e7d32; }
+
+@media (max-width: 768px) {
+    .directorist .atbd_search_form .form-group {
+        margin-bottom: 15px;
+    }
+}
+
+.directory-hero {
+    background: linear-gradient(135deg, #388e3c, #2e7d32);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.category-card {
+    background: white;
+    border: 1px solid #795548;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.category-card i {
+    font-size: 3em;
+    color: #388e3c;
+    margin-bottom: 20px;
+}
+
+/* Directorist Listings With Map Add-on */
+.ab-mcp-listings-map {
+    border: 2px solid #388e3c;
+    background: #e8f5e9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Directorist Stripe Add-on */
+.ab-mcp-stripe-checkout {
+    background: linear-gradient(90deg, #388e3c, #2e7d32);
+    color: #fff !important;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 32px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.ab-mcp-stripe-checkout:hover {
+    background: linear-gradient(90deg, #2e7d32, #388e3c);
+}
+
+/* Directorist Pricing Plans Add-on */
+.ab-mcp-pricing-plan {
+    border: 2px solid #795548;
+    background: #f5fbe7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+} 

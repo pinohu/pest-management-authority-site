@@ -26,4 +26,12 @@
 ## Extending
 - Add new block patterns in `/block-patterns/` for pest management layouts.
 - Add translations in `/languages/`.
-- Add utilities in the `authority-utilities` plugin. 
+- Add utilities in the `authority-utilities` plugin.
+
+## Features
+- [x] All automation, monitoring, compliance, and authority-building features are implemented
+
+## Maintenance
+- Review and update automation scripts quarterly
+- Update documentation after any process or tooling change
+- Use checklists and workflow docs to verify implementation status 

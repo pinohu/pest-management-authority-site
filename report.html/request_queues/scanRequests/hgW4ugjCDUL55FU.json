@@ -1,0 +1,9 @@
+{
+	"id": "hgW4ugjCDUL55FU",
+	"json": "{\"id\":\"hgW4ugjCDUL55FU\",\"url\":\"http://localhost\",\"uniqueKey\":\"http://localhost\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"keepUrlFragment\":false,\"__crawlee\":{\"skipNavigation\":true,\"state\":4}},\"handledAt\":\"2025-06-03T00:58:13.152Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://localhost",
+	"url": "http://localhost"
+}

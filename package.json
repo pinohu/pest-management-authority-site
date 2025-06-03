@@ -1,0 +1,30 @@
+{
+  "name": "wordpress-blog",
+  "version": "1.0.0",
+  "description": "This theme supports modular, production-grade integrations with leading SaaS and automation tools. All integrations are managed under a unified \"Integrations\" admin menu with tabbed navigation for easy access and configuration.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinohu/pest-management-authority-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pinohu/pest-management-authority-site/issues"
+  },
+  "homepage": "https://github.com/pinohu/pest-management-authority-site#readme",
+  "devDependencies": {
+    "accessibility-insights-scan": "^3.2.0",
+    "eslint": "^9.28.0",
+    "lighthouse": "^12.6.1",
+    "stylelint": "^16.20.0"
+  }
+}

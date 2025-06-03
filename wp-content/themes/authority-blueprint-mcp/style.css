@@ -1,0 +1,76 @@
+/*
+Theme Name: Authority Blueprint MCP
+Theme URI: https://yourdomain.com/
+Author: Your Name
+Author URI: https://yourdomain.com/
+Description: Modern, MCP-integrated, accessible, high-performance theme for authority sites, directories, and resource hubs in any niche. Fully niche-agnostic, extensible, and production-ready.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: authority-blueprint-mcp
+Tags: accessibility-ready, custom-post-types, custom-taxonomies, directory, responsive, seo, performance, mcp, alttext, neuronwriter, insighto, pulsetic
+
+Performance Optimizations:
+- WebP image support (auto-convert JPEG/PNG to WebP)
+- Preload and preconnect for critical fonts and APIs
+- font-display: swap for Inter font
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap');
+
+:root {
+  --primary-color: #388e3c;
+  --secondary-color: #795548;
+  --background-color: #f5fbe7;
+  --text-color: #222;
+  --font-family-base: 'Inter', Arial, sans-serif;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-sm: 0.95rem;
+  --border-radius: 8px;
+  --transition: 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  background: var(--background-color);
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-base);
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+a:hover, a:focus {
+  color: var(--secondary-color);
+}
+
+/* OpenAI Content Generator Styles: see css/navigation.css for details */
+
+.btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background var(--transition);
+  display: inline-block;
+  text-align: center;
+}
+.btn:hover, .btn:focus {
+  background: var(--secondary-color);
+}
+
+/* Add more base styles and import component CSS as needed */ 

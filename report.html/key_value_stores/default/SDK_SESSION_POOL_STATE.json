@@ -1,0 +1,55 @@
+{
+  "usableSessionsCount": 2,
+  "retiredSessionsCount": 0,
+  "sessions": [
+    {
+      "id": "session_lrPIWc3ZQ3",
+      "cookieJar": {
+        "version": "tough-cookie@5.1.2",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2025-06-03T01:48:06.640Z",
+      "createdAt": "2025-06-03T00:58:06.640Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_KWAzpU4tVr",
+      "cookieJar": {
+        "version": "tough-cookie@5.1.2",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": [
+        {
+          "requestId": "hgW4ugjCDUL55FU",
+          "browserError": {
+            "errorType": "ResourceLoadFailure",
+            "message": "net::ERR_CONNECTION_REFUSED at http://localhost",
+            "stack": "Error: net::ERR_CONNECTION_REFUSED at http://localhost\n    at navigate (C:\\Users\\ohu001\\AppData\\Local\\npm-cache\\_npx\\6db55377745e415c\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\cdp\\Frame.js:183:27)\n    at async Deferred.race (C:\\Users\\ohu001\\AppData\\Local\\npm-cache\\_npx\\6db55377745e415c\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\util\\Deferred.js:36:20)\n    at async CdpFrame.goto (C:\\Users\\ohu001\\AppData\\Local\\npm-cache\\_npx\\6db55377745e415c\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\cdp\\Frame.js:149:25)\n    at async CdpPage.goto (C:\\Users\\ohu001\\AppData\\Local\\npm-cache\\_npx\\6db55377745e415c\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\api\\Page.js:574:20)\n    at async C:\\Users\\ohu001\\AppData\\Local\\npm-cache\\_npx\\6db55377745e415c\\node_modules\\accessibility-insights-scan\\dist\\ai-scan-cli.js:4529:30\n    at async PageNavigator.invokePageOperation (C:\\Users\\ohu001\\AppData\\Local\\npm-cache\\_npx\\6db55377745e415c\\node_modules\\accessibility-insights-scan\\dist\\ai-scan-cli.js:4535:30)\n    at async PageNavigator.navigatePage (C:\\Users\\ohu001\\AppData\\Local\\npm-cache\\_npx\\6db55377745e415c\\node_modules\\accessibility-insights-scan\\dist\\ai-scan-cli.js:4511:26)\n    at async PuppeteerCrawler.requestHandler [as userProvidedRequestHandler] (C:\\Users\\ohu001\\AppData\\Local\\npm-cache\\_npx\\6db55377745e415c\\node_modules\\accessibility-insights-scan\\dist\\ai-scan-cli.js:5049:24)\n    at async wrap (C:\\Users\\ohu001\\AppData\\Local\\npm-cache\\_npx\\6db55377745e415c\\node_modules\\@apify\\timeout\\cjs\\index.cjs:54:21)"
+          }
+        }
+      ],
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2025-06-03T01:48:06.645Z",
+      "createdAt": "2025-06-03T00:58:06.645Z",
+      "usageCount": 1,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    }
+  ]
+}

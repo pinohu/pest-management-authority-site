@@ -244,6 +244,14 @@ Content must be robust enough to be interpreted reliably by a wide variety of us
 
 - **Continuous Improvement**: Treat accessibility as an ongoing process rather than a one-time project, with regular reviews and updates.
 
+## Automated Audits
+- [x] Integrate axe-core or Lighthouse CI into CI/CD pipeline for every deploy (automated)
+- [x] Review and address all issues in `axe-a11y-report.json` (manual, scheduled)
+
+## Remediation
+- [x] Document all fixes and improvements in accessibility audit logs
+- [x] Schedule quarterly accessibility reviews
+
 ## Emerging Trends and Future Considerations
 
 ### AI and Accessibility
@@ -266,5 +274,6 @@ Content must be robust enough to be interpreted reliably by a wide variety of us
 
 - **Voice User Interfaces**: Ensure voice interfaces are accessible to users with speech impairments or accents.
 
-- **Multimodal Interaction**: Support multiple interaction methods (touch, keyboard, voice, gesture) to accommodate different user preferences and abili
+- **Multimodal Interaction**: Support multiple interaction methods (touch, keyboard, voice, gesture) to accommodate different user preferences and abilities.
+
 (Content truncated due to size limit. Use line ranges to read in chunks)

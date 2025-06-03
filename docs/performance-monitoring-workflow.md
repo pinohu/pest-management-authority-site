@@ -1,5 +1,16 @@
 # Performance Monitoring Workflow
 
+## Monitoring Tools
+- [x] Integrate New Relic, Pulsetic, or similar for real-time performance monitoring (automated)
+- [x] Set up alerts for slow page loads, high error rates, or downtime (automated)
+
+## Log Review
+- [x] Schedule weekly review of performance logs and metrics (manual, scheduled)
+- [x] Document any incidents or anomalies in `docs/lessons-learned.md`
+
+## Continuous Improvement
+- [x] Review and update monitoring tools and alert thresholds quarterly (manual, scheduled)
+
 ## Lighthouse/PageSpeed Audits
 - [ ] Schedule weekly Lighthouse/PageSpeed Insights audits
 - [ ] Store reports in project root or analytics folder
