@@ -101,4 +101,15 @@ wp-content/plugins/directorist-stripe/
 Thumbs.db
 ehthumbs.db
 Icon?
-._* 
+._*
+
+# Lovable.dev and workflow temp files
+lovable-exports/components/*.dev.*
+lovable-exports/styles/*.dev.*
+
+# Next.js build output
+.next/
+
+# Temporary sync files
+*.tmp
+.sync-in-progress 
