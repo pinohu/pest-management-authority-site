@@ -304,23 +304,20 @@ The following organizations establish the core standards that guide modern web d
 
 #### Framework-Specific Best Practices
 
-- **React**: 
+- **React**:
   - Use functional components with hooks
   - Implement proper memoization with useMemo and useCallback
   - Apply context API for state management
   - Use server components when appropriate
-  
-- **Vue**: 
+- **Vue**:
   - Implement the Composition API for complex components
   - Use Pinia for state management
   - Apply proper component design with props and emits
-  
-- **Angular**: 
+- **Angular**:
   - Follow the OnPush change detection strategy
   - Implement lazy loading for modules
   - Use reactive forms for complex form handling
-  
-- **Svelte**: 
+- **Svelte**:
   - Leverage Svelte's reactivity system
   - Use stores for state management
   - Apply transitions for smooth UI changes
@@ -339,4 +336,4 @@ The following organizations establish the core standards that guide modern web d
 
 - **Use modern build tools** like Vite, Webpack, or Turbopack.
 - **Implement tree shaking** to e
-(Content truncated due to size limit. Use line ranges to read in chunks)
+  (Content truncated due to size limit. Use line ranges to read in chunks)

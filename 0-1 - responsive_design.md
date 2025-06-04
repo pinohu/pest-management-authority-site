@@ -104,7 +104,7 @@ Modern CSS layout techniques like Grid and Flexbox provide powerful tools for cr
     flex-direction: row; /* Arrange items horizontally on larger screens */
     flex-wrap: wrap;
   }
-  
+
   .item {
     flex: 1 0 50%; /* Two items per row on tablets */
   }
@@ -153,11 +153,11 @@ Container queries are a newer feature that allows styles to be applied based on 
   .card {
     display: flex;
   }
-  
+
   .card-image {
     flex: 0 0 40%;
   }
-  
+
   .card-content {
     flex: 1;
   }
@@ -173,21 +173,21 @@ Responsive images ensure that users download appropriately sized images for thei
 **Using srcset and sizes**:
 
 ```html
-<img 
-  src="image-800w.jpg" 
-  srcset="image-400w.jpg 400w, image-800w.jpg 800w, image-1200w.jpg 1200w" 
-  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+<img
+  src="image-800w.jpg"
+  srcset="image-400w.jpg 400w, image-800w.jpg 800w, image-1200w.jpg 1200w"
+  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
   alt="Description of image"
->
+/>
 ```
 
 **Using picture element for art direction**:
 
 ```html
 <picture>
-  <source media="(max-width: 600px)" srcset="image-mobile.jpg">
-  <source media="(max-width: 1200px)" srcset="image-tablet.jpg">
-  <img src="image-desktop.jpg" alt="Description of image">
+  <source media="(max-width: 600px)" srcset="image-mobile.jpg" />
+  <source media="(max-width: 1200px)" srcset="image-tablet.jpg" />
+  <img src="image-desktop.jpg" alt="Description of image" />
 </picture>
 ```
 
@@ -214,7 +214,11 @@ Responsive videos maintain their aspect ratio while scaling to fit their contain
 
 ```html
 <div class="video-container">
-  <iframe src="https://www.youtube.com/embed/video-id" frameborder="0" allowfullscreen></iframe>
+  <iframe
+    src="https://www.youtube.com/embed/video-id"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
 </div>
 ```
 
@@ -235,7 +239,12 @@ Fluid typography scales smoothly between minimum and maximum sizes based on view
 body {
   font-size: clamp(
     var(--font-size-min) * 1px,
-    calc(var(--font-size-min) * 1px + (var(--font-size-max) - var(--font-size-min)) * (100vw - var(--viewport-min) * 1px) / (var(--viewport-max) - var(--viewport-min))),
+    calc(
+      var(--font-size-min) * 1px +
+        (var(--font-size-max) - var(--font-size-min)) *
+        (100vw - var(--viewport-min) * 1px) /
+        (var(--viewport-max) - var(--viewport-min))
+    ),
     var(--font-size-max) * 1px
   );
 }
@@ -286,7 +295,9 @@ Ensure interactive elements are large enough for touch interaction:
 - Adequate spacing between touch targets: at least 8 pixels
 
 ```css
-.button, .link, .interactive-element {
+.button,
+.link,
+.interactive-element {
   min-height: 44px;
   min-width: 44px;
   padding: 12px 16px;
@@ -304,15 +315,15 @@ Implement touch gestures thoughtfully:
 
 ```javascript
 // Example of implementing swipe detection with Hammer.js
-const element = document.querySelector('.swipeable');
+const element = document.querySelector(".swipeable");
 const hammer = new Hammer(element);
 
-hammer.on('swipeleft', function() {
+hammer.on("swipeleft", function () {
   // Handle left swipe
   nextSlide();
 });
 
-hammer.on('swiperight', function() {
+hammer.on("swiperight", function () {
   // Handle right swipe
   previousSlide();
 });
@@ -340,9 +351,9 @@ Since touch devices don't support hover, provide alternatives:
 
 ```javascript
 // JavaScript to toggle active class on touch
-document.querySelectorAll('.card').forEach(card => {
-  card.addEventListener('touchstart', function() {
-    this.classList.toggle('active');
+document.querySelectorAll(".card").forEach((card) => {
+  card.addEventListener("touchstart", function () {
+    this.classList.toggle("active");
   });
 });
 ```
@@ -382,7 +393,7 @@ The hamburger menu is a common pattern for collapsing navigation on smaller scre
     z-index: 100;
     padding: 2rem;
   }
-  
+
   .hamburger-icon {
     display: block;
     width: 24px;
@@ -396,12 +407,12 @@ The hamburger menu is a common pattern for collapsing navigation on smaller scre
   .menu-toggle {
     display: none;
   }
-  
+
   .main-navigation {
     display: block !important;
     position: static;
   }
-  
+
   .main-navigation ul {
     display: flex;
   }
@@ -419,11 +430,11 @@ Priority+ navigation shows the most important items and collapses others into a 
     <li><a href="/about">About</a></li>
     <!-- More items -->
   </ul>
-  
+
   <button class="more-button" aria-expanded="false" aria-controls="more-menu">
     More <span class="more-icon">+</span>
   </button>
-  
+
   <ul id="more-menu" class="hidden-links" hidden>
     <!-- Overflow items will be moved here via JavaScript -->
   </ul>
@@ -433,57 +444,57 @@ Priority+ navigation shows the most important items and collapses others into a 
 ```javascript
 // Simplified example of Priority+ navigation implementation
 function setupPriorityNav() {
-  const nav = document.querySelector('.priority-nav');
-  const visibleLinks = nav.querySelector('.visible-links');
-  const hiddenLinks = nav.querySelector('.hidden-links');
-  const moreButton = nav.querySelector('.more-button');
-  
+  const nav = document.querySelector(".priority-nav");
+  const visibleLinks = nav.querySelector(".visible-links");
+  const hiddenLinks = nav.querySelector(".hidden-links");
+  const moreButton = nav.querySelector(".more-button");
+
   function updateNav() {
     // Calculate available space and move items as needed
     const navWidth = nav.clientWidth;
     const moreButtonWidth = moreButton.clientWidth;
     const availableSpace = navWidth - moreButtonWidth;
-    
+
     let visibleItemsWidth = 0;
-    const visibleItems = visibleLinks.querySelectorAll('li');
-    
+    const visibleItems = visibleLinks.querySelectorAll("li");
+
     // Check if items need to be moved to hidden menu
     for (let i = visibleItems.length - 1; i >= 0; i--) {
       visibleItemsWidth += visibleItems[i].clientWidth;
-      
+
       if (visibleItemsWidth > availableSpace) {
         hiddenLinks.insertBefore(visibleItems[i], hiddenLinks.firstChild);
       }
     }
-    
+
     // Check if items can be moved back to visible menu
-    const hiddenItems = hiddenLinks.querySelectorAll('li');
+    const hiddenItems = hiddenLinks.querySelectorAll("li");
     if (hiddenItems.length > 0) {
       const firstHiddenItemWidth = hiddenItems[0].clientWidth;
-      
+
       if (visibleItemsWidth + firstHiddenItemWidth < availableSpace) {
         visibleLinks.appendChild(hiddenItems[0]);
       }
     }
-    
+
     // Show/hide more button based on whether there are hidden items
     moreButton.hidden = hiddenLinks.children.length === 0;
   }
-  
+
   // Toggle hidden links menu
-  moreButton.addEventListener('click', function() {
-    const expanded = this.getAttribute('aria-expanded') === 'true';
-    this.setAttribute('aria-expanded', !expanded);
+  moreButton.addEventListener("click", function () {
+    const expanded = this.getAttribute("aria-expanded") === "true";
+    this.setAttribute("aria-expanded", !expanded);
     hiddenLinks.hidden = expanded;
   });
-  
+
   // Update navigation on resize
-  window.addEventListener('resize', updateNav);
+  window.addEventListener("resize", updateNav);
   updateNav();
 }
 
 // Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', setupPriorityNav);
+document.addEventListener("DOMContentLoaded", setupPriorityNav);
 ```
 
 ### Off-Canvas Navigation
@@ -491,7 +502,11 @@ document.addEventListener('DOMContentLoaded', setupPriorityNav);
 Off-canvas navigation slides in from the side of the screen:
 
 ```html
-<button class="menu-toggle" aria-expanded="false" aria-controls="off-canvas-menu">
+<button
+  class="menu-toggle"
+  aria-expanded="false"
+  aria-controls="off-canvas-menu"
+>
   <span class="sr-only">Menu</span>
   <span class="hamburger-icon"></span>
 </button>
@@ -500,7 +515,7 @@ Off-canvas navigation slides in from the side of the screen:
   <div class="site-content">
     <!-- Main site content -->
   </div>
-  
+
   <nav id="off-canvas-menu" class="off-canvas-menu" aria-hidden="true">
     <ul>
       <li><a href="/">Home</a></li>
@@ -550,7 +565,7 @@ Off-canvas navigation slides in from the side of the screen:
   .menu-toggle {
     display: none;
   }
-  
+
   .off-canvas-menu {
     position: static;
     transform: none;
@@ -559,11 +574,11 @@ Off-canvas navigation slides in from the side of the screen:
     background: transparent;
     padding: 0;
   }
-  
+
   .off-canvas-menu ul {
     display: flex;
   }
-  
+
   .site-content {
     transform: none !important;
   }
@@ -575,6 +590,7 @@ Off-canvas navigation slides in from the side of the screen:
 ### Device Testing
 
 - **Real Device Testing**: Test on actual devices whenever possible, including:
+
   - Various smartphones (iOS and Android)
   - Tablets (different sizes and orientations)
   - Laptops and desktops with different screen sizes
@@ -596,30 +612,30 @@ Implement automated testing for responsive designs:
 
 ```javascript
 // Example using Cypress for responsive testing
-describe('Responsive Navigation', () => {
-  const sizes = ['iphone-6', 'ipad-2', [1200, 800]];
-  
-  sizes.forEach(size => {
+describe("Responsive Navigation", () => {
+  const sizes = ["iphone-6", "ipad-2", [1200, 800]];
+
+  sizes.forEach((size) => {
     it(`Should display navigation correctly at ${size} viewport`, () => {
       if (Array.isArray(size)) {
         cy.viewport(size[0], size[1]);
       } else {
         cy.viewport(size);
       }
-      
-      cy.visit('/');
-      
-      if (size === 'iphone-6') {
+
+      cy.visit("/");
+
+      if (size === "iphone-6") {
         // Check mobile navigation
-        cy.get('.menu-toggle').should('be.visible');
-        cy.get('.main-navigation').should('not.be.visible');
-        cy.get('.menu-toggle').click();
-        cy.get('.main-navigation').should('be.visible');
+        cy.get(".menu-toggle").should("be.visible");
+        cy.get(".main-navigation").should("not.be.visible");
+        cy.get(".menu-toggle").click();
+        cy.get(".main-navigation").should("be.visible");
       } else {
         // Check desktop navigation
-        cy.get('.menu-toggle').should('not.exist');
-        cy.get('.main-navigation').should('be.visible');
-        cy.get('.main-navigation li').should('have.length.at.least', 4);
+        cy.get(".menu-toggle").should("not.exist");
+        cy.get(".main-navigation").should("be.visible");
+        cy.get(".main-navigation li").should("have.length.at.least", 4);
       }
     });
   });
@@ -632,12 +648,13 @@ describe('Responsive Navigation', () => {
 
 Establish performance budgets for different device categories:
 
-- **Mobile**: 
+- **Mobile**:
+
   - Total page weight: < 1MB
   - Critical rendering path: < 1s
   - Time to Interactive: < 3s
 
-- **Desktop**: 
+- **Desktop**:
   - Total page weight: < 2MB
   - Critical rendering path: < 0.8s
   - Time to Interactive: < 2s
@@ -651,47 +668,47 @@ Establish performance budgets for different device categories:
 
 ```javascript
 // Service Worker registration example
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      console.log('ServiceWorker registration successful');
-    }, function(err) {
-      console.log('ServiceWorker registration failed: ', err);
-    });
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("/sw.js").then(
+      function (registration) {
+        console.log("ServiceWorker registration successful");
+      },
+      function (err) {
+        console.log("ServiceWorker registration failed: ", err);
+      },
+    );
   });
 }
 ```
 
 ```javascript
 // Basic service worker implementation (sw.js)
-const CACHE_NAME = 'my-site-cache-v1';
+const CACHE_NAME = "my-site-cache-v1";
 const urlsToCache = [
-  '/',
-  '/styles/main.css',
-  '/scripts/main.js',
-  '/images/logo.png'
+  "/",
+  "/styles/main.css",
+  "/scripts/main.js",
+  "/images/logo.png",
 ];
 
-self.addEventListener('install', function(event) {
+self.addEventListener("install", function (event) {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        return cache.addAll(urlsToCache);
-      })
+    caches.open(CACHE_NAME).then(function (cache) {
+      return cache.addAll(urlsToCache);
+    }),
   );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener("fetch", function (event) {
   event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
+    caches.match(event.request).then(function (response) {
+      // Cache hit - return response
+      if (response) {
+        return response;
       }
-    )
+      return fetch(event.request);
+    }),
   );
 });
 ```
@@ -702,7 +719,7 @@ Implement lazy loading for images and non-critical content:
 
 ```html
 <!-- Native lazy loading for images -->
-<img src="image.jpg" loading="lazy" alt="Description">
+<img src="image.jpg" loading="lazy" alt="Description" />
 
 <!-- Lazy loading for iframes -->
 <iframe src="video-embed.html" loading="lazy"></iframe>
@@ -711,12 +728,15 @@ Implement lazy loading for images and non-critical content:
 For browsers that don't support native lazy loading, use the Intersection Observer API:
 
 ```javascript
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const lazyImages = document.querySelectorAll("img.lazy");
-  
+
   if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
+    let lazyImageObserver = new IntersectionObserver(function (
+      entries,
+      observer,
+    ) {
+      entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           let lazyImage = entry.target;
           lazyImage.src = lazyImage.dataset.src;
@@ -726,8 +746,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     });
-    
-    lazyImages.forEach(function(lazyImage) {
+
+    lazyImages.forEach(function (lazyImage) {
       lazyImageObserver.observe(lazyImage);
     });
   } else {

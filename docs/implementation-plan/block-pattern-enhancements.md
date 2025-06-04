@@ -1,14 +1,17 @@
 # Block Pattern Enhancements Implementation Plan
 
 ## Background and Motivation
+
 The Authority Blueprint theme leverages block patterns for rapid, consistent content creation. The architecture blueprint calls for a wide range of content types (FAQ, comparison, glossary, resource list, case study, etc.) that are not yet fully represented in the current block patterns directory.
 
 ## Key Challenges and Analysis
+
 - Ensuring new patterns are accessible, responsive, and SEO-friendly
 - Aligning pattern structure with content hub, cluster, and conversion page needs
 - Supporting easy customization and extensibility
 
 ## High-level Task Breakdown
+
 - [ ] Audit existing block patterns and identify gaps
 - [ ] Define requirements and wireframes for each new pattern (FAQ, comparison, glossary, resource list, case study, etc.)
 - [ ] Implement each pattern as a PHP file in block-patterns/
@@ -17,6 +20,7 @@ The Authority Blueprint theme leverages block patterns for rapid, consistent con
 - [ ] Document usage in README
 
 ## Project Status Board
+
 - [x] Block pattern audit complete
 - [x] Requirements defined
 - [x] FAQ Section pattern implemented
@@ -32,11 +36,13 @@ The Authority Blueprint theme leverages block patterns for rapid, consistent con
 - [ ] Documentation updated
 
 ## Executor's Feedback or Assistance Requests
-- None yet 
+
+- None yet
 
 ## Block Pattern Audit Results
 
 **Current Patterns:**
+
 - accessibility-announcement
 - content-hub
 - cta-section
@@ -51,6 +57,7 @@ The Authority Blueprint theme leverages block patterns for rapid, consistent con
 - hero
 
 **Missing (per blueprint):**
+
 - FAQ section
 - Comparison table/list
 - Glossary/definition list
@@ -60,7 +67,7 @@ The Authority Blueprint theme leverages block patterns for rapid, consistent con
 - Conversion/landing page pattern
 - Author/expert bio
 
-- [x] Block pattern audit complete 
+- [x] Block pattern audit complete
 
 ## Requirements & Wireframes for New Patterns
 
@@ -73,13 +80,15 @@ The Authority Blueprint theme leverages block patterns for rapid, consistent con
 - **Conversion/Landing Page:** Hero, benefits/features, testimonials, form/CTA, trust indicators, minimal distractions.
 - **Author/Expert Bio:** Photo, name, credentials, bio, social/contact links, related content.
 
-- [x] Requirements/wireframes defined 
+- [x] Requirements/wireframes defined
 
 ## Lessons Learned
+
 - Use semantic table markup for accessibility and mobile-first CSS for stacking.
-- ARIA labels and icons improve clarity for all users. 
+- ARIA labels and icons improve clarity for all users.
 
 ## Status
+
 - [x] All block pattern enhancements implemented
 - [x] Documentation and review schedules are current
-- [x] Project is fully up to date as of latest audit 
+- [x] Project is fully up to date as of latest audit

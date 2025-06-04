@@ -6,37 +6,21 @@
   "title": "Categories",
   "name": "directorist/all-categories",
   "description": "Create directory category listing grid view and list view.",
-  "keywords": [
-    "all categories",
-    "category",
-    "taxonomy",
-    "term"
-  ],
+  "keywords": ["all categories", "category", "taxonomy", "term"],
   "attributes": {
     "view": {
       "type": "string",
-      "enum": [
-        "grid",
-        "list"
-      ],
+      "enum": ["grid", "list"],
       "default": "grid"
     },
     "orderby": {
       "type": "string",
-      "enum": [
-        "id",
-        "count",
-        "name",
-        "slug"
-      ],
+      "enum": ["id", "count", "name", "slug"],
       "default": "id"
     },
     "order": {
       "type": "string",
-      "enum": [
-        "asc",
-        "desc"
-      ],
+      "enum": ["asc", "desc"],
       "default": "desc"
     },
     "cat_per_page": {
@@ -45,13 +29,7 @@
     },
     "columns": {
       "type": "number",
-      "enum": [
-        1,
-        2,
-        3,
-        4,
-        6
-      ],
+      "enum": [1, 2, 3, 4, 6],
       "default": 3
     },
     "slug": {

@@ -215,7 +215,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/* global window, exports, define */
     /**
      * export to either browser or node.js
      */
-    /* eslint-disable quote-props */
+     
     if (true) {
         exports.sprintf = sprintf
         exports.vsprintf = vsprintf
@@ -234,8 +234,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/* global window, exports, define */
 		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))
         }
     }
-    /* eslint-enable quote-props */
-}(); // eslint-disable-line
+     
+}();  
 
 
 /***/ })
@@ -511,7 +511,7 @@ var sprintf_default = /*#__PURE__*/__webpack_require__.n(sprintf);
  *
  * @param {...*} args Arguments to pass to `console.error`
  */
-const logErrorOnce = memize(console.error); // eslint-disable-line no-console
+const logErrorOnce = memize(console.error);  
 
 /**
  * Returns a formatted string. If an error occurs in applying the format, the

@@ -6,12 +6,7 @@
   "name": "directorist/location",
   "title": "Single Location",
   "description": "Create directory listing locations grid view, list view or map view.",
-  "keywords": [
-    "all locations",
-    "location",
-    "taxonomy",
-    "term"
-  ],
+  "keywords": ["all locations", "location", "taxonomy", "term"],
   "attributes": {
     "view": {
       "type": "string",

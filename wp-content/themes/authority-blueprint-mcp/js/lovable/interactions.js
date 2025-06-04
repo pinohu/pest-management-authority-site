@@ -1,1 +1,1 @@
-// Lovable UI Interactions - interactions.js 
+// Lovable UI Interactions - interactions.js

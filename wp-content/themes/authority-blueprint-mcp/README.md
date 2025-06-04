@@ -3,9 +3,11 @@
 **Note:** This theme is now fully niche-agnostic. All demo content, directory types, and templates are generic and easily customizable for any industry or use case.
 
 ## Overview
+
 A modern, MCP-integrated, accessible, high-performance WordPress theme for authority sites, directories, and resource hubs in any niche.
 
 ## Features
+
 - Modern CSS Grid/Flexbox, mobile-first, responsive
 - Accessibility (WCAG 2.2 AA), ARIA, skip links, focus management
 - Custom post types: pillar, cluster, resource, case_study, glossary, faq, comparison, tool, testimonial, curated_list, author_expert
@@ -30,6 +32,7 @@ A modern, MCP-integrated, accessible, high-performance WordPress theme for autho
 - i18n ready, legal statements included
 
 ## Setup
+
 1. Copy the theme to `wp-content/themes/authority-blueprint-mcp`.
 2. Activate in WordPress admin.
 3. Install and activate Directorist plugin.
@@ -38,6 +41,7 @@ A modern, MCP-integrated, accessible, high-performance WordPress theme for autho
 6. Go to **Settings → API Integrations** to enter your API keys for all services you wish to use.
 
 ## API Integrations
+
 - **AiTable:** Enter API key and Table ID. Use for dynamic directory/resources. Sync or display via block/shortcode.
 - **Reoon Email Verifier:** Enter API key. Email validation on registration, directory, and contact forms.
 - **Acumbamail:** Enter API key. Newsletter signup block/shortcode, campaign automation.
@@ -64,17 +68,20 @@ A frontend UI for AI-powered content generation is available on the front page. 
   - The endpoint is public for demo; restrict as needed for production.
 
 ## Customization
+
 - Use the Customizer for hero, colors, and typography.
 - Edit `/inc/` files for CPTs, taxonomies, and enhancements.
 - Add/modify block patterns in `/block-patterns/`.
 - Update `/css/` and `/js/` for custom styles/scripts.
 
 ## Development
+
 - Follows WordPress coding standards.
 - All API integrations are modular and secure.
 - Add tests in `/tests/` as needed.
 
 ## License
+
 GPL v2 or later.
 
 ## Integrations: Default Feature Scaffolds
@@ -96,21 +103,25 @@ GPL v2 or later.
 - **Automated a11y Testing:** On post/page save, a11y MCP audits the page and reports issues as admin notices (API key required).
 
 ## Performance Enhancements
+
 - **WebP Image Support:** JPEG/PNG images are auto-converted to WebP for modern browsers.
 - **Font Preloading & Resource Hints:** Critical fonts and MCP APIs are preloaded/preconnected for faster rendering.
 - **Async/Defer JS:** Non-critical JS (navigation) is deferred for faster page load.
 
 ## SEO Enhancements
+
 - **Automated Meta/OG/Canonical Tags:** All posts/pages output Open Graph, meta description, and canonical tags automatically.
 - **FAQPage Schema:** If FAQ accordion is present, outputs FAQPage schema for rich results.
 
 ## Mobile Experience Enhancements
+
 - **Block Patterns:** FAQ accordion, sticky CTA, and comparison cards for mobile-first layouts.
 - **Responsive Images:** srcset and WebP for mobile optimization.
 - **Font-size Adjustments:** Improved readability on small screens.
 - **Mobile a11y Testing Reminder:** Admin notice prompts for real device accessibility testing.
 
 ## Integrations: Live Demo & Backend Logic
+
 - **AiTable:** Directory/resource sync with live data display.
 - **Reoon:** Email validation with live API check and error summary.
 - **Acumbamail:** Newsletter signup with live subscription and error summary.
@@ -118,16 +129,19 @@ GPL v2 or later.
 - **Printful:** Product grid with live data from Printful API.
 
 ## Security & Internationalization
+
 - **Security:** API keys are securely managed. For vulnerability monitoring, use WPScan or similar tools. Follow WordPress best practices for file permissions and updates.
 - **Internationalization:** Theme is translation-ready (text domain: authority-blueprint-mcp). Can be extended with WPML/Polylang for multilingual sites.
 
 ## Developer Documentation
+
 - **Extending Integrations:** Add new MCP/API integrations in /inc/ as modular PHP files. Register REST endpoints as needed.
 - **Customizing Frontend Blocks:** Add or modify partials in /parts/ and register new block patterns in functions.php.
 - **REST Endpoints:** All AJAX/REST endpoints are registered under /wp-json/ab-mcp/v1/.
 - **API Keys:** Managed via theme settings or environment variables.
 
 ## New Features
+
 - **Custom XML Sitemap:** All custom post types and taxonomies are included at /sitemap.xml for SEO completeness.
 - **Editorial Workflow Tool:** Admin page for content calendar, review status, and audit scheduling. Accessible from the WP admin menu.
 
@@ -143,12 +157,15 @@ This theme automatically sets up all demo content (pages, menus, widgets, homepa
 - All code is in functions.php, fully documented for customization
 
 **To customize for your niche:**
+
 - Edit the `$pages` and `$menus` arrays in `functions.php` (see comments)
 
 **To re-run the automation:**
+
 - Delete the `ab_mcp_demo_content_installed` option from the WordPress options table (e.g., via WP-CLI or phpMyAdmin)
 
 **Best Practices:**
+
 - The automation is idempotent and will not create duplicate content on re-activation
 - All content is created using WordPress core APIs for maximum compatibility
 
@@ -183,4 +200,4 @@ This theme automatically sets up all demo content (pages, menus, widgets, homepa
 - To add a new starter kit, create a PHP file in `/inc/niche-packs/` following the provided examples.
 - The core theme remains fully niche-agnostic and untouched.
 
---- 
+---

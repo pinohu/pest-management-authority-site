@@ -16,19 +16,19 @@ Performance Optimizations:
 - font-display: swap for Inter font
 */
 
-@import url('https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap");
 
 :root {
   --primary-color: #388e3c;
   --secondary-color: #795548;
   --background-color: #f5fbe7;
   --text-color: #222;
-  --font-family-base: 'Inter', Arial, sans-serif;
+  --font-family-base: "Inter", Arial, sans-serif;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
   --font-size-sm: 0.95rem;
   --border-radius: 8px;
-  --transition: 0.2s cubic-bezier(.4,0,.2,1);
+  --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -40,7 +40,12 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-family-base);
   color: var(--primary-color);
   margin-top: 0;
@@ -51,7 +56,8 @@ a {
   text-decoration: none;
   transition: color var(--transition);
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: var(--secondary-color);
 }
 
@@ -69,8 +75,9 @@ a:hover, a:focus {
   display: inline-block;
   text-align: center;
 }
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background: var(--secondary-color);
 }
 
-/* Add more base styles and import component CSS as needed */ 
+/* Add more base styles and import component CSS as needed */

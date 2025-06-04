@@ -74,12 +74,12 @@ __webpack_require__.d(__webpack_exports__, {
  */
 function validateNamespace(namespace) {
   if ('string' !== typeof namespace || '' === namespace) {
-    // eslint-disable-next-line no-console
+     
     console.error('The namespace must be a non-empty string.');
     return false;
   }
   if (!/^[a-zA-Z][a-zA-Z0-9_.\-\/]*$/.test(namespace)) {
-    // eslint-disable-next-line no-console
+     
     console.error('The namespace can only contain numbers, letters, dashes, periods, underscores and slashes.');
     return false;
   }
@@ -99,17 +99,17 @@ function validateNamespace(namespace) {
  */
 function validateHookName(hookName) {
   if ('string' !== typeof hookName || '' === hookName) {
-    // eslint-disable-next-line no-console
+     
     console.error('The hook name must be a non-empty string.');
     return false;
   }
   if (/^__/.test(hookName)) {
-    // eslint-disable-next-line no-console
+     
     console.error('The hook name cannot begin with `__`.');
     return false;
   }
   if (!/^[a-zA-Z][a-zA-Z0-9_.-]*$/.test(hookName)) {
-    // eslint-disable-next-line no-console
+     
     console.error('The hook name can only contain numbers, letters, dashes, periods and underscores.');
     return false;
   }
@@ -153,14 +153,14 @@ function createAddHook(hooks, storeKey) {
       return;
     }
     if ('function' !== typeof callback) {
-      // eslint-disable-next-line no-console
+       
       console.error('The hook callback must be a function.');
       return;
     }
 
     // Validate numeric priority
     if ('number' !== typeof priority) {
-      // eslint-disable-next-line no-console
+       
       console.error('If specified, the hook priority must be a number.');
       return;
     }

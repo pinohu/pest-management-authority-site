@@ -106,6 +106,7 @@ All patterns are mobile-first, accessible, and ready for use in the block editor
 # Build & Development Guide
 
 ## Docker Usage
+
 - `docker compose up -d` — Start all services
 - `docker compose exec wpcli wp core update` — Update WordPress core
 - `docker compose exec wpcli wp plugin update --all` — Update all plugins
@@ -113,32 +114,39 @@ All patterns are mobile-first, accessible, and ready for use in the block editor
 - `docker compose exec wpcli wp db export /var/www/html/backup.sql` — Backup database
 
 ## Security Best Practices
+
 - File editing disabled in dashboard
 - SSL enforced for admin
 - Sensitive files protected via .htaccess
 - Debugging disabled in production
 
 ## Performance
+
 - Object caching enabled (add Redis/Memcached for best results)
 - PHP memory limits increased
 - Image optimization and lazy loading recommended
 
 ## Theme/Plugin Development
+
 - Use WP-CLI for scaffolding and management
 - Custom block styles and variations supported
 - See `/wp-content/themes/authority-blueprint` for theme structure
 
 ## Automation
+
 - Use WP-CLI in Docker for backups, updates, and migrations
 - Example: `docker compose exec wpcli wp search-replace 'oldurl' 'newurl' --skip-columns=guid`
 
 ## Testing
+
 - Add PHPUnit for backend, Cypress for frontend
 - Use GitHub Actions for CI/CD
 
 ## Accessibility & SEO
+
 - Run a11y audits regularly
 - Use semantic HTML and ARIA best practices
 
 ## Further Reading
-- See referenced best practices docs in `/` for architecture, SEO, accessibility, and more. 
+
+- See referenced best practices docs in `/` for architecture, SEO, accessibility, and more.

@@ -6,12 +6,7 @@
   "title": "Sign In & Sign Up",
   "name": "directorist/signin-signup",
   "description": "Create user sign in and sign up form.",
-  "keywords": [
-    "login",
-    "registration",
-    "sign in",
-    "sign up"
-  ],
+  "keywords": ["login", "registration", "sign in", "sign up"],
   "supports": {
     "html": false
   },

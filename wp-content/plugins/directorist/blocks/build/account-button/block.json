@@ -6,13 +6,7 @@
   "title": "Account Button",
   "category": "directorist-blocks-collection",
   "description": "Directorist login-registration popup with account management dropdown menu.",
-  "keywords": [
-    "directorist",
-    "account",
-    "popup",
-    "avatar",
-    "navigation"
-  ],
+  "keywords": ["directorist", "account", "popup", "avatar", "navigation"],
   "attributes": {
     "showDashboardMenu": {
       "type": "boolean",
@@ -103,10 +97,7 @@
     },
     "spacing": {
       "__experimentalSkipSerialization": true,
-      "padding": [
-        "horizontal",
-        "vertical"
-      ],
+      "padding": ["horizontal", "vertical"],
       "__experimentalDefaultControls": {
         "padding": true
       }
@@ -145,8 +136,5 @@
   "editorStyle": "file:./editor.css",
   "style": "file:./style-index.css",
   "render": "file:./render.php",
-  "script": [
-    "directorist-account",
-    "file:./script.js"
-  ]
+  "script": ["directorist-account", "file:./script.js"]
 }

@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main, develop, 'feature/*', 'bugfix/*']
+    branches: [main, develop, "feature/*", "bugfix/*"]
   pull_request:
     branches: [main, develop]
 
@@ -14,7 +14,7 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
+          php-version: "8.1"
       - name: PHP Lint
         run: find . -name '*.php' -exec php -l {} \;
       - name: JS Lint
@@ -31,10 +31,10 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
+          php-version: "8.1"
       - name: Install Composer dependencies
         run: |
           if [ -f composer.json ]; then composer install; fi
       - name: Run PHPUnit
         run: |
-          if [ -f vendor/bin/phpunit ]; then vendor/bin/phpunit; fi 
+          if [ -f vendor/bin/phpunit ]; then vendor/bin/phpunit; fi

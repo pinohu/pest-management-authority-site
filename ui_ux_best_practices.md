@@ -39,24 +39,28 @@ As design tools become more accessible and AI-powered, the value of a UX profess
 Current UI design trends should be implemented strategically rather than followed blindly. The most effective trends in 2025 include:
 
 #### Bento Grid Layouts
+
 - Organize content into distinct, modular containers
 - Prioritize content without unnecessary distractions
 - Create visual hierarchy that guides users through information
 - Maintain flexibility to arrange elements creatively while preserving visual harmony
 
 #### 3D Elements and Immersive Design
+
 - Add depth and dimension to create more engaging interfaces
 - Incorporate realistic textures, shapes, and fluid movements
 - Enhance functionality with interactive elements like 360° product views
 - Balance visual richness with performance considerations
 
 #### Kinetic Typography
+
 - Use motion to capture brand essence and user attention
 - Implement directional movement, transformations, color shifts, and size variations
 - Direct user attention to important information through animated text
 - Create memorable experiences through dynamic text interactions
 
 #### Thoughtful Visual Effects
+
 - Apply blur and grain effects to add depth and tactile feeling
 - Create low-light interfaces (evolution of dark mode) with muted tones and softer contrasts
 - Design with digital well-being in mind, reducing eye strain and visual fatigue

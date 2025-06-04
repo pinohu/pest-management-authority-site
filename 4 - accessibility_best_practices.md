@@ -245,10 +245,12 @@ Content must be robust enough to be interpreted reliably by a wide variety of us
 - **Continuous Improvement**: Treat accessibility as an ongoing process rather than a one-time project, with regular reviews and updates.
 
 ## Automated Audits
+
 - [x] Integrate axe-core or Lighthouse CI into CI/CD pipeline for every deploy (automated)
 - [x] Review and address all issues in `axe-a11y-report.json` (manual, scheduled)
 
 ## Remediation
+
 - [x] Document all fixes and improvements in accessibility audit logs
 - [x] Schedule quarterly accessibility reviews
 

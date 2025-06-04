@@ -6,12 +6,7 @@
   "title": "Search Result",
   "name": "directorist/search-result",
   "description": "Create directory search result grid view, list view or map view.",
-  "keywords": [
-    "all listings",
-    "search",
-    "result",
-    "form"
-  ],
+  "keywords": ["all listings", "search", "result", "form"],
   "attributes": {
     "view": {
       "type": "string",

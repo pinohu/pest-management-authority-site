@@ -16,11 +16,7 @@
   "attributes": {
     "styleDisplay": {
       "type": "string",
-      "enum": [
-        "icon",
-        "text",
-        "icon_and_text"
-      ],
+      "enum": ["icon", "text", "icon_and_text"],
       "default": "icon"
     },
     "textAlign": {
@@ -108,10 +104,7 @@
     },
     "spacing": {
       "__experimentalSkipSerialization": true,
-      "padding": [
-        "horizontal",
-        "vertical"
-      ],
+      "padding": ["horizontal", "vertical"],
       "__experimentalDefaultControls": {
         "padding": true
       }

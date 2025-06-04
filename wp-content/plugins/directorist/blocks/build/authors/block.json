@@ -6,12 +6,7 @@
   "name": "directorist/all-authors",
   "title": "Authors",
   "description": "Create authors grid.",
-  "keywords": [
-    "all authors",
-    "authors grid"
-  ],
+  "keywords": ["all authors", "authors grid"],
   "attributes": {},
-  "editorScript": [
-    "file:./index.js"
-  ]
+  "editorScript": ["file:./index.js"]
 }

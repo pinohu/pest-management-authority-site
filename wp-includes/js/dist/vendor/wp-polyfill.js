@@ -221,11 +221,11 @@ module.exports =
   // eslint-disable-next-line es/no-global-this -- safe
   check(typeof globalThis == 'object' && globalThis) ||
   check(typeof window == 'object' && window) ||
-  // eslint-disable-next-line no-restricted-globals -- safe
+   
   check(typeof self == 'object' && self) ||
   check(typeof global == 'object' && global) ||
   check(typeof this == 'object' && this) ||
-  // eslint-disable-next-line no-new-func -- fallback
+   
   (function () { return this; })() || Function('return this')();
 
 
@@ -1135,7 +1135,7 @@ var makeBuiltIn = module.exports = function (value, name, options) {
 };
 
 // add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative
-// eslint-disable-next-line no-extend-native -- required
+ 
 Function.prototype.toString = makeBuiltIn(function toString() {
   return isCallable(this) && getInternalState(this).source || inspectSource(this);
 }, 'toString');
@@ -1417,10 +1417,10 @@ var createMethod = function (IS_INCLUDES) {
     var index = toAbsoluteIndex(fromIndex, length);
     var value;
     // Array#includes uses SameValueZero equality algorithm
-    // eslint-disable-next-line no-self-compare -- NaN check
+     
     if (IS_INCLUDES && el !== el) while (length > index) {
       value = O[index++];
-      // eslint-disable-next-line no-self-compare -- NaN check
+       
       if (value !== value) return true;
     // Array#indexOf ignores holes, Array#includes - not
     } else for (;length > index; index++) {
@@ -1471,7 +1471,7 @@ var trunc = __webpack_require__(61);
 // https://tc39.es/ecma262/#sec-tointegerorinfinity
 module.exports = function (argument) {
   var number = +argument;
-  // eslint-disable-next-line no-self-compare -- NaN check
+   
   return number !== number || number === 0 ? 0 : trunc(number);
 };
 
@@ -1664,7 +1664,7 @@ var NullProtoObjectViaActiveX = function (activeXDocument) {
   activeXDocument.write(scriptTag(''));
   activeXDocument.close();
   var temp = activeXDocument.parentWindow.Object;
-  // eslint-disable-next-line no-useless-assignment -- avoid memory leak
+   
   activeXDocument = null;
   return temp;
 };
@@ -2244,7 +2244,7 @@ module.exports = function (name) {
       return globalThis.process.getBuiltinModule(name);
     } catch (error) { /* empty */ }
     try {
-      // eslint-disable-next-line no-new-func -- safe
+       
       return Function('return require("' + name + '")')();
     } catch (error) { /* empty */ }
   }
@@ -3184,7 +3184,7 @@ for (NAME in BigIntArrayConstructorsList) {
 
 // WebKit bug - typed arrays constructors prototype is Object.prototype
 if (!NATIVE_ARRAY_BUFFER_VIEWS || !isCallable(TypedArray) || TypedArray === Function.prototype) {
-  // eslint-disable-next-line no-shadow -- safe
+   
   TypedArray = function TypedArray() {
     throw new TypeError('Incorrect invocation');
   };
@@ -3294,7 +3294,7 @@ module.exports = !fails(function () {
 
 "use strict";
 
-/* eslint-disable no-proto -- safe */
+ 
 var uncurryThisAccessor = __webpack_require__(85);
 var isObject = __webpack_require__(19);
 var requireObjectCoercible = __webpack_require__(15);
@@ -3398,7 +3398,7 @@ var exportTypedArrayMethod = ArrayBufferViewCore.exportTypedArrayMethod;
 
 var PROPER_ORDER = !!function () {
   try {
-    // eslint-disable-next-line no-throw-literal, es/no-typed-arrays, es/no-array-prototype-with -- required for testing
+    // eslint-disable-next-line es/no-typed-arrays, es/no-array-prototype-with -- required for testing
     new Int8Array(1)['with'](2, { valueOf: function () { throw 8; } });
   } catch (error) {
     // some early implementations, like WebKit, does not follow the final semantic

@@ -66,9 +66,10 @@ Understanding these engines helps developers anticipate compatibility issues, as
 ### Feature Detection vs. Browser Detection
 
 **Feature Detection** (Recommended):
+
 ```javascript
 // Feature detection example
-if ('IntersectionObserver' in window) {
+if ("IntersectionObserver" in window) {
   // Use Intersection Observer API
 } else {
   // Use fallback approach
@@ -76,16 +77,18 @@ if ('IntersectionObserver' in window) {
 ```
 
 **Browser Detection** (Generally Discouraged):
+
 ```javascript
 // Browser detection example - avoid when possible
-if (navigator.userAgent.indexOf('Chrome') !== -1) {
+if (navigator.userAgent.indexOf("Chrome") !== -1) {
   // Chrome-specific code
-} else if (navigator.userAgent.indexOf('Firefox') !== -1) {
+} else if (navigator.userAgent.indexOf("Firefox") !== -1) {
   // Firefox-specific code
 }
 ```
 
 Feature detection is strongly preferred because:
+
 - It tests for the actual capability rather than making assumptions based on the browser
 - It's more future-proof as browsers evolve
 - It accounts for users who may have disabled certain features
@@ -104,26 +107,32 @@ Progressive enhancement is an approach that starts with a basic, functional expe
 
 <script>
   // Basic functionality works everywhere
-  document.querySelector('.share-button').addEventListener('click', function() {
-    window.location.href = 'mailto:?subject=Check this out&body=' + window.location.href;
-  });
-  
+  document
+    .querySelector(".share-button")
+    .addEventListener("click", function () {
+      window.location.href =
+        "mailto:?subject=Check this out&body=" + window.location.href;
+    });
+
   // Enhanced functionality for browsers that support Web Share API
   if (navigator.share) {
-    document.querySelector('.share-button').addEventListener('click', async function(event) {
-      event.preventDefault();
-      try {
-        await navigator.share({
-          title: document.title,
-          url: window.location.href
-        });
-        console.log('Shared successfully');
-      } catch (error) {
-        console.log('Error sharing:', error);
-        // Fall back to basic functionality
-        window.location.href = 'mailto:?subject=Check this out&body=' + window.location.href;
-      }
-    });
+    document
+      .querySelector(".share-button")
+      .addEventListener("click", async function (event) {
+        event.preventDefault();
+        try {
+          await navigator.share({
+            title: document.title,
+            url: window.location.href,
+          });
+          console.log("Shared successfully");
+        } catch (error) {
+          console.log("Error sharing:", error);
+          // Fall back to basic functionality
+          window.location.href =
+            "mailto:?subject=Check this out&body=" + window.location.href;
+        }
+      });
   }
 </script>
 ```
@@ -146,7 +155,7 @@ Graceful degradation is the complementary approach to progressive enhancement, f
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .grid-container > * {
     flex: 0 0 calc(33.333% - 20px);
     margin: 10px;
@@ -177,36 +186,36 @@ Graceful degradation is the complementary approach to progressive enhancement, f
 
 ```javascript
 // Example using Jest and Puppeteer for cross-browser testing
-describe('Button Component', () => {
+describe("Button Component", () => {
   let browser;
   let page;
-  
+
   beforeAll(async () => {
     browser = await puppeteer.launch({
       headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
     page = await browser.newPage();
-    await page.goto('http://localhost:3000/test-page');
+    await page.goto("http://localhost:3000/test-page");
   });
-  
+
   afterAll(async () => {
     await browser.close();
   });
-  
-  test('Button should be clickable and change state', async () => {
-    await page.waitForSelector('.test-button');
-    
+
+  test("Button should be clickable and change state", async () => {
+    await page.waitForSelector(".test-button");
+
     // Initial state
-    let buttonText = await page.$eval('.test-button', el => el.textContent);
-    expect(buttonText).toBe('Click Me');
-    
+    let buttonText = await page.$eval(".test-button", (el) => el.textContent);
+    expect(buttonText).toBe("Click Me");
+
     // Click the button
-    await page.click('.test-button');
-    
+    await page.click(".test-button");
+
     // Check state after click
-    buttonText = await page.$eval('.test-button', el => el.textContent);
-    expect(buttonText).toBe('Clicked!');
+    buttonText = await page.$eval(".test-button", (el) => el.textContent);
+    expect(buttonText).toBe("Clicked!");
   });
 });
 ```
@@ -215,20 +224,20 @@ describe('Button Component', () => {
 
 ```javascript
 // Example using Cypress and Percy for visual testing
-describe('Homepage', () => {
-  it('should display correctly across browsers', () => {
-    cy.visit('/');
-    cy.get('.main-content').should('be.visible');
-    
+describe("Homepage", () => {
+  it("should display correctly across browsers", () => {
+    cy.visit("/");
+    cy.get(".main-content").should("be.visible");
+
     // Take a snapshot for visual comparison
-    cy.percySnapshot('Homepage');
-    
+    cy.percySnapshot("Homepage");
+
     // Test responsive layouts
-    cy.viewport('iphone-x');
-    cy.percySnapshot('Homepage on iPhone X');
-    
+    cy.viewport("iphone-x");
+    cy.percySnapshot("Homepage on iPhone X");
+
     cy.viewport(1200, 800);
-    cy.percySnapshot('Homepage on Desktop');
+    cy.percySnapshot("Homepage on Desktop");
   });
 });
 ```
@@ -238,6 +247,7 @@ describe('Homepage', () => {
 Create a comprehensive checklist for manual cross-browser testing:
 
 1. **Visual Appearance**:
+
    - Layout integrity
    - Typography and font rendering
    - Color consistency
@@ -245,6 +255,7 @@ Create a comprehensive checklist for manual cross-browser testing:
    - Responsive behavior
 
 2. **Functionality**:
+
    - Navigation and links
    - Form submission and validation
    - Interactive elements (buttons, dropdowns, etc.)
@@ -252,6 +263,7 @@ Create a comprehensive checklist for manual cross-browser testing:
    - Authentication flows
 
 3. **Performance**:
+
    - Loading times
    - Scrolling smoothness
    - Animation performance
@@ -270,7 +282,10 @@ Using a CSS reset or normalization library helps establish a consistent baseline
 
 ```html
 <!-- Include normalize.css -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+/>
 ```
 
 Or create a custom reset:
@@ -290,7 +305,18 @@ html {
 
 body {
   line-height: 1.5;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 ```
 
@@ -314,10 +340,15 @@ Using autoprefixer in your build process is recommended to automatically handle 
 // Example PostCSS config with Autoprefixer
 module.exports = {
   plugins: [
-    require('autoprefixer')({
-      overrideBrowserslist: ['> 1%', 'last 2 versions', 'Firefox ESR', 'not dead']
-    })
-  ]
+    require("autoprefixer")({
+      overrideBrowserslist: [
+        "> 1%",
+        "last 2 versions",
+        "Firefox ESR",
+        "not dead",
+      ],
+    }),
+  ],
 };
 ```
 
@@ -365,7 +396,7 @@ Flexbox has broader browser support than Grid and can serve as an effective fall
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
   }
-  
+
   .gallery-item {
     margin: 0; /* Remove margin as gap handles spacing */
   }
@@ -382,14 +413,16 @@ Polyfills provide implementations of newer features for browsers that don't supp
 // Example: Using a polyfill for fetch API
 if (!window.fetch) {
   // Include fetch polyfill
-  document.write('<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.js"><\/script>');
+  document.write(
+    '<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.js"><\/script>',
+  );
 }
 
 // Now fetch can be used across all browsers
-fetch('/api/data')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
+fetch("/api/data")
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((error) => console.error("Error:", error));
 ```
 
 ### Using Babel for JavaScript Transpilation
@@ -400,11 +433,11 @@ Babel transpiles modern JavaScript to be compatible with older browsers:
 // Modern JavaScript (ES6+)
 const calculateArea = (radius) => Math.PI * radius ** 2;
 
-const areas = [1, 2, 3].map(radius => calculateArea(radius));
+const areas = [1, 2, 3].map((radius) => calculateArea(radius));
 const sum = areas.reduce((total, area) => total + area, 0);
 
 // After Babel transpilation, becomes compatible with older browsers
-"use strict";
+("use strict");
 
 var calculateArea = function calculateArea(radius) {
   return Math.PI * Math.pow(radius, 2);
@@ -455,29 +488,29 @@ function addEvent(element, eventName, handler) {
     element.addEventListener(eventName, handler, false);
   } else if (element.attachEvent) {
     // IE8 and below
-    element.attachEvent('on' + eventName, handler);
+    element.attachEvent("on" + eventName, handler);
   } else {
     // Fallback
-    element['on' + eventName] = handler;
+    element["on" + eventName] = handler;
   }
 }
 
 // Usage
-addEvent(document.getElementById('myButton'), 'click', function(e) {
+addEvent(document.getElementById("myButton"), "click", function (e) {
   // Get event object in a cross-browser way
   e = e || window.event;
-  
+
   // Prevent default behavior
   if (e.preventDefault) {
     e.preventDefault();
   } else {
     e.returnValue = false;
   }
-  
+
   // Get target element
   var target = e.target || e.srcElement;
-  
-  console.log('Button clicked:', target.id);
+
+  console.log("Button clicked:", target.id);
 });
 ```
 
@@ -490,11 +523,11 @@ Use the `picture` element and `srcset` attribute to serve different image format
 ```html
 <picture>
   <!-- WebP for browsers that support it -->
-  <source srcset="image.webp" type="image/webp">
+  <source srcset="image.webp" type="image/webp" />
   <!-- AVIF for browsers that support it -->
-  <source srcset="image.avif" type="image/avif">
+  <source srcset="image.avif" type="image/avif" />
   <!-- Fallback to JPEG for all other browsers -->
-  <img src="image.jpg" alt="Description of image">
+  <img src="image.jpg" alt="Description of image" />
 </picture>
 ```
 
@@ -504,15 +537,21 @@ Provide multiple sources for video and audio content:
 
 ```html
 <video controls width="100%">
-  <source src="video.webm" type="video/webm">
-  <source src="video.mp4" type="video/mp4">
-  <p>Your browser doesn't support HTML5 video. Here's a <a href="video.mp4">link to the video</a> instead.</p>
+  <source src="video.webm" type="video/webm" />
+  <source src="video.mp4" type="video/mp4" />
+  <p>
+    Your browser doesn't support HTML5 video. Here's a
+    <a href="video.mp4">link to the video</a> instead.
+  </p>
 </video>
 
 <audio controls>
-  <source src="audio.ogg" type="audio/ogg">
-  <source src="audio.mp3" type="audio/mpeg">
-  <p>Your browser doesn't support HTML5 audio. Here's a <a href="audio.mp3">link to the audio</a> instead.</p>
+  <source src="audio.ogg" type="audio/ogg" />
+  <source src="audio.mp3" type="audio/mpeg" />
+  <p>
+    Your browser doesn't support HTML5 audio. Here's a
+    <a href="audio.mp3">link to the audio</a> instead.
+  </p>
 </audio>
 ```
 
@@ -522,8 +561,8 @@ Provide PNG fallbacks for SVG content:
 
 ```html
 <picture>
-  <source srcset="logo.svg" type="image/svg+xml">
-  <img src="logo.png" alt="Company Logo">
+  <source srcset="logo.svg" type="image/svg+xml" />
+  <img src="logo.png" alt="Company Logo" />
 </picture>
 ```
 
@@ -531,12 +570,12 @@ Or use feature detection in CSS:
 
 ```css
 .logo {
-  background-image: url('logo.png'); /* Fallback */
+  background-image: url("logo.png"); /* Fallback */
 }
 
-@supports (background-image: url('logo.svg')) {
+@supports (background-image: url("logo.svg")) {
   .logo {
-    background-image: url('logo.svg');
+    background-image: url("logo.svg");
   }
 }
 ```
@@ -549,7 +588,10 @@ Form elements are notoriously difficult to style consistently across browsers:
 
 ```css
 /* Reset browser-specific styles */
-input, button, select, textarea {
+input,
+button,
+select,
+textarea {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -590,7 +632,7 @@ input[type="checkbox"] + label {
 }
 
 input[type="checkbox"] + label:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -601,7 +643,7 @@ input[type="checkbox"] + label:before {
 }
 
 input[type="checkbox"]:checked + label:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 5px;
   top: 9px;
@@ -618,21 +660,25 @@ input[type="checkbox"]:checked + label:after {
 Use HTML5 input types with fallbacks for older browsers:
 
 ```html
-<input type="date" id="birthdate" name="birthdate">
+<input type="date" id="birthdate" name="birthdate" />
 
 <script>
   // Check if browser supports date input
-  const input = document.createElement('input');
-  input.setAttribute('type', 'date');
-  
-  if (input.type === 'text') {
+  const input = document.createElement("input");
+  input.setAttribute("type", "date");
+
+  if (input.type === "text") {
     // Browser doesn't support date input, enhance with a polyfill
-    document.write('<script src="https://cdn.jsdelivr.net/npm/flatpickr"><\/script>');
-    document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">');
-    
-    document.addEventListener('DOMContentLoaded', function() {
+    document.write(
+      '<script src="https://cdn.jsdelivr.net/npm/flatpickr"><\/script>',
+    );
+    document.write(
+      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">',
+    );
+
+    document.addEventListener("DOMContentLoaded", function () {
       flatpickr("#birthdate", {
-        dateFormat: "Y-m-d"
+        dateFormat: "Y-m-d",
       });
     });
   }
@@ -647,64 +693,70 @@ Implement consistent form validation:
 <form id="registration-form" novalidate>
   <div class="form-group">
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required />
     <div class="error-message"></div>
   </div>
-  
+
   <div class="form-group">
     <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required minlength="8">
+    <input
+      type="password"
+      id="password"
+      name="password"
+      required
+      minlength="8"
+    />
     <div class="error-message"></div>
   </div>
-  
+
   <button type="submit">Register</button>
 </form>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('registration-form');
-    
-    form.addEventListener('submit', function(event) {
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("registration-form");
+
+    form.addEventListener("submit", function (event) {
       // Prevent the form from submitting
       event.preventDefault();
-      
+
       // Clear previous error messages
-      const errorMessages = form.querySelectorAll('.error-message');
-      errorMessages.forEach(el => el.textContent = '');
-      
+      const errorMessages = form.querySelectorAll(".error-message");
+      errorMessages.forEach((el) => (el.textContent = ""));
+
       // Check validity of each input
       let isValid = true;
-      
+
       const email = form.elements.email;
       if (!email.value) {
-        showError(email, 'Email is required');
+        showError(email, "Email is required");
         isValid = false;
       } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-        showError(email, 'Please enter a valid email address');
+        showError(email, "Please enter a valid email address");
         isValid = false;
       }
-      
+
       const password = form.elements.password;
       if (!password.value) {
-        showError(password, 'Password is required');
+        showError(password, "Password is required");
         isValid = false;
       } else if (password.value.length < 8) {
-        showError(password, 'Password must be at least 8 characters');
+        showError(password, "Password must be at least 8 characters");
         isValid = false;
       }
-      
+
       // If the form is valid, submit it
       if (isValid) {
         // In a real application, you would submit the form or use AJAX
-        console.log('Form is valid, submitting...');
+        console.log("Form is valid, submitting...");
         form.submit();
       }
     });
-    
+
     function showError(input, message) {
-      const errorElement = input.parentElement.querySelector('.error-message');
+      const errorElement = input.parentElement.querySelector(".error-message");
       errorElement.textContent = message;
-      input.classList.add('error');
+      input.classList.add("error");
     }
   });
 </script>
@@ -728,13 +780,19 @@ Optimize resource loading for all browsers:
 
 ```html
 <!-- Preconnect to required origins -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://api.example.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://api.example.com" crossorigin />
 
 <!-- Preload critical resources -->
-<link rel="preload" href="critical.css" as="style">
-<link rel="preload" href="main.js" as="script">
-<link rel="preload" href="hero.jpg" as="image" imagesrcset="hero-400.jpg 400w, hero-800.jpg 800w" imagesizes="100vw">
+<link rel="preload" href="critical.css" as="style" />
+<link rel="preload" href="main.js" as="script" />
+<link
+  rel="preload"
+  href="hero.jpg"
+  as="image"
+  imagesrcset="hero-400.jpg 400w, hero-800.jpg 800w"
+  imagesizes="100vw"
+/>
 
 <!-- Use async or defer for non-critical scripts -->
 <script src="non-critical.js" defer></script>
@@ -757,7 +815,10 @@ Optimize rendering performance across browsers:
 
 /* Avoid layout thrashing */
 .optimized-element {
-  transform: translate(0, 0); /* Use transform instead of top/left for animations */
+  transform: translate(
+    0,
+    0
+  ); /* Use transform instead of top/left for animations */
   opacity: 0.9; /* Use opacity instead of visibility for showing/hiding */
 }
 ```
@@ -767,19 +828,19 @@ Optimize rendering performance across browsers:
 function updateElements() {
   // Read phase - gather all measurements
   const measurements = [];
-  const elements = document.querySelectorAll('.dynamic-element');
-  
-  elements.forEach(element => {
+  const elements = document.querySelectorAll(".dynamic-element");
+
+  elements.forEach((element) => {
     const rect = element.getBoundingClientRect();
     measurements.push({
       element,
       width: rect.width,
-      height: rect.height
+      height: rect.height,
     });
   });
-  
+
   // Write phase - apply all updates
-  measurements.forEach(measurement => {
+  measurements.forEach((measurement) => {
     const { element, width, height } = measurement;
     element.style.width = `${width * 1.5}px`;
     element.style.height = `${height * 1.5}px`;
@@ -849,7 +910,7 @@ function updateElements() {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-  
+
   .grid-item {
     margin: 0;
   }
@@ -871,23 +932,26 @@ Each browser has its own developer tools with unique features:
 
 ```javascript
 function logBrowserSpecificIssue(message) {
-  const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  const isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+  const isChrome =
+    /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  const isSafari =
+    /Safari/.test(navigator.userAgent) &&
+    /Apple Computer/.test(navigator.vendor);
   const isFirefox = /Firefox/.test(navigator.userAgent);
   const isEdge = /Edg/.test(navigator.userAgent);
-  
-  let browserName = 'Unknown';
-  
-  if (isChrome) browserName = 'Chrome';
-  if (isSafari) browserName = 'Safari';
-  if (isFirefox) browserName = 'Firefox';
-  if (isEdge) browserName = 'Edge';
-  
+
+  let browserName = "Unknown";
+
+  if (isChrome) browserName = "Chrome";
+  if (isSafari) browserName = "Safari";
+  if (isFirefox) browserName = "Firefox";
+  if (isEdge) browserName = "Edge";
+
   console.log(`[${browserName}] ${message}`);
 }
 
 // Usage
-logBrowserSpecificIssue('Testing browser-specific behavior');
+logBrowserSpecificIssue("Testing browser-specific behavior");
 ```
 
 ## Cross-Browser Compatibility Checklist

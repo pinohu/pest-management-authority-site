@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------------------
- * console.log‚ª—˜—p‚Å‚«‚È‚¢ƒuƒ‰ƒEƒU‘Î‰ž
+ * console.logï¿½ï¿½ï¿½ï¿½ï¿½pï¿½Å‚ï¿½ï¿½È‚ï¿½ï¿½uï¿½ï¿½ï¿½Eï¿½Uï¿½Î‰ï¿½
  *--------------------------------------------------------------------------------*/
 if (typeof window.console != 'object'){
  window.console = {log:function(){},debug:function(){},info:function(){},warn:function(){},error:function(){},assert:function(){},dir:function(){},dirxml:function(){},trace:function(){},group:function(){},groupEnd:function(){},time:function(){},timeEnd:function(){},profile:function(){},profileEnd:function(){},count:function(){}};
@@ -21,7 +21,7 @@ OpenLayers.Control.Crosshairs = OpenLayers.Class(OpenLayers.Control, {
 		OpenLayers.Control.prototype.draw.apply(this, arguments);
 		var px = this.position.clone();
 		var centered = new OpenLayers.Pixel(Math.round(px.x - (this.size.w / 2)), Math.round(px.y - (this.size.h / 2)));
-		this.buttons = new Array();
+		this.buttons = [];
 		this.div = OpenLayers.Util.createAlphaImageDiv(
 				OpenLayers.Util.createUniqueID("OpenLayers.Control.Crosshairs_"), 
 				centered, 

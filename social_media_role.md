@@ -30,6 +30,7 @@ This comprehensive industry analysis examines how social media platforms contrib
 ### Platform-Specific Considerations:
 
 Different social platforms have unique communities and content preferences:
+
 - **Facebook**: Focus on authenticity and friend-to-friend sharing
 - Each platform requires tailored content strategies
 
@@ -41,4 +42,5 @@ Different social platforms have unique communities and content preferences:
 This analysis emphasizes that while viral content can't be forced, understanding the psychological and social factors that drive sharing can significantly increase a website's chances of achieving virality and widespread popularity.
 
 ### Source:
+
 Fractl. (n.d.). Social Media's Role in Viral Content Marketing.

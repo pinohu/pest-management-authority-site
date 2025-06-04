@@ -14,16 +14,19 @@ Based on research from Nielsen Norman Group and other authoritative sources, tax
 ### Types of Taxonomies for Websites
 
 - **Hierarchical Taxonomy**: Single organizing principle with parent-child relationships
+
   - Example: Product categories in e-commerce (Electronics > Computers > Laptops)
   - Benefits: Clear organization, intuitive structure
   - Limitations: Single perspective on content organization
 
 - **Faceted Taxonomy**: Multiple distinct taxonomies that work together
+
   - Example: Products classified by type, price range, features, and audience
   - Benefits: Allows filtering from multiple perspectives simultaneously
   - Implementation: Powers faceted navigation and advanced filtering
 
 - **Thesauri**: More complex than taxonomies, including relationships like:
+
   - Broader/narrower terms
   - Related terms
   - Preferred/non-preferred terms (synonyms)
@@ -105,6 +108,7 @@ Based on research from Nielsen Norman Group and other authoritative sources, tax
 - **SERP Features**: Supports rich results through structured data implementation
 
 ## Sources:
+
 1. Nielsen Norman Group. (2022, July 3). Taxonomy 101: Definition, Best Practices, and How It Complements Other IA Work.
 2. Lumar. (2020, January 7). Categorizing a Website & Defining Taxonomies.
 3. Builtvisible. (2019, October 17). An SEO's guide to taxonomies.

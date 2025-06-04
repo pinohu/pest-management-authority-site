@@ -5,6 +5,7 @@
 Your WordPress files are ready to deploy! Here's what you need to do:
 
 ## ✅ What's Already Done
+
 - ✅ GitHub repository created: `https://github.com/pinohu/pest-management-authority-site`
 - ✅ WordPress files uploaded with Authority Blueprint theme
 - ✅ Database created in 20i.com: `pestmanagementsite-323038c8c2`
@@ -15,10 +16,12 @@ Your WordPress files are ready to deploy! Here's what you need to do:
 ### Step 1: Setup WordPress Configuration
 
 1. **Copy the template file:**
+
    - In your 20i.com file manager, copy `wp-config-template.php` to `wp-config.php`
 
 2. **Update database settings in wp-config.php:**
    Replace these placeholders with your actual database details:
+
    ```php
    define('DB_NAME', 'pestmanagementsite-323038c8c2');
    define('DB_USER', 'pestmanagementsite-323038c8c2');
@@ -34,6 +37,7 @@ Your WordPress files are ready to deploy! Here's what you need to do:
 ### Step 2: Setup 20i GitHub Integration
 
 1. **In your 20i control panel:**
+
    - Go to **Developer Tools** → **Git Integration**
    - Connect your GitHub account
    - Select repository: `pinohu/pest-management-authority-site`
@@ -47,10 +51,12 @@ Your WordPress files are ready to deploy! Here's what you need to do:
 ### Step 3: WordPress Installation
 
 1. **Visit your site:**
+
    - Go to: https://pestmanagementscience.com
    - You should see the WordPress installation screen
 
 2. **Complete WordPress setup:**
+
    - Site Title: `Pest Management Science Authority`
    - Username: `admin` (or your preferred username)
    - Password: Use a strong password
@@ -64,6 +70,7 @@ Your WordPress files are ready to deploy! Here's what you need to do:
 ## 🚀 Your Database Details
 
 From your 20i screenshot:
+
 - **Database Name:** `pestmanagementsite-323038c8c2`
 - **Database User:** `pestmanagementsite-323038c8c2`
 - **Database Password:** `8huilc2drh`
@@ -72,6 +79,7 @@ From your 20i screenshot:
 ## 🎨 What You'll See
 
 Once deployed, your site will feature:
+
 - **Modern pest management theme** with green/brown professional colors
 - **Beautiful gradient hero sections**
 - **Card layouts with hover effects**
@@ -88,6 +96,7 @@ Once deployed, your site will feature:
 ## 📞 Support
 
 If you encounter any issues:
+
 1. Check 20i.com support documentation
 2. Verify database connection details
 3. Ensure file permissions are correct (usually 755 for directories, 644 for files)
@@ -95,10 +104,11 @@ If you encounter any issues:
 ## 🔄 Making Updates
 
 After initial setup, you can:
+
 1. Push code changes to GitHub
 2. Use 20i's Git Integration to auto-deploy
 3. Manage content through WordPress admin
 
 ---
 
-**Ready to go live!** 🌟 Your professional pest management authority website awaits at https://pestmanagementscience.com 
+**Ready to go live!** 🌟 Your professional pest management authority website awaits at https://pestmanagementscience.com

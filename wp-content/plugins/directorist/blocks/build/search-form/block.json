@@ -6,11 +6,7 @@
   "name": "directorist/search-listing",
   "title": "Search Form",
   "description": "Create directory listing search form.",
-  "keywords": [
-    "search",
-    "form",
-    "find"
-  ],
+  "keywords": ["search", "form", "find"],
   "attributes": {
     "show_title_subtitle": {
       "type": "boolean",

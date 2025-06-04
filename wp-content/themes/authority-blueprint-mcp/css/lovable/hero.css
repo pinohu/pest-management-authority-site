@@ -10,7 +10,8 @@
   position: relative;
 }
 .lovable-hero--image {
-  background: url('/wp-content/themes/authority-blueprint-mcp/assets/hero-bg.jpg') center/cover no-repeat;
+  background: url("/wp-content/themes/authority-blueprint-mcp/assets/hero-bg.jpg")
+    center/cover no-repeat;
 }
 .lovable-hero--gradient {
   background: linear-gradient(135deg, #388e3c, #2e7d32);
@@ -43,4 +44,4 @@
 }
 .lovable-hero__cta:hover {
   background: #2e7d32;
-} 
+}

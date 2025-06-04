@@ -6,7 +6,11 @@
       "palette": [
         { "slug": "primary", "color": "#388e3c", "name": "Primary Green" },
         { "slug": "secondary", "color": "#795548", "name": "Secondary Brown" },
-        { "slug": "background", "color": "#f5fbe7", "name": "Background Light" },
+        {
+          "slug": "background",
+          "color": "#f5fbe7",
+          "name": "Background Light"
+        },
         { "slug": "contrast", "color": "#222", "name": "Contrast" }
       ]
     },
@@ -46,4 +50,4 @@
       "fontSize": "var(--wp--preset--font-size--base)"
     }
   }
-} 
+}

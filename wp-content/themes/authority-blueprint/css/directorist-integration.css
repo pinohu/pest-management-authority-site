@@ -2,70 +2,76 @@
 
 /* Apply pest management color scheme to Directorist elements */
 .directorist .atbd_content_module .widget {
-    border-color: #388e3c;
+  border-color: #388e3c;
 }
 
 .directorist .btn.btn-primary,
 .directorist .atbd_submit_btn {
-    background-color: #388e3c;
-    border-color: #388e3c;
+  background-color: #388e3c;
+  border-color: #388e3c;
 }
 
 .directorist .btn.btn-primary:hover,
 .directorist .atbd_submit_btn:hover {
-    background-color: #2e7d32;
-    border-color: #2e7d32;
+  background-color: #2e7d32;
+  border-color: #2e7d32;
 }
 
 /* Directory listing cards */
 .directorist .atbd_single_listing {
-    border: 1px solid #795548;
-    background: #f5fbe7;
+  border: 1px solid #795548;
+  background: #f5fbe7;
 }
 
 /* Category icons styling for pest management */
-.pest-directory-category .fas.fa-bug { color: #388e3c; }
-.pest-directory-category .fas.fa-microscope { color: #795548; }
-.pest-directory-category .fas.fa-industry { color: #2e7d32; }
+.pest-directory-category .fas.fa-bug {
+  color: #388e3c;
+}
+.pest-directory-category .fas.fa-microscope {
+  color: #795548;
+}
+.pest-directory-category .fas.fa-industry {
+  color: #2e7d32;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .directorist .atbd_search_form .form-group {
-        margin-bottom: 15px;
-    }
+  .directorist .atbd_search_form .form-group {
+    margin-bottom: 15px;
+  }
 }
 
 /* Pest management specific directory styling */
 .pest-management-directory .directory-hero {
-    background: linear-gradient(135deg, #388e3c, #2e7d32);
-    color: white;
-    padding: 60px 0;
-    text-align: center;
+  background: linear-gradient(135deg, #388e3c, #2e7d32);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
 }
 
 .pest-management-directory .category-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
 }
 
 .pest-management-directory .category-card {
-    background: white;
-    border: 1px solid #795548;
-    border-radius: 8px;
-    padding: 30px;
-    text-align: center;
-    transition: transform 0.3s ease;
+  background: white;
+  border: 1px solid #795548;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .pest-management-directory .category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .pest-management-directory .category-card i {
-    font-size: 3em;
-    color: #388e3c;
-    margin-bottom: 20px;
+  font-size: 3em;
+  color: #388e3c;
+  margin-bottom: 20px;
 }

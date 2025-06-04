@@ -73,7 +73,7 @@ function warning(message) {
     return;
   }
 
-  // eslint-disable-next-line no-console
+   
   console.warn(message);
 
   // Throwing an error and catching it immediately to improve debugging

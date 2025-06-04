@@ -6,12 +6,7 @@
   "title": "Single Tag",
   "name": "directorist/tag",
   "description": "Create directory listing tags grid view, list view or map view.",
-  "keywords": [
-    "all tags",
-    "tag",
-    "taxonomy",
-    "term"
-  ],
+  "keywords": ["all tags", "tag", "taxonomy", "term"],
   "attributes": {
     "view": {
       "type": "string",

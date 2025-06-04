@@ -2,7 +2,7 @@
 .openai-generator {
   background: #fff;
   border-radius: var(--border-radius);
-  box-shadow: 0 2px 8px rgba(56,142,60,0.07);
+  box-shadow: 0 2px 8px rgba(56, 142, 60, 0.07);
   padding: 2rem;
   margin: 2rem auto;
   max-width: 700px;
@@ -62,7 +62,7 @@
 .accordion {
   border-radius: var(--border-radius);
   background: #fff;
-  box-shadow: 0 2px 8px rgba(56,142,60,0.07);
+  box-shadow: 0 2px 8px rgba(56, 142, 60, 0.07);
   margin: 2rem 0;
 }
 .accordion-item {
@@ -95,4 +95,4 @@
 }
 .accordion-panel[aria-hidden="false"] {
   display: block;
-} 
+}

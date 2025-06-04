@@ -1,6 +1,7 @@
 # Research on Website Virality, Popularity, and Authority Components
 
 ## Literature and Web Research
+
 - [x] Search for academic articles on website virality and popularity
 - [x] Gather industry reports on successful website launches
 - [x] Identify key factors that contribute to website virality
@@ -11,6 +12,7 @@
 - [x] Explore technical aspects (loading speed, mobile optimization) affecting virality
 
 ## Case Studies Analysis
+
 - [x] Identify websites with rapid growth in recent years
 - [x] Analyze social media platforms' growth strategies
 - [x] Study content-focused websites with viral success
@@ -19,6 +21,7 @@
 - [x] Document common patterns across successful case studies
 
 ## Authority Website Components
+
 - [x] Research what makes a website authoritative
 - [x] Identify content quality indicators
 - [x] Explore backlink profiles of authority websites
@@ -33,6 +36,7 @@
 - [ ] Document common patterns across successful case studies
 
 ## Authority Website Components
+
 - [ ] Research what makes a website authoritative
 - [ ] Identify content quality indicators
 - [ ] Explore backlink profiles of authority websites
@@ -43,6 +47,7 @@
 - [ ] Study brand building strategies for website authority
 
 ## Report Compilation
+
 - [ ] Create outline for comprehensive report
 - [ ] Write section on virality factors
 - [ ] Write section on popularity strategies

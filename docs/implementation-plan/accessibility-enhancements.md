@@ -1,14 +1,17 @@
 # Accessibility Enhancements Implementation Plan
 
 ## Background and Motivation
+
 Accessibility is a core requirement in the architecture blueprint. The theme includes some accessibility features, but a full audit and further enhancements (ARIA, focus management, accessible forms, etc.) are needed.
 
 ## Key Challenges and Analysis
+
 - Ensuring WCAG compliance across all templates and patterns
 - Automating alt text and ARIA where possible
 - Testing with screen readers and keyboard navigation
 
 ## High-level Task Breakdown
+
 - [ ] Audit current accessibility features
 - [ ] Define requirements for ARIA, focus, forms, alt text
 - [ ] Implement enhancements (ARIA, focus, forms, automation)
@@ -16,6 +19,7 @@ Accessibility is a core requirement in the architecture blueprint. The theme inc
 - [ ] Document accessibility features
 
 ## Project Status Board
+
 - [x] Accessibility audit complete
 - [x] Requirements defined
 - [ ] Enhancements implemented
@@ -25,6 +29,7 @@ Accessibility is a core requirement in the architecture blueprint. The theme inc
 ## Accessibility Audit Results
 
 **Current Features:**
+
 - ARIA roles and labels on navigation, regions, and announcements
 - Skip link to main content (with focus management JS)
 - Visually hidden (sr-only) and screen-reader-text utilities
@@ -35,6 +40,7 @@ Accessibility is a core requirement in the architecture blueprint. The theme inc
 - Accessibility statement in /legal
 
 **Gaps:**
+
 - No automated alt text (MCP integration missing)
 - No explicit error summary for forms
 - No accessible FAQ/accordion pattern
@@ -48,4 +54,5 @@ Accessibility is a core requirement in the architecture blueprint. The theme inc
 - **Automated a11y Testing:** Integrate a11y MCP or axe-core for CI/CD and admin dashboard, report issues.
 
 ## Executor's Feedback or Assistance Requests
-- None yet 
+
+- None yet

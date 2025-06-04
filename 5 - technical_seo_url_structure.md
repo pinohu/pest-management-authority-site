@@ -7,10 +7,12 @@ Based on research from Google Search Central, Semrush, and other authoritative s
 ### URL Readability and Format
 
 - **Use Readable Words**: Create URLs with descriptive words rather than long ID numbers
+
   - Recommended: `example.com/category/product-name`
   - Not recommended: `example.com/index.php?id_sezione=360&sid=3a5ebc944f41daa6f849f730f1`
 
 - **Word Separation**: Use hyphens (-) to separate words in URLs
+
   - Recommended: `example.com/summer-clothing/dark-grey-dress`
   - Not recommended: `example.com/summer_clothing/dark_grey_dress` or `example.com/summerclothing/darkgreydress`
 
@@ -23,10 +25,12 @@ Based on research from Google Search Central, Semrush, and other authoritative s
 ### URL Structure Hierarchy
 
 - **Logical Hierarchy**: Structure URLs to reflect site organization
+
   - Format: `example.com/category/subcategory/product`
   - Benefits: Helps users and search engines understand content relationships
 
 - **Consistent Patterns**: Maintain the same URL structure pattern throughout the site
+
   - Example: All blog posts follow `example.com/blog/post-title`
   - Example: All product pages follow `example.com/category/subcategory/product-name`
 
@@ -37,6 +41,7 @@ Based on research from Google Search Central, Semrush, and other authoritative s
 ### Language and Character Considerations
 
 - **Audience Language**: Use words in your audience's language in URLs
+
   - Example for German audience: `example.com/lebensmittel/pfefferminz`
 
 - **Character Encoding**: Use UTF-8 encoding for non-ASCII characters
@@ -48,10 +53,12 @@ Based on research from Google Search Central, Semrush, and other authoritative s
 ### URL Parameters and Crawlability
 
 - **Minimize Parameters**: Limit the number of URL parameters to improve crawlability
+
   - Problem: Multiple parameters create duplicate content and waste crawl budget
   - Solution: Use only necessary parameters and consolidate when possible
 
 - **Avoid Session IDs in URLs**: Session IDs create massive duplication
+
   - Not recommended: `example.com/product?sessionid=123456&id=789`
   - Alternative: Use cookies for session management
 
@@ -63,10 +70,12 @@ Based on research from Google Search Central, Semrush, and other authoritative s
 ### URL Stability and Redirects
 
 - **URL Permanence**: Once established, URLs should remain unchanged
+
   - Benefits: Preserves link equity, user bookmarks, and social shares
   - Implementation: If URLs must change, implement proper 301 redirects
 
 - **Redirect Chains**: Avoid multiple redirects in sequence
+
   - Recommended: Direct 301 redirect from old URL to new URL
   - Not recommended: Old URL → intermediate URL → new URL
 
@@ -77,10 +86,12 @@ Based on research from Google Search Central, Semrush, and other authoritative s
 ### URL Canonicalization
 
 - **WWW vs. Non-WWW**: Choose one version and redirect the other
+
   - Example: Redirect `www.example.com` to `example.com` (or vice versa)
   - Implementation: Server-level redirects and canonical tags
 
 - **Trailing Slashes**: Be consistent with trailing slash usage
+
   - Example: Either `example.com/category/` or `example.com/category` (not both)
   - Implementation: Redirect non-preferred version to preferred version
 
@@ -93,6 +104,7 @@ Based on research from Google Search Central, Semrush, and other authoritative s
 ### Topic Cluster URL Implementation
 
 - **Pillar Content URLs**: Keep pillar page URLs short and focused on main keyword
+
   - Example: `example.com/digital-marketing`
   - Benefits: Easier to remember, share, and rank for primary terms
 
@@ -104,11 +116,13 @@ Based on research from Google Search Central, Semrush, and other authoritative s
 ### URL Structure for Different Content Types
 
 - **Blog Content**: Use date-based or category-based URL structures
+
   - Date-based: `example.com/blog/2025/05/post-title`
   - Category-based: `example.com/blog/category/post-title`
   - Evergreen content: `example.com/resources/guide-title`
 
 - **Product Pages**: Include category hierarchy in product URLs
+
   - Example: `example.com/furniture/living-room/sofas/leather-sofa`
   - Benefits: Provides context and helps with category-level ranking
 
@@ -119,10 +133,12 @@ Based on research from Google Search Central, Semrush, and other authoritative s
 ### URL Structure for International Sites
 
 - **Country-Specific Domains**: Use country-code top-level domains (ccTLDs)
+
   - Example: `example.de` for Germany, `example.fr` for France
   - Benefits: Strong geo-targeting signal, clear user indication
 
 - **Subdirectories**: Use language/country subdirectories with generic TLDs
+
   - Example: `example.com/de/` for German content, `example.com/fr/` for French
   - Benefits: Easier to manage than separate domains, still provides geo-targeting
 
@@ -135,10 +151,12 @@ Based on research from Google Search Central, Semrush, and other authoritative s
 ### Duplicate Content Issues
 
 - **URL Variations**: Different URLs serving identical content
+
   - Problem: `example.com/product` and `example.com/product?source=menu` showing same content
   - Solution: Use canonical tags or parameter handling in Google Search Console
 
 - **Case Sensitivity**: URLs with different letter cases
+
   - Problem: `example.com/Page` and `example.com/page` treated as different URLs
   - Solution: Standardize on lowercase and redirect uppercase versions
 
@@ -149,10 +167,12 @@ Based on research from Google Search Central, Semrush, and other authoritative s
 ### Technical URL Problems
 
 - **URL Fragments**: Don't use fragments (#) to change page content
+
   - Not recommended: `example.com/#/category`
   - Alternative: Use History API for JavaScript-based navigation
 
 - **Infinite Spaces**: URLs that generate endless variations
+
   - Problem: Calendar systems with no date restrictions
   - Problem: Broken relative links causing repeated path elements
   - Solution: Implement proper pagination and path validation
@@ -178,6 +198,7 @@ Based on research from Google Search Central, Semrush, and other authoritative s
 - **Monitoring**: Regularly audit URLs for issues and consistency
 
 ## Sources:
+
 1. Google Search Central. (2025). URL structure best practices for Google.
 2. Semrush. (2025, January 30). Website Architecture: Best Practices for SEO Site Structures.
 3. HigherVisibility. (2024, November 15). URL Structure Best Practices for On-Page SEO.

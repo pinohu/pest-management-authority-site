@@ -22,26 +22,31 @@ This theme supports modular, production-grade integrations with leading SaaS and
 ### Usage & Troubleshooting
 
 #### OpenAI
+
 - **Setup**: Enter your OpenAI API key in the OpenAI tab.
 - **Usage**: Use the content generator REST API or admin UI blocks.
 - **Troubleshooting**: Ensure your API key is valid. Check logs for errors.
 
 #### AITable
+
 - **Setup**: Enter your AITable API key.
 - **Usage**: Sync and manage tables via the integration UI.
 - **Troubleshooting**: API errors are logged. Check credentials and network.
 
 #### Reoon
+
 - **Setup**: Enter your Reoon API key.
 - **Usage**: Email verification is available in admin tools.
 - **Troubleshooting**: Invalid API keys or quota issues will be logged.
 
 #### Insighto
+
 - **Setup**: Enter your Insighto API key.
 - **Usage**: Comment moderation is automatic on new comments.
 - **Troubleshooting**: Check logs for moderation errors.
 
 #### NeuronWriter
+
 - **Setup**: Enter your NeuronWriter API key.
 - **Usage**: Content suggestions appear in the post editor sidebar.
 - **Troubleshooting**: Ensure API key is active and check logs for issues.
@@ -57,4 +62,5 @@ All integrations are located in `/inc/integrations/` and follow a common API cli
 - Real-time API key validation and error feedback are planned for future updates.
 
 ---
-For further help, see `/docs/integrations/` or contact the theme developer. 
+
+For further help, see `/docs/integrations/` or contact the theme developer.

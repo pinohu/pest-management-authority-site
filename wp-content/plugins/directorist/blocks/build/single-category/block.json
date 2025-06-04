@@ -6,13 +6,7 @@
   "title": "Single Category",
   "name": "directorist/category",
   "description": "Create directory listing categories grid view, list view or map view.",
-  "keywords": [
-    "all categories",
-    "category",
-    "taxonomy",
-    "term",
-    "single"
-  ],
+  "keywords": ["all categories", "category", "taxonomy", "term", "single"],
   "attributes": {
     "view": {
       "type": "string",

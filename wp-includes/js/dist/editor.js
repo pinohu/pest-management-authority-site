@@ -4153,7 +4153,7 @@ const getPostTypeLabel = (0,external_wp_data_namespaceObject.createRegistrySelec
   const currentPostType = getCurrentPostType(state);
   const postType = select(external_wp_coreData_namespaceObject.store).getPostType(currentPostType);
   // Disable reason: Post type labels object is shaped like this.
-  // eslint-disable-next-line camelcase
+   
   return postType?.labels?.singular_name;
 });
 
@@ -6349,7 +6349,7 @@ function isTemplateRemovable(template) {
   // In patterns list page we map the templates parts to a different object
   // than the one returned from the endpoint. This is why we need to check for
   // two props whether is custom or has a theme file.
-  return [template.source, template.source].includes('custom') && !Boolean(template.type === 'wp_template' && template?.plugin) && !template.has_theme_file;
+  return [template.source, template.source].includes('custom') && !(template.type === 'wp_template' && template?.plugin) && !template.has_theme_file;
 }
 
 ;// ./node_modules/@wordpress/fields/build-module/actions/duplicate-template-part.js
@@ -8908,7 +8908,7 @@ function AuthorView({
       getEntityRecord
     } = select(external_wp_coreData_namespaceObject.store);
     let user;
-    if (!!item.author) {
+    if (item.author) {
       user = getEntityRecord('root', 'user', item.author);
     }
     return {
@@ -10490,7 +10490,7 @@ const getOpenverseCaption = item => {
 const coreMediaFetch = async (query = {}) => {
   const mediaItems = await (0,external_wp_data_namespaceObject.resolveSelect)(external_wp_coreData_namespaceObject.store).getMediaItems({
     ...query,
-    orderBy: !!query?.search ? 'relevance' : 'date'
+    orderBy: query?.search ? 'relevance' : 'date'
   });
   return mediaItems.map(mediaItem => ({
     ...mediaItem,
@@ -13445,7 +13445,7 @@ const getPageContentFocusCommands = () => function usePageContentFocusCommands()
       }
     });
   }
-  if (!!goBack) {
+  if (goBack) {
     commands.push({
       name: 'core/switch-to-previous-entity',
       label: (0,external_wp_i18n_namespaceObject.__)('Go back'),
@@ -15195,7 +15195,7 @@ const registerPostTypeSchema = postType => async ({
     name: postType
   });
   const currentTheme = await registry.resolveSelect(external_wp_coreData_namespaceObject.store).getCurrentTheme();
-  const actions = [postTypeConfig.viewable ? view_post : undefined, !!postTypeConfig.supports?.revisions ? view_post_revisions : undefined,
+  const actions = [postTypeConfig.viewable ? view_post : undefined, postTypeConfig.supports?.revisions ? view_post_revisions : undefined,
   // @ts-ignore
    false ? 0 : undefined, postTypeConfig.slug === 'wp_template_part' && canCreate && currentTheme?.is_block_theme ? duplicate_template_part : undefined, canCreate && postTypeConfig.slug === 'wp_block' ? duplicate_pattern : undefined, postTypeConfig.supports?.title ? rename_post : undefined, postTypeConfig.supports?.['page-attributes'] ? reorder_page : undefined, postTypeConfig.slug === 'wp_block' ? export_pattern : undefined, restore_post, reset_post, delete_post, trash_post, permanently_delete_post].filter(Boolean);
   const fields = [postTypeConfig.supports?.thumbnail && currentTheme?.theme_supports?.['post-thumbnails'] && featured_image, postTypeConfig.supports?.author && author, fields_status, date, slug, postTypeConfig.supports?.['page-attributes'] && fields_parent, postTypeConfig.supports?.comments && comment_status, fields_template, fields_password, postTypeConfig.supports?.editor && postTypeConfig.viewable && content_preview].filter(Boolean);
@@ -17614,7 +17614,7 @@ function EntitiesSavedStatesExtensible({
   });
   const dialogLabelId = (0,external_wp_compose_namespaceObject.useInstanceId)(EntitiesSavedStatesExtensible, 'entities-saved-states__panel-label');
   const dialogDescriptionId = (0,external_wp_compose_namespaceObject.useInstanceId)(EntitiesSavedStatesExtensible, 'entities-saved-states__panel-description');
-  const selectItemsToSaveDescription = !!dirtyEntityRecords.length ? (0,external_wp_i18n_namespaceObject.__)('Select the items you want to save.') : undefined;
+  const selectItemsToSaveDescription = dirtyEntityRecords.length ? (0,external_wp_i18n_namespaceObject.__)('Select the items you want to save.') : undefined;
   const isInline = variant === 'inline';
   const actionButtons = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_ReactJSXRuntime_namespaceObject.Fragment, {
     children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.FlexItem, {
@@ -18332,7 +18332,7 @@ function parent_PageAttributesParent() {
     };
 
     // Perform a search when the field is changed.
-    if (!!fieldValue) {
+    if (fieldValue) {
       query.search = fieldValue;
     }
     const parentPost = pageId ? getEntityRecord('postType', postTypeSlug, pageId) : null;
@@ -18669,7 +18669,7 @@ function CreateNewTemplateModal({
           placeholder: DEFAULT_TITLE,
           disabled: isBusy,
           help: (0,external_wp_i18n_namespaceObject.__)(
-          // eslint-disable-next-line no-restricted-syntax -- 'sidebar' is a common web design term for layouts
+           
           'Describe the template, e.g. "Post with sidebar". A custom template can be manually applied to any post or page.')
         }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.__experimentalHStack, {
           justify: "right",
@@ -23939,7 +23939,7 @@ function FlatTermSelector({
       getEntityRecords
     } = select(external_wp_coreData_namespaceObject.store);
     return {
-      searchResults: !!search ? getEntityRecords('taxonomy', slug, {
+      searchResults: search ? getEntityRecords('taxonomy', slug, {
         ...flat_term_selector_DEFAULT_QUERY,
         search
       }) : flat_term_selector_EMPTY_ARRAY
@@ -26909,7 +26909,7 @@ function PostTrashCheck({
     const postType = getCurrentPostType();
     const postId = getCurrentPostId();
     const isNew = isEditedPostNew();
-    const canUserDelete = !!postId ? canUser('delete', {
+    const canUserDelete = postId ? canUser('delete', {
       kind: 'postType',
       name: postType,
       id: postId
@@ -33597,7 +33597,7 @@ const Sidebar = ({
     const _isEditorSidebarOpened = [sidebars.block, sidebars.document].includes(sidebar);
     let _tabName = sidebar;
     if (!_isEditorSidebarOpened) {
-      _tabName = !!select(external_wp_blockEditor_namespaceObject.store).getBlockSelectionStart() ? sidebars.block : sidebars.document;
+      _tabName = select(external_wp_blockEditor_namespaceObject.store).getBlockSelectionStart() ? sidebars.block : sidebars.document;
     }
     return {
       tabName: _tabName,
@@ -33609,7 +33609,7 @@ const Sidebar = ({
     enableComplementaryArea
   } = (0,external_wp_data_namespaceObject.useDispatch)(store);
   const onTabSelect = (0,external_wp_element_namespaceObject.useCallback)(newSelectedTabId => {
-    if (!!newSelectedTabId) {
+    if (newSelectedTabId) {
       enableComplementaryArea('core', newSelectedTabId);
     }
   }, [enableComplementaryArea]);
@@ -33681,7 +33681,7 @@ function Editor({
   }, [postType, postId, templateId]);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_ReactJSXRuntime_namespaceObject.Fragment, {
     children: [hasLoadedPost && !post && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.Notice, {
-      status: !!error ? 'error' : 'warning',
+      status: error ? 'error' : 'warning',
       isDismissible: false,
       children: !error ? (0,external_wp_i18n_namespaceObject.__)("You attempted to edit an item that doesn't exist. Perhaps it was deleted?") : error
     }), !!post && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(ExperimentalEditorProvider, {

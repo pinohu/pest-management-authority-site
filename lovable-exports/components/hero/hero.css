@@ -54,7 +54,7 @@
   max-width: 100%;
   height: auto;
   border-radius: 1rem;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
 }
 @media (max-width: 900px) {
   .hero--split {
@@ -75,4 +75,4 @@
   .hero__subtitle {
     font-size: 1rem;
   }
-} 
+}

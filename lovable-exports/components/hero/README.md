@@ -12,4 +12,4 @@ If you wish to add dynamic behavior (e.g., smooth scroll, modal open on CTA clic
 - Add the CSS to your theme's stylesheet or via the Customizer > Additional CSS.
 - Replace static text/images with dynamic WordPress fields as needed.
 - For background or centered variants, adjust classes and structure as shown in the React component.
-- Ensure all class names are unique to avoid style conflicts. 
+- Ensure all class names are unique to avoid style conflicts.

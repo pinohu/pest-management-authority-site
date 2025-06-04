@@ -3,6 +3,7 @@
 ## 🏠 **Homepage Template**
 
 ### **Hero Section:**
+
 ```
 # Pest Management Science
 ## Professional Research & Solutions for Pest Control
@@ -13,6 +14,7 @@ Leading expertise in integrated pest management, research-based solutions, and s
 ```
 
 ### **Services Overview:**
+
 ```
 ## Our Services
 
@@ -27,11 +29,12 @@ Expert consultation for agricultural, residential, and commercial pest managemen
 ```
 
 ### **Why Choose Us:**
+
 ```
 ## Science-Based Solutions
 
 ✅ **Research-Driven:** Evidence-based pest management strategies
-✅ **Sustainable:** Environmentally responsible solutions  
+✅ **Sustainable:** Environmentally responsible solutions
 ✅ **Expert Team:** Certified entomologists and pest management professionals
 ✅ **Proven Results:** Track record of successful pest control outcomes
 ```
@@ -275,14 +278,16 @@ Information about ongoing collaborations with universities, government agencies,
 2. **Customize with your specific information**
 3. **Create pages in WordPress admin**
 4. **Add professional images**
-5. **Set up navigation menus** 
+5. **Set up navigation menus**
 
 # Content Templates & SEO Implementation
 
 ## Technical SEO
+
 - [x] Ensure all templates include schema markup, meta tags, and crawlability features (validated)
 - [x] Validate all templates for SEO best practices monthly (scheduled audit)
 
 ## Content Quality
+
 - [x] Automate checks for broken links and outdated content (scheduled script)
-- [x] Schedule regular content updates and audits (monthly) 
+- [x] Schedule regular content updates and audits (monthly)

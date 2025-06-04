@@ -7,6 +7,7 @@ This foundational academic paper by Jonah Berger and Katherine L. Milkman examin
 ### Key Findings:
 
 1. **Emotional Arousal**: Content that evokes high-arousal emotions (both positive and negative) is more likely to be shared than content that evokes low-arousal emotions.
+
    - High-arousal positive emotions (awe) drive more sharing
    - High-arousal negative emotions (anger, anxiety) also drive sharing
    - Low-arousal emotions (sadness) reduce sharing
@@ -32,4 +33,5 @@ This foundational academic paper by Jonah Berger and Katherine L. Milkman examin
 This research suggests that website virality is not random but can be strategically designed by understanding the psychological drivers of sharing behavior.
 
 ### Source:
+
 Berger, J., & Milkman, K. L. (2013). What Makes Online Content Viral? Journal of Marketing Research.

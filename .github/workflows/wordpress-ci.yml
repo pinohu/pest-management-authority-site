@@ -2,9 +2,9 @@ name: WordPress CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
+          php-version: "8.1"
       - name: Validate composer.json and composer.lock
         run: |
           if [ -f composer.json ]; then composer validate; fi
@@ -25,4 +25,4 @@ jobs:
         run: |
           if [ -f vendor/bin/phpunit ]; then vendor/bin/phpunit; fi
       # - name: Deploy to Production
-      #   run: echo "Deploy step here (add secrets and deployment logic)" 
+      #   run: echo "Deploy step here (add secrets and deployment logic)"

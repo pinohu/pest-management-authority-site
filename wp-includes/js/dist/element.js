@@ -448,7 +448,7 @@ function closeOuterElement(endOffset) {
 /**
  * External dependencies
  */
-// eslint-disable-next-line @typescript-eslint/no-restricted-imports
+ 
 
 
 /**

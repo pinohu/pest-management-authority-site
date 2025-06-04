@@ -331,7 +331,7 @@ function $c512c27ab02ef895$export$fd42f52fd3ae1109(rootComponentName, defaultCon
  * We use this safe version which suppresses the warning by replacing it with a noop on the server.
  *
  * See: https://reactjs.org/docs/hooks-reference.html#uselayouteffect
- */ const $9f79659886946c16$export$e5c5a5f917a5871c = Boolean(globalThis === null || globalThis === void 0 ? void 0 : globalThis.document) ? external_React_namespaceObject.useLayoutEffect : ()=>{};
+ */ const $9f79659886946c16$export$e5c5a5f917a5871c = (globalThis === null || globalThis === void 0 ? void 0 : globalThis.document) ? external_React_namespaceObject.useLayoutEffect : ()=>{};
 
 
 

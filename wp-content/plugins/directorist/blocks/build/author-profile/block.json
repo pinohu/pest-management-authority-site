@@ -6,10 +6,7 @@
   "name": "directorist/author-profile",
   "title": "Author Profile",
   "description": "Create author profile page.",
-  "keywords": [
-    "author",
-    "profile"
-  ],
+  "keywords": ["author", "profile"],
   "attributes": {
     "logged_in_user_only": {
       "type": "boolean",

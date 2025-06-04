@@ -6,15 +6,9 @@
   "name": "directorist/user-dashboard",
   "title": "Dashboard",
   "description": "Create user frontend dashboard.",
-  "keywords": [
-    "dashboard",
-    "my account"
-  ],
+  "keywords": ["dashboard", "my account"],
   "supports": {
     "html": false
   },
-  "editorScript": [
-    "file:./index.js",
-    "directorist-dashboard"
-  ]
+  "editorScript": ["file:./index.js", "directorist-dashboard"]
 }

@@ -521,7 +521,11 @@
 
 /* Research Statistics Shortcode */
 .research-stats {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-dark)
+  );
   border-radius: var(--radius-xl);
   padding: var(--space-8);
   color: var(--color-white);
@@ -766,4 +770,4 @@
   .stat-number {
     font-size: var(--font-size-2xl);
   }
-} 
+}

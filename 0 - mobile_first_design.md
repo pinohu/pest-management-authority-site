@@ -25,13 +25,13 @@ Mobile-first design forces designers and developers to focus on the most essenti
     <p>Essential description that communicates core benefits</p>
     <a href="/signup" class="primary-cta">Get Started</a>
   </section>
-  
+
   <!-- Secondary content follows -->
   <section class="features">
     <h2>Key Features</h2>
     <!-- Feature list -->
   </section>
-  
+
   <!-- Additional content comes last -->
   <section class="testimonials">
     <h2>What Our Customers Say</h2>
@@ -62,7 +62,7 @@ Progressive enhancement is the practice of starting with a basic, functional exp
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .card {
     flex: 0 0 calc(50% - 1rem);
     margin-right: 1rem;
@@ -75,10 +75,10 @@ Progressive enhancement is the practice of starting with a basic, functional exp
     flex: 0 0 calc(33.333% - 1rem);
     transition: transform 0.3s ease;
   }
-  
+
   .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
 }
 ```
@@ -94,25 +94,28 @@ Mobile-first design naturally emphasizes performance optimization, which benefit
 
 ```html
 <!-- Responsive image example with lazy loading -->
-<img 
-  src="placeholder.jpg" 
-  data-src="image-800w.jpg" 
-  data-srcset="image-400w.jpg 400w, image-800w.jpg 800w, image-1200w.jpg 1200w" 
-  data-sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+<img
+  src="placeholder.jpg"
+  data-src="image-800w.jpg"
+  data-srcset="image-400w.jpg 400w, image-800w.jpg 800w, image-1200w.jpg 1200w"
+  data-sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
   alt="Description of image"
   loading="lazy"
   class="lazy-image"
->
+/>
 ```
 
 ```javascript
 // JavaScript for lazy loading (for browsers that don't support native lazy loading)
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const lazyImages = document.querySelectorAll("img.lazy-image");
-  
+
   if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
+    let lazyImageObserver = new IntersectionObserver(function (
+      entries,
+      observer,
+    ) {
+      entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           let lazyImage = entry.target;
           lazyImage.src = lazyImage.dataset.src;
@@ -127,8 +130,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     });
-    
-    lazyImages.forEach(function(lazyImage) {
+
+    lazyImages.forEach(function (lazyImage) {
       lazyImageObserver.observe(lazyImage);
     });
   }
@@ -173,18 +176,18 @@ Writing CSS with a mobile-first approach means starting with base styles for mob
     max-width: 750px;
     margin: 0 auto;
   }
-  
+
   .navigation {
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
   .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-  
+
   .card {
     margin-bottom: 0;
   }
@@ -196,11 +199,11 @@ Writing CSS with a mobile-first approach means starting with base styles for mob
     padding: 3rem;
     max-width: 1200px;
   }
-  
+
   .card-container {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   /* Additional enhancements for desktop */
 }
 ```
@@ -266,18 +269,18 @@ Navigation is particularly challenging on mobile devices due to limited screen s
   .menu-toggle {
     display: none;
   }
-  
+
   .primary-navigation {
     position: static;
     transform: none;
     padding: 0;
     background: transparent;
   }
-  
+
   .primary-navigation ul {
     display: flex;
   }
-  
+
   .primary-navigation li {
     margin-right: 1.5rem;
   }
@@ -317,7 +320,7 @@ Navigation is particularly challenging on mobile devices due to limited screen s
   left: 0;
   right: 0;
   background: white;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
   z-index: 100;
 }
 
@@ -348,12 +351,12 @@ Navigation is particularly challenging on mobile devices due to limited screen s
     background: transparent;
     justify-content: flex-start;
   }
-  
+
   .bottom-nav-item {
     flex-direction: row;
     margin-right: 1.5rem;
   }
-  
+
   .bottom-nav-item .icon {
     margin-bottom: 0;
     margin-right: 5px;
@@ -415,13 +418,29 @@ Typography is crucial for readability on small screens:
 :root {
   --base-font-size: 16px;
   --scale-ratio: 1.2;
-  --h1-size: calc(var(--base-font-size) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio));
-  --h2-size: calc(var(--base-font-size) * var(--scale-ratio) * var(--scale-ratio));
+  --h1-size: calc(
+    var(--base-font-size) * var(--scale-ratio) * var(--scale-ratio) *
+      var(--scale-ratio)
+  );
+  --h2-size: calc(
+    var(--base-font-size) * var(--scale-ratio) * var(--scale-ratio)
+  );
   --h3-size: calc(var(--base-font-size) * var(--scale-ratio));
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: var(--base-font-size);
   line-height: 1.5;
 }
@@ -470,24 +489,30 @@ Forms are particularly challenging on mobile devices due to limited screen space
 <form class="mobile-first-form">
   <div class="form-group">
     <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" required>
+    <input type="text" id="name" name="name" required />
   </div>
-  
+
   <div class="form-group">
     <label for="email">Email Address</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required />
   </div>
-  
+
   <div class="form-group">
     <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      placeholder="123-456-7890"
+    />
   </div>
-  
+
   <div class="form-group">
     <label for="message">Message</label>
     <textarea id="message" name="message" rows="4"></textarea>
   </div>
-  
+
   <button type="submit" class="submit-button">Send Message</button>
 </form>
 ```
@@ -508,7 +533,9 @@ label {
   font-weight: 500;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   width: 100%;
   padding: 12px;
   border: 1px solid #ddd;
@@ -533,7 +560,7 @@ input, textarea, select {
   .mobile-first-form {
     max-width: 600px;
   }
-  
+
   .submit-button {
     width: auto;
     padding: 12px 24px;
@@ -554,24 +581,34 @@ Images and media need special consideration in mobile-first design:
 <!-- Responsive image with art direction -->
 <picture>
   <!-- Vertical crop for mobile -->
-  <source 
-    media="(max-width: 767px)" 
-    srcset="hero-mobile.jpg 400w, hero-mobile@2x.jpg 800w" 
-    sizes="100vw">
-  
+  <source
+    media="(max-width: 767px)"
+    srcset="hero-mobile.jpg 400w, hero-mobile@2x.jpg 800w"
+    sizes="100vw"
+  />
+
   <!-- Horizontal crop for desktop -->
-  <source 
-    media="(min-width: 768px)" 
-    srcset="hero-desktop.jpg 800w, hero-desktop@2x.jpg 1600w, hero-desktop@3x.jpg 2400w" 
-    sizes="(max-width: 1200px) 100vw, 1200px">
-  
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      hero-desktop.jpg     800w,
+      hero-desktop@2x.jpg 1600w,
+      hero-desktop@3x.jpg 2400w
+    "
+    sizes="(max-width: 1200px) 100vw, 1200px"
+  />
+
   <!-- Fallback -->
-  <img src="hero-desktop.jpg" alt="Hero image description" loading="lazy">
+  <img src="hero-desktop.jpg" alt="Hero image description" loading="lazy" />
 </picture>
 
 <!-- Aspect ratio box for video -->
 <div class="video-container">
-  <iframe src="https://www.youtube.com/embed/video-id" frameborder="0" allowfullscreen></iframe>
+  <iframe
+    src="https://www.youtube.com/embed/video-id"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
 </div>
 ```
 

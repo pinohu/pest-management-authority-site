@@ -15,6 +15,7 @@ This report is organized into three main sections: (1) Factors driving website v
 Academic research by Berger & Milkman (2013) identified key psychological factors that drive content virality:
 
 - **Emotional Arousal**: Content that evokes high-arousal emotions (both positive and negative) is more likely to be shared than content that evokes low-arousal emotions.
+
   - High-arousal positive emotions (awe) drive more sharing
   - High-arousal negative emotions (anger, anxiety) also drive sharing
   - Low-arousal emotions (sadness) reduce sharing

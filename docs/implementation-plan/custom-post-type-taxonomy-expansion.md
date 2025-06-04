@@ -1,14 +1,17 @@
 # Custom Post Type & Taxonomy Expansion Implementation Plan
 
 ## Background and Motivation
+
 The theme currently supports pillar, cluster, resource, case_study, and glossary CPTs, and several taxonomies. The architecture blueprint suggests additional types (FAQ, comparison, tool, testimonial, etc.) for richer content modeling.
 
 ## Key Challenges and Analysis
+
 - Ensuring new CPTs/taxonomies are well-integrated with navigation, templates, and SEO
 - Avoiding bloat and maintaining performance
 - Supporting extensibility for future needs
 
 ## High-level Task Breakdown
+
 - [ ] Audit current CPTs/taxonomies
 - [ ] Define requirements for new types (FAQ, comparison, tool, testimonial, etc.)
 - [ ] Register new CPTs/taxonomies in functions.php
@@ -17,6 +20,7 @@ The theme currently supports pillar, cluster, resource, case_study, and glossary
 - [ ] Document new types and usage
 
 ## Project Status Board
+
 - [x] CPT/taxonomy audit complete
 - [x] Requirements defined
 - [ ] Types registered
@@ -25,11 +29,13 @@ The theme currently supports pillar, cluster, resource, case_study, and glossary
 - [ ] Documentation updated
 
 ## Executor's Feedback or Assistance Requests
-- None yet 
+
+- None yet
 
 ## CPT/Taxonomy Audit Results
 
 **Registered Custom Post Types:**
+
 - pillar
 - cluster
 - resource
@@ -37,17 +43,19 @@ The theme currently supports pillar, cluster, resource, case_study, and glossary
 - glossary
 
 **Registered Taxonomies:**
+
 - topic (hierarchical)
 - audience (hierarchical)
 - resource_type (hierarchical, for resource)
 
 **Missing (per blueprint):**
+
 - FAQ
 - Comparison
 - Tool
 - Testimonial
 - List/curated collection
-- Author/expert 
+- Author/expert
 
 ## New CPT/Taxonomy Requirements
 
@@ -58,9 +66,10 @@ The theme currently supports pillar, cluster, resource, case_study, and glossary
 - **Curated List:** CPT for resource/link collections, supports tags, summaries, ratings.
 - **Author/Expert:** CPT or extended user profile for bios, credentials, related content.
 
-- [x] Requirements defined 
+- [x] Requirements defined
 
 ## Status
+
 - [x] All custom post type and taxonomy expansions implemented
 - [x] Documentation and review schedules are current
-- [x] Project is fully up to date as of latest audit 
+- [x] Project is fully up to date as of latest audit
